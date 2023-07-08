@@ -1,0 +1,926 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Baloo+Chettan+2:wght@500;600;700&family=Dancing+Script:wght@500&family=Open+Sans:wght@500&family=Oswald&family=Poppins:wght@400;500&family=Roboto:wght@500&display=swap');
+
+
+
+:root {
+    --color-red :rgb(38, 103, 103);
+    --color-gray : rgb(233, 224, 224);
+    --border-gray:#e8e8e8;
+    --bg-gray:#f7f7f7;
+    --text-color:rgb(21, 64, 64);
+}
+
+a{
+    text-decoration: none !important;
+}
+* {
+margin: 0;
+padding: 0;
+font-size: 13px;
+box-sizing: border-box;
+font-family: 'Baloo Chettan 2', cursive;
+
+}
+
+/* Title css */
+
+.bg-img{
+    background-color: var(--color-red);
+    background-attachment: fixed;
+    background-image: url(//catalog.wlimg.com/templates-images/12569/12570/pattern_n2.png);
+    display: block;
+    overflow: hidden;
+    padding: 0;
+    position: relative;
+    color: white;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.02) inset, 0 -5px 5px rgba(0, 0, 0, 0.02) inset;    
+}
+.head-product{
+    height: 85px;
+}
+.first-text-product,.first-text-product span{
+    font-size: 11.7px !important;
+}
+
+.first-text-product a:hover{
+  color: white;
+}
+.first-text-product a{
+    text-decoration: none;
+    color: white;
+    font-size: 11.7px !important;
+}
+.head-product .h1
+{
+    font-size: 24px;
+}
+/* Product-title */
+
+.title-text-product
+{
+    padding-top: 13px;
+    border-bottom: solid 1px var(--color-gray);
+    color: var(--text-color);
+    transition: 0.5s;
+    font-size: 18px;
+    font-weight: bold;
+}
+.title-text-product:hover{
+    color: black;
+}
+
+/* Product-title */
+
+.main-col
+{
+  margin: 20px 0;
+  padding: 0;
+  transition: 0.5s !important;
+}
+.main-single-product{
+  width: 100%;
+}
+.single-product{
+  border: solid 1px rgb(221, 218, 218);
+  background-color: var(--bg-gray);
+  width:100%;
+  margin: auto;
+  transition: 0.5s;
+  position: relative;
+  height: 292px;
+  overflow: hidden;
+}
+
+.back-img{
+  position: relative;
+  width: 245px;
+  margin: auto;
+  height: 250px;
+  z-index: 0;
+}
+.bluer-back-img
+{
+  backdrop-filter:blur(2px) ;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255,0.5); 
+}
+.product-img,
+.product-img-last
+{
+  position: absolute;
+  top:19%;
+  left: 0;
+  right: 0;
+  height: 150px;
+  width: 100%;
+  margin: auto;
+}
+.text-product{
+  text-align: center;
+  padding-top: 10px;
+  width: 100%;
+  font-size: 15px;
+  color:black !important;
+}
+#grains .product-img{
+  width: 175px;
+  top:19%;
+  height: 140px;
+
+}
+#fodderseeds .fs-img1{
+  width: 180px;
+  top:20%;
+  height: 120px;
+}
+#fodderseeds .fs-img2{
+  width: 150px;
+  margin: auto;
+  top:28%;
+  height: 100px;
+}
+.product-img2{
+  width: 140px;
+  margin: auto;
+  top:25%;
+  height: 100px;
+}
+#indianspices .product-img{
+  width: 200px;
+  height: 200px;
+  top: 9%;
+   transform: translatey(calc(5%)); 
+ } 
+.bg1
+{
+  background:url('../imgs/asset 3.jpeg');
+}
+.bg2
+{
+  background: url('../imgs/asset 41.jpeg');
+ }
+.bg3{
+  background: url('../imgs/asset 42.jpeg');
+ }
+.bg4{
+ background: url('../imgs/asset 43.jpeg');
+}
+.bg5{
+ background: url('../imgs/asset 44.jpeg');
+  
+}
+.bg6{
+ background: url('../imgs/asset 45.jpeg');
+  
+}
+.bg7{
+ background: url('../imgs/asset 46.jpeg');
+  
+}
+.bg8{
+ background: url('../imgs/asset 47.jpeg');
+  
+}
+.bg9{
+ background: url('../imgs/asset 48.jpeg');
+  
+}
+.bg10{
+ background: url('../imgs/asset 49.jpeg');
+}
+.bg11{
+  background: url('../imgs/asset 12.jpeg');
+}
+.bg12{
+  background: url('../imgs/asset 13.jpeg');
+ }
+ .bg13{
+  background: url('../imgs/asset 14.jpeg');
+ }
+ .bg14{
+  background: url('../imgs/asset 15.jpeg');
+ }
+ .bg15{
+  background: url('../imgs/asset 16.jpeg');
+ }
+ .bg16{
+  background: url('../imgs/asset 17.jpeg');
+ }
+ .bg17{
+  background: url('../imgs/asset 18.jpeg');
+ }
+ .bg18{
+  background: url('../imgs/asset 19.jpeg');
+ }
+ .bg19{
+  background: url('../imgs/asset 20.jpeg');
+ }
+ .bg20{
+  background: url('../imgs/asset 21.jpeg');
+ }
+ .bg21{
+  background: url('../imgs/asset 22.jpeg');
+ }
+ .bg22{
+  background: url('../imgs/asset 23.jpeg');
+ }
+ .bg23{
+  background: url('../imgs/asset 24.jpeg');
+ }
+
+
+/* Back size card */
+
+.card-body1{
+  z-index: 10;
+  position: absolute;
+  left: 0px;
+  right: 0px;
+  top: 0px;
+  background-color: rgba(0,0,0,0.8);
+  color: #ffffff;
+  font-size: 16px;
+  height: 100%;
+  transition: 0.5s !important;
+  display: none;
+}
+.main-col:hover .card-body1{
+  display: block;
+}
+.card-body1::before,
+.card-body1::after
+{
+  content: "";
+  position: absolute;
+  background-color:white;
+  right: 10px;
+  transform: scaley(0);
+  transition: 0.5s;
+  height: 93%;
+  width: 1px;
+  bottom: 11px;
+}
+.card-body1::before{
+  left: 10px;
+  top: 10px;
+}
+.card-body1:hover::before
+{ 
+  transform:scaleY(1);
+}
+.card-body1:hover::after
+{  
+  transform:scaleY(1);
+}
+
+.card-title p{
+  margin-bottom: 8px;
+}
+.card-title{
+  margin: 5px;
+  letter-spacing: 0px;
+  padding: 20px;
+  font-size: 14px;
+  height: 290px;
+  z-index: 2;
+} 
+.card-title::before,
+.card-title::after
+{
+  content: "";
+  position: absolute;
+  background-color:white;
+  transform: scaleX(0);
+  transition: 0.5s;
+  width: 92%;
+  left: 10px;
+  height: 1px;
+  bottom:11px;
+}
+.card-title::after
+{
+  right: 10px;
+  top:10px;
+}
+
+.card-title:hover::after
+{ 
+  transform:scaleX(1);
+}
+.card-title:hover::before
+{ 
+  transform:scaleX(1);
+}
+
+.product-title-back b{
+  font-size: 16px !important;
+}
+
+.product-title-back{
+  padding: 7px 0;
+}
+.secound-back-body{
+  width: 100%;
+  height: 211px;
+}
+
+/*Back-size buttons css */
+.btns{
+  display: flex;
+  justify-content:start;
+  align-items: center;
+  margin-top: 13px;
+}
+.btn{
+  display: flex;
+  border: 1px solid white !important;
+  font-size: 14px  !important;
+  color: white !important;
+  height: 31px;
+ 
+}
+.btn1
+{
+  background-color: var(--color-red) !important;
+  margin-right:5px;
+  width: 108px;
+  padding: 0;
+}
+.btns .btn2
+{
+  padding: 5px 5px;
+  width: 96px !important;
+}
+.btn2:hover
+{
+    background-color:var(--color-red) !important;
+    cursor: pointer;
+}
+.btn1:hover
+{
+    background-color:black !important;
+    cursor: pointer;
+}
+#indian .pre{
+  font-size: 13px;
+  line-height: 19.5px;
+}
+
+/* Second Page */
+
+/* First box */
+
+.main-basmati-box
+{
+  box-shadow: 0 0 10px rgba(204,204,204,0.67);
+  background-color: rgb(255, 252, 252);
+}
+.basmati-rice-img
+{
+  display: flex;
+  align-items: center;
+  height: 400px;
+  width: 400px;
+  background: rgba(0,0,0,.03);
+  margin: 5px;  
+}
+.row-box
+{
+  padding: 5px 10px;
+}
+.basmti-img
+{
+  width: 100%!important;
+ z-index: 1;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* .products-body {
+    padding-top: 15px;
+  }
+  .product-title {
+    border-bottom: 1px gray solid;
+    padding: 10px 0;
+  }
+  .product-name {
+    padding-left: 0px;
+    color: red;
+    font-size: 18px;
+    transition: 0.5s;
+    padding-bottom: 0;
+    }
+  .product-name:hover {
+    color: black;
+    cursor: pointer;
+    text-decoration: none;
+  } */
+
+
+/* Product css */
+/* 
+ .product-img ,
+.product-img-last
+{
+  position: absolute;
+  top:18%;
+  left: 0;
+  right: 0;
+  height: 150px;
+  width: 100%;
+  margin: auto;
+} */
+
+/* .main-col
+{
+  margin: 20px 0;
+  padding: 0;
+}
+
+.bluer-back-img
+{
+  backdrop-filter:blur(2px) ;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255,0.5); 
+}
+.back-img{
+  position: relative;
+  width: 250px;
+  margin: auto;
+  height: 300px;
+  z-index: 0;
+}
+
+.single-product{
+  border: solid 1px rgb(236, 236, 236);
+  background-color: rgb(252, 249, 249);
+  transition: 0.5s !important;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+.card-title{
+  position: relative;
+  margin: 5px;
+  letter-spacing: 0px;
+  padding: 20px;
+  font-size: 14px;
+  height: 290px;
+  z-index: 2;
+} 
+.card-title p{
+ 
+
+  margin-bottom: 8px;
+}
+.main-product-link{
+  margin-left: 0;
+  position: relative;
+}
+.card-body1{
+  z-index: 10;
+  position: absolute;
+  left: 0px;
+  right: 0px;
+  top: 0px;
+  background:#2b2a29;
+  color: #ffffff;
+  font-size: 16px;
+  height: 100%;
+  
+  transition: 0.5s !important;
+  display: none;
+}
+.single-product:hover .card-body1{
+  display: block;
+}  */
+/* .text-product{
+  position: absolute;
+  text-align: center;
+  bottom:-16px;
+  background-color: white;
+  padding-top: 10px;
+  width: 100%;
+  color:black !important;
+} */
+
+/* .card-title::after,
+.card-title::before
+{
+  content: "";
+  position: absolute;
+  background-color:white;
+  transform: scaleX(0);
+  transition: 0.5s;
+  width: 96%;
+  left: 5px;
+  height: 1px;
+  bottom:5px;
+}
+.card-title::after{
+  top: 5px;
+}
+
+
+.card-body1::after
+{
+  content: "";
+  position: absolute;
+  background-color:white;
+  left: 10px;
+  transform: scaley(0);
+  transition: 0.5s;
+  height: 92%;
+  width: 1px;
+  bottom: 13px;
+}
+.card-body1::before{
+  content: "";
+  position: absolute;
+  background-color:white;
+  right: 10px;
+  transform: scaley(0);
+  transition: 0.5s;
+  height: 92%;
+  width: 1px;
+  top: 12px;
+}
+
+.card-title:hover::after
+{ 
+  transform:scaleX(1);
+
+}
+.card-title:hover::before
+{ 
+  transform:scaleX(1);
+
+}
+.card-body1:hover::before
+{ 
+  transform:scaleY(1);
+}
+.card-body1:hover::after
+{ 
+  transform:scaleY(1);
+} */
+
+
+
+
+
+
+ /* Basmati Rice */
+ .fs-14{
+  font-size: 14px;
+ }
+ .fs-26{
+  font-size: 26px;
+ }
+.link-disgn:hover{
+  color: white !important;
+  text-decoration: none !important;
+}
+
+
+
+.basmati-body{
+  font-size: 14px;
+
+}
+.brbtn{
+  padding: 2px 10px;
+  border: 1px solid var(--color-red);
+  width: 110px;
+  font-size: 12px;
+  border-radius: 5px;
+  align-items: center;
+  transition: 0.5s;
+  margin-bottom:6px;
+}
+.brbtn:hover{
+  background-color:var(--color-red);
+  color: white;
+  cursor: pointer;
+}
+.gray-text{
+  color: gray;
+}
+.main-form{
+  font-size: 10px ;
+}
+.tb{
+  border-bottom: 1px solid rgb(167, 163, 163);
+
+}
+.tb td{
+  padding-bottom:10px;
+  width: 10% !important;
+  padding-top: 10px;
+  align-items: start;
+}
+.tb td .gray-text{
+  max-width: 200px;
+  min-width: 100px;
+}
+.tb td p{
+  margin-bottom: 0;
+}
+
+.link{
+  padding-top: 10px;
+  color:var(--color-red);
+  text-decoration: underline;
+  font-size: 13px;
+}
+.link:hover{
+  color: black;
+  text-decoration: none;
+}
+.link-view-more
+{
+  padding-top: 10px;
+}
+.text-red{
+  color:var(--color-red);
+  padding-top: 50px;
+  font-weight: 600;
+}
+#basmati-btn
+{
+  display: flex;
+  justify-content:space-between ;
+  font-weight: 700;
+  font-size: 17px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+
+}
+#basmati-btn .brbtn1{
+text-align: center;
+border: 1px solid var(--color-red);
+border-radius: 5px;
+/* padding: 15px 135px; */
+
+width: 98%;
+padding: 15px 0px;
+transition: 0.5s;
+}
+#basmati-btn .brbtn1:hover{
+  background-color: var(--color-red);
+  color: white !important;
+  cursor: pointer;
+}
+#basmati-btn .brbtn2{
+  text-align: center;
+  background-color: var(--color-red);
+  color: white;
+  border-radius: 5px;
+transition: 0.5s;
+
+  width: 97%;
+padding: 15px 0px;
+}
+#basmati-btn .brbtn2:hover{
+  background-color: black;
+  cursor: pointer;
+  
+}
+
+.main-slider a:hover{
+  text-decoration: none;
+}
+.main-line-text{
+  padding: 20px;
+  font-size: 14px;
+}
+.main-line{
+  font-size: 14px;
+}
+.fs
+{
+  font-size: 10px;
+}
+.main-line .gray-text,
+.main-line b{
+  padding:15px 0px;
+  align-items: start;
+  width: 40%;
+}
+.single-line{
+  display: flex;
+  border-bottom: 1px solid gray;
+  align-items: start;
+}
+#basmati-btn-last .brbtn2
+{
+  width: 200px;
+  margin: auto;
+  background-color: var(--color-red);
+  color:white;
+  text-align: center;
+  padding: 10px;
+  margin-bottom: 10px;
+  transition: 0.5s;
+}
+.rf b{
+  color:var(--text-color);
+  font-size: 20px;
+}
+#basmati-btn-last .brbtn2:hover{
+  background-color: black;
+  cursor: pointer;
+}
+.first-line{
+  font-size: 14px;
+}
+
+/* yes i am intrested */
+.title-interested{
+  position: absolute;
+  left: 0px;
+  right: 0px;
+  top: 0px;
+  background: rgba(0,0,0,0.6);
+  padding: 5px 15px;
+  color: #ffffff;
+  font-size: 16px;
+  text-align: center;
+}
+.back-img-box{
+  height: 250px;
+}
+.title-interested2{
+  background:#00abed;
+  padding: 5px;
+  color: #ffffff;
+  font-size: 16px;
+  text-align: center;
+  width: 100%;
+}
+/* box */
+.main-inpute{
+  display: flex;
+  justify-content: center;
+}
+.modal-dialog {
+  max-width: 800px !important;
+  margin: 2.75rem auto !important;
+}
+.box{
+  border: 1px solid rgb(167, 164, 164);
+  padding: 2px;
+  border-radius: 5px;
+}
+/* Form button */
+.box-btn{
+  border: 1px solid black;
+  border-radius: 5px;
+  background-color: rgb(53, 52, 52);
+  color: white;
+  text-align: center;
+  padding: 5px 20px;
+  width: 200px;
+  margin-left: auto ;
+}
+.box-btn:hover{
+  background-color: black;
+  cursor: pointer;
+}
+/* form */
+
+.in{
+ width: 60px;
+}
+.name{
+  font-size: 12px;
+
+}
+.main-box
+{
+  margin: 10px auto;
+  width: 90%;
+  /* margin: auto; */
+}
+.main-box1
+{
+  margin: 7px auto;
+  width: 80%;
+  /* margin: auto; */
+}
+.input-main-name{
+  width: 100%;
+}
+.inpute-name-box1{
+  height: 36px;
+  padding: 7px 7px;
+  width: 100%;
+  font-size: 11px;
+  color: #999;
+  border-color: rgba(0,0,0,0.13); 
+}
+.main-box2{
+  width: 90%;  
+}
+.radio-box{
+  margin-left: 11px;
+  width: 110px;
+  height: 30px;
+  padding: 5px 10px;
+  text-align: left;
+}
+.radio-box1{
+  margin-left: 5px;
+  width: 110px;
+  height: 40px;
+  font-size: 11px;
+  padding: 10px 10px;
+  text-align: left;
+}
+/* slider css */
+.silder-text{
+  text-align: center;
+  display: block;
+  
+ 
+}
+.main-slider .silder-text{
+  color: var(--color-red) !important;
+  transition: 0.5s;
+}
+.main-slider .silder-text:hover {
+  color:black !important;
+}
+#basmati-btn-last .btn-slider{
+  text-decoration: none !important;
+  font-size: 13px;
+}
+#basmati-btn-last .btn-slider{
+
+  width: 130px;
+  padding: 6px;
+}
+
+
+.react-multiple-carousel__arrow.react-multiple-carousel__arrow--right,
+.react-multiple-carousel__arrow.react-multiple-carousel__arrow--left{
+  background-color:rgba(252, 249, 249,0.1) !important;
+}
+.react-multiple-carousel__arrow::before {
+  font-size: 30px!important;
+  color: black !important;
+}
+.hidden{
+  overflow: hidden;
+}
+.product-2{
+ 
+
+  transition: 0.7s;
+  transform: scale(1);
+}
+.product-2:hover{
+  transform: scale(1.1);
+}
+.back-img-slider{
+
+  height: 275PX;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(253, 249, 249, 0.5);
+}
+.single-product-slider
+{
+  height: 350px;
+  background-color: rgba(247, 243, 243, 0.5);
+
+}

@@ -1,0 +1,135 @@
+@media (max-width: 1192px) {
+  .container{
+    max-width: 1156px !important;
+}
+.btns{
+  flex-direction: column;
+}
+
+#basmati-btn{
+  flex-direction: row;
+}
+
+
+.btns .btn2
+{
+  padding: 5px 5px;
+  width: 96px !important;
+}
+
+
+}
+@media (min-width: 992px){
+  .container{
+      max-width: 1156px !important;
+  }
+  .single-product{
+ 
+    padding: 0px;
+  
+  }
+}
+/* Meadiam */
+@media (max-width: 991px) {
+  .btns{
+    flex-direction:row;
+  }
+      .back-img{
+        max-width: 250px;
+        margin: auto;
+      }
+      
+   /* basmati rice button */
+
+}
+@media (max-width: 845px) {
+  .btns{
+    flex-direction:column;
+  }
+}
+/* Meadiam */
+@media (max-width: 768px) {
+  .btns{
+    flex-direction:row;
+  }
+  .first-text-product{
+    padding-bottom: 25px;
+  }
+  .first-text-product2{
+    padding: 0;
+  }
+  .head-product{
+    padding-top: 15px;
+  }
+      /* box */
+      .modal-dialog {
+        position: absolute;
+        max-width: 100% !important;
+        margin:auto !important;
+      }
+        /* basmati rice button */
+
+#basmati-btn .brbtn1 {
+  width: 100%;
+  margin: 3px;
+}
+
+#indianrice #basmati-btn-last .brbtn2
+{
+  width: 150px;
+}
+
+}
+
+/* Small  */
+
+@media (max-width: 576px) {
+  
+ .back-img{
+    width: 250px;
+    margin: auto;
+ }
+ .first-text-product2{
+  padding-bottom: 15px;
+}
+
+ 
+  
+/* basmati rice button */
+#basmati-btn{
+  flex-direction: column;
+}
+#indianrice #basmati-btn-last .brbtn2
+{
+  width: 200px;
+}
+}
+/* Extra Small */
+
+@media (max-width: 393px) {
+  
+  /* basmati rice button */
+
+  #basmati-btn .brbtn1 {
+    padding: 9px 30px;
+  }
+  #basmati-btn .brbtn2 {
+    padding: 9px 30px;
+  }
+
+
+
+}
+@media (max-width:375px) {
+
+  #basmati-btn {
+    flex-direction: column;
+  
+  }
+  #basmati-btn .brbtn1 {
+    width: 100%;
+  }
+  #basmati-btn .brbtn2 {
+    width: 100%;
+  }
+ }
