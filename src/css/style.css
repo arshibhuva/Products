@@ -1,14 +1,12 @@
 
   @import url('https://fonts.googleapis.com/css2?family=Baloo+Chettan+2:wght@500;600;700&family=Dancing+Script:wght@500&family=Open+Sans:wght@500&family=Oswald&family=Poppins:wght@400;500&family=Roboto:wght@500&display=swap');
 
-
-
 :root {
     --color-red :rgb(38, 103, 103);
     --color-gray : rgb(233, 224, 224);
     --border-gray:#e8e8e8;
     --bg-gray:#f7f7f7;
-    --text-color:rgb(21, 64, 64);
+    --text-color:rgb(20, 58, 58);
 }
 
 a{
@@ -22,7 +20,12 @@ box-sizing: border-box;
 font-family: 'Baloo Chettan 2', cursive;
 
 }
-
+body{
+  font-family: 'Baloo Chettan 2', cursive;
+}
+.container{
+  font-family: 'Baloo Chettan 2', cursive;
+}
 /* Title css */
 
 .bg-img{
@@ -74,12 +77,13 @@ font-family: 'Baloo Chettan 2', cursive;
 
 .main-col
 {
-  margin: 20px 0;
-  padding: 0;
+  margin: 10px 0;
+  padding: 0 10px !important;
   transition: 0.5s !important;
 }
 .main-single-product{
-  width: 100%;
+  /* width: 100%; */
+  /* width: 210px; */
 }
 .single-product{
   border: solid 1px rgb(221, 218, 218);
@@ -88,13 +92,16 @@ font-family: 'Baloo Chettan 2', cursive;
   margin: auto;
   transition: 0.5s;
   position: relative;
-  height: 292px;
+  height: 290px;
   overflow: hidden;
 }
 
 .back-img{
+  display: flex;
+  justify-content: center;
+  align-items: center;
   position: relative;
-  width: 245px;
+  max-width: 250px;
   margin: auto;
   height: 250px;
   z-index: 0;
@@ -104,19 +111,27 @@ font-family: 'Baloo Chettan 2', cursive;
   backdrop-filter:blur(2px) ;
   width: 100%;
   height: 100%;
-  background: rgba(255, 255, 255,0.5); 
+  background-color: var(--bg-gray);
+  background:rgba(232, 227, 227, 0.6)
+  /* background: rgba(255, 255, 255,0.5);  */
 }
 .product-img,
 .product-img-last
 {
   position: absolute;
-  top:19%;
   left: 0;
   right: 0;
   height: 150px;
   width: 100%;
   margin: auto;
 }
+.product-img.promegranate,
+.product-img.onion
+{
+ width: 145px;
+ height: 125px;
+}
+
 .text-product{
   text-align: center;
   padding-top: 10px;
@@ -124,34 +139,31 @@ font-family: 'Baloo Chettan 2', cursive;
   font-size: 15px;
   color:black !important;
 }
-#grains .product-img{
-  width: 175px;
-  top:19%;
-  height: 140px;
 
+#grains .product-img{
+  width: 160px;
+  height: 110px;
+}
+#grains .wheat{
+  height: 110px;
+  width: 130px;
 }
 #fodderseeds .fs-img1{
   width: 180px;
-  top:20%;
   height: 120px;
 }
 #fodderseeds .fs-img2{
   width: 150px;
-  margin: auto;
-  top:28%;
   height: 100px;
 }
-.product-img2{
-  width: 140px;
-  margin: auto;
-  top:25%;
-  height: 100px;
-}
+
 #indianspices .product-img{
-  width: 200px;
+  width: 220px;
+  height: 220px;
+ } 
+ #indianspices .pro-img{
+  width: 245px;
   height: 200px;
-  top: 9%;
-   transform: translatey(calc(5%)); 
  } 
 .bg1
 {
@@ -179,10 +191,11 @@ font-family: 'Baloo Chettan 2', cursive;
  background: url('../imgs/asset 46.jpeg');
   
 }
+
 .bg8{
- background: url('../imgs/asset 47.jpeg');
-  
+ background: url('../imgs/asset 47.jpeg');  
 }
+
 .bg9{
  background: url('../imgs/asset 48.jpeg');
   
@@ -229,6 +242,9 @@ font-family: 'Baloo Chettan 2', cursive;
  .bg23{
   background: url('../imgs/asset 24.jpeg');
  }
+ .bg8,.bg12,.bg15,.bg16,.bg22{
+  background-size: cover;
+}
 
 
 /* Back size card */
@@ -255,7 +271,7 @@ font-family: 'Baloo Chettan 2', cursive;
   content: "";
   position: absolute;
   background-color:white;
-  right: 10px;
+  right: 11px;
   transform: scaley(0);
   transition: 0.5s;
   height: 93%;
@@ -297,12 +313,12 @@ font-family: 'Baloo Chettan 2', cursive;
   width: 92%;
   left: 10px;
   height: 1px;
-  bottom:11px;
+  bottom:10px;
 }
 .card-title::after
 {
   right: 10px;
-  top:10px;
+  top:9px;
 }
 
 .card-title:hover::after
@@ -313,12 +329,12 @@ font-family: 'Baloo Chettan 2', cursive;
 { 
   transform:scaleX(1);
 }
-
 .product-title-back b{
   font-size: 16px !important;
 }
 
 .product-title-back{
+  
   padding: 7px 0;
 }
 .secound-back-body{
@@ -335,6 +351,8 @@ font-family: 'Baloo Chettan 2', cursive;
 }
 .btn{
   display: flex;
+  justify-content: start;
+  align-items: center;
   border: 1px solid white !important;
   font-size: 14px  !important;
   color: white !important;
@@ -345,13 +363,11 @@ font-family: 'Baloo Chettan 2', cursive;
 {
   background-color: var(--color-red) !important;
   margin-right:5px;
-  width: 108px;
-  padding: 0;
+  width: 100px;
 }
 .btns .btn2
 {
-  padding: 5px 5px;
-  width: 96px !important;
+  width: 95px !important;
 }
 .btn2:hover
 {
@@ -360,7 +376,7 @@ font-family: 'Baloo Chettan 2', cursive;
 }
 .btn1:hover
 {
-    background-color:black !important;
+    background-color: rgba(0,0,0,0.1) !important;
     cursor: pointer;
 }
 #indian .pre{
@@ -374,252 +390,54 @@ font-family: 'Baloo Chettan 2', cursive;
 
 .main-basmati-box
 {
-  box-shadow: 0 0 10px rgba(204,204,204,0.67);
+  box-shadow: 0 0 10px rgba(121, 120, 120, 0.67);
   background-color: rgb(255, 252, 252);
+  margin-top: 35px;
+}
+.basmti-main-img{
+  /* border: solid red 1px; */
+  display: flex;
+  justify-content: start;
+
+  
 }
 .basmati-rice-img
 {
   display: flex;
+  justify-content: center;
   align-items: center;
   height: 400px;
-  width: 400px;
+  width: 410px;
+  /* overflow: hidden; */
   background: rgba(0,0,0,.03);
-  margin: 5px;  
+  background-size: cover;
 }
 .row-box
 {
-  padding: 5px 10px;
+  display: flex;
+  padding: 10px 10px;
 }
 .basmti-img
 {
-  width: 100%!important;
- z-index: 1;
+  /* width: 100%!important; */
+  z-index: 200;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* .products-body {
-    padding-top: 15px;
-  }
-  .product-title {
-    border-bottom: 1px gray solid;
-    padding: 10px 0;
-  }
-  .product-name {
-    padding-left: 0px;
-    color: red;
-    font-size: 18px;
-    transition: 0.5s;
-    padding-bottom: 0;
-    }
-  .product-name:hover {
-    color: black;
-    cursor: pointer;
-    text-decoration: none;
-  } */
-
-
-/* Product css */
-/* 
- .product-img ,
-.product-img-last
-{
-  position: absolute;
-  top:18%;
-  left: 0;
-  right: 0;
-  height: 150px;
+.main-table{
   width: 100%;
-  margin: auto;
-} */
-
-/* .main-col
-{
-  margin: 20px 0;
-  padding: 0;
 }
-
-.bluer-back-img
-{
-  backdrop-filter:blur(2px) ;
-  width: 100%;
-  height: 100%;
-  background: rgba(255, 255, 255,0.5); 
-}
-.back-img{
-  position: relative;
-  width: 250px;
-  margin: auto;
-  height: 300px;
-  z-index: 0;
-}
-
-.single-product{
-  border: solid 1px rgb(236, 236, 236);
-  background-color: rgb(252, 249, 249);
-  transition: 0.5s !important;
-  width: 100%;
-  overflow: hidden;
-  position: relative;
-}
-.card-title{
-  position: relative;
-  margin: 5px;
-  letter-spacing: 0px;
-  padding: 20px;
-  font-size: 14px;
-  height: 290px;
-  z-index: 2;
-} 
-.card-title p{
- 
-
-  margin-bottom: 8px;
-}
-.main-product-link{
-  margin-left: 0;
-  position: relative;
-}
-.card-body1{
-  z-index: 10;
-  position: absolute;
-  left: 0px;
-  right: 0px;
-  top: 0px;
-  background:#2b2a29;
-  color: #ffffff;
-  font-size: 16px;
-  height: 100%;
-  
-  transition: 0.5s !important;
-  display: none;
-}
-.single-product:hover .card-body1{
-  display: block;
-}  */
-/* .text-product{
-  position: absolute;
-  text-align: center;
-  bottom:-16px;
-  background-color: white;
-  padding-top: 10px;
-  width: 100%;
-  color:black !important;
-} */
-
-/* .card-title::after,
-.card-title::before
-{
-  content: "";
-  position: absolute;
-  background-color:white;
-  transform: scaleX(0);
-  transition: 0.5s;
-  width: 96%;
-  left: 5px;
-  height: 1px;
-  bottom:5px;
-}
-.card-title::after{
-  top: 5px;
-}
-
-
-.card-body1::after
-{
-  content: "";
-  position: absolute;
-  background-color:white;
-  left: 10px;
-  transform: scaley(0);
-  transition: 0.5s;
-  height: 92%;
-  width: 1px;
-  bottom: 13px;
-}
-.card-body1::before{
-  content: "";
-  position: absolute;
-  background-color:white;
-  right: 10px;
-  transform: scaley(0);
-  transition: 0.5s;
-  height: 92%;
-  width: 1px;
-  top: 12px;
-}
-
-.card-title:hover::after
-{ 
-  transform:scaleX(1);
-
-}
-.card-title:hover::before
-{ 
-  transform:scaleX(1);
-
-}
-.card-body1:hover::before
-{ 
-  transform:scaleY(1);
-}
-.card-body1:hover::after
-{ 
-  transform:scaleY(1);
-} */
-
-
-
-
-
-
- /* Basmati Rice */
- .fs-14{
-  font-size: 14px;
- }
- .fs-26{
+.fn-26{
   font-size: 26px;
- }
-.link-disgn:hover{
-  color: white !important;
-  text-decoration: none !important;
 }
-
-
-
-.basmati-body{
-  font-size: 14px;
-
+.main-basmti-body{
+  
+  padding: 0 0 !important;
+  /* border: 1px solid red; */
+  padding-right: 10px !important;
 }
 .brbtn{
-  padding: 2px 10px;
+  padding: 4px 10px;
   border: 1px solid var(--color-red);
-  width: 110px;
+  width: 105px;
   font-size: 12px;
   border-radius: 5px;
   align-items: center;
@@ -631,26 +449,118 @@ font-family: 'Baloo Chettan 2', cursive;
   color: white;
   cursor: pointer;
 }
+.fs-14 span,
+.fs-14 b{
+ font-size: 14.7px;
+}
+
 .gray-text{
   color: gray;
+}
+.tb td.gray-text{
+  width: 130px !important;
+  font-size: 14.7px;
+}
+.tb b{
+  font-size: 14.7px;
+}
+.main-line .gray-text,
+.main-line b{
+  padding:15px 0px;
+  align-items: start;
+  width: 40%;
+}
+.link-view-more
+{
+  padding-top: 10px;
+  border: none !important;
+}
+.link-view-more a{
+  color: var(--color-red);
+  text-decoration: underline !important;
+  border: none !important;
+}
+.link-view-more a:hover{
+  text-decoration: none !important;
+}
+.text-red{
+  color:var(--color-red);
+  padding-top: 25px;
+  margin-bottom: 0;
+  font-weight: 600;
+  font-size: 15.73px;
+}
+#basmati-btn
+{
+  display: flex;
+  justify-content:space-between ;
+  font-size: 17.16px;
+  /* border: 1px solid red; */
+  width: 100%;
+  margin: auto;
+  margin: 15px 0px;
+}
+#basmati-btn .brbtn1,
+#basmati-btn .brbtn2{
+  font-size: 17.16px;
+  font-weight: 700;
+  padding: 11px 0px;
+}
+#basmati-btn .brbtn1{
+text-align: center;
+border: 1px solid var(--color-red);
+border-radius: 5px;
+width: 98%;
+transition: 0.5s;
+}
+#basmati-btn .brbtn1:hover{
+  background-color: var(--color-red);
+  color: white !important;
+  cursor: pointer;
+}
+#basmati-btn .brbtn2{
+  text-align: center;
+  background-color: var(--color-red);
+  color: white;
+  border-radius: 5px;
+  transition: 0.5s;
+  width: 99%;
+}
+#basmati-btn .brbtn2:hover{
+  background-color: black;
+  cursor: pointer;
+}
+
+.rf b{
+  color:var(--text-color);
+  font-size: 20px;
+}
+#basmati-btn-last .brbtn2:hover{
+  background-color: black;
+  cursor: pointer;
+}
+
+.link-disgn:hover{
+  color: white !important;
+  text-decoration: none !important;
+}
+.basmati-body{
+  font-size: 14px;
 }
 .main-form{
   font-size: 10px ;
 }
 .tb{
   border-bottom: 1px solid rgb(167, 163, 163);
+  width: 100%;
 
 }
 .tb td{
   padding-bottom:10px;
-  width: 10% !important;
   padding-top: 10px;
   align-items: start;
 }
-.tb td .gray-text{
-  max-width: 200px;
-  min-width: 100px;
-}
+
 .tb td p{
   margin-bottom: 0;
 }
@@ -665,105 +575,86 @@ font-family: 'Baloo Chettan 2', cursive;
   color: black;
   text-decoration: none;
 }
-.link-view-more
-{
-  padding-top: 10px;
-}
-.text-red{
-  color:var(--color-red);
-  padding-top: 50px;
-  font-weight: 600;
-}
-#basmati-btn
-{
-  display: flex;
-  justify-content:space-between ;
-  font-weight: 700;
-  font-size: 17px;
-  margin-top: 10px;
-  margin-bottom: 10px;
-
-}
-#basmati-btn .brbtn1{
-text-align: center;
-border: 1px solid var(--color-red);
-border-radius: 5px;
-/* padding: 15px 135px; */
-
-width: 98%;
-padding: 15px 0px;
-transition: 0.5s;
-}
-#basmati-btn .brbtn1:hover{
-  background-color: var(--color-red);
-  color: white !important;
-  cursor: pointer;
-}
-#basmati-btn .brbtn2{
-  text-align: center;
-  background-color: var(--color-red);
-  color: white;
-  border-radius: 5px;
-transition: 0.5s;
-
-  width: 97%;
-padding: 15px 0px;
-}
-#basmati-btn .brbtn2:hover{
-  background-color: black;
-  cursor: pointer;
-  
-}
-
 .main-slider a:hover{
   text-decoration: none;
 }
-.main-line-text{
+
+.first-line{
+  font-size: 14px;
+}
+/* Second box */
+
+
+#basmati-table{
+
+}
+#basmati-table .table-box{
   padding: 20px;
-  font-size: 14px;
 }
-.main-line{
-  font-size: 14px;
-}
-.fs
-{
-  font-size: 10px;
-}
-.main-line .gray-text,
-.main-line b{
-  padding:15px 0px;
-  align-items: start;
-  width: 40%;
+
+.main-line-text p{
+  font-size: 18.3px;
+  margin: 0;
 }
 .single-line{
   display: flex;
-  border-bottom: 1px solid gray;
+  padding: 0px 5px;
+  font-size: 50px !important;
   align-items: start;
+  border-bottom: 1px solid rgb(186, 185, 185);
+}
+
+.single-line .gray-text,
+.single-line b{
+  padding-bottom: 10px !important;
+  font-size: 13px;
+}
+.table-pre
+{
+  text-align: justify;
+  font-size: 11.7px;
+  color: #333333;
+  line-height: 20px;
+}
+#basmati-table ul li{
+  font-size: 11.7px;
+  color: #333333;
+  padding-left: 0px !important;
+  line-height: 25px;
+}
+strong{
+  font-size: 11.7px;
+  font-weight: bold;
+}
+
+
+
+/* yes i am intrested */
+
+#yes-btrn .brbtn2{
+  /* width: 1120px; */
+
+  font-size: 15px !important;
+ 
 }
 #basmati-btn-last .brbtn2
 {
-  width: 200px;
+  width: 180px;
   margin: auto;
   background-color: var(--color-red);
   color:white;
   text-align: center;
-  padding: 10px;
+  padding: 10px 20px;
   margin-bottom: 10px;
   transition: 0.5s;
+  border-radius: 3px;
+  font-size: 15px !important;
 }
-.rf b{
-  color:var(--text-color);
-  font-size: 20px;
+.box-body-table{
+ padding-left: 15px !important;
 }
-#basmati-btn-last .brbtn2:hover{
-  background-color: black;
-  cursor: pointer;
-}
-.first-line{
-  font-size: 14px;
-}
-
-/* yes i am intrested */
+/* ---------------------------------------------------------------------------------- */
+/* yes i am intrested - box*/
 .title-interested{
   position: absolute;
   left: 0px;
@@ -786,6 +677,7 @@ padding: 15px 0px;
   text-align: center;
   width: 100%;
 }
+
 /* box */
 .main-inpute{
   display: flex;
@@ -800,24 +692,267 @@ padding: 15px 0px;
   padding: 2px;
   border-radius: 5px;
 }
+
+/* ------------------------------------------------------------------------------ */
+
+/* Lookin for - form */
+
+#lookingfor h2,
+.inner-text b{
+  font-size: 26px;
+  font-weight: 900;
+}
+
+.inner-text b{
+  color: var(--text-color);
+}
+
+.lookin-box{
+  padding: 10px;
+  margin: 0 60px;
+}
+.lookin-box-text{
+  padding: 10px;
+}
+.main-box1
+{
+  margin: 7px auto;
+  width: 100%;
+}
+#lookingfor label{
+  font-size: 12px;
+  font-family:"Open Sans", sans-serif ;
+}
+.inpute-name1
+{
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  width: 120px;
+  margin-right: 10px;
+  text-align: right;
+  color:  #666666;
+}
+.textarea-box-text{
+  width: 105px;
+}
+.input-main-name{
+
+  width: 100%;
+}
+.adress-box{
+  width: 100%;
+}
+.form-box{
+  margin-right: 0px !important;
+}
+.radio-btn{
+  display: flex;
+  justify-content:start;
+  align-items: center;
+  border: 1px solid rgb(216, 210, 210);
+  padding: 10px 0px;
+  width: 32% !important;
+  border-radius: 2px;
+  background-color: white;
+}
+
+.fs{
+ width: 12px;
+ height: 12px;
+ margin:0 5px;
+}
+.radio-text{
+  font-size: 13px;
+  color: #999;
+}
+.form-row-radio{
+  width: 50% !important;
+}
+.inpute-name-box1{
+  height: 36px;
+  padding: 0px 10px;
+  width: 100%;
+  font-size: 13px;
+  color: #999 !important;
+  border-color: rgba(0,0,0,0.13); 
+}
+
+.input-main-name-radio{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.textarea-box{
+  padding-top: 5px;
+  height: 50px;
+}
 /* Form button */
-.box-btn{
+#box-btn{
+ width: 100%;
+}
+
+#box-btn .box-btn {
   border: 1px solid black;
   border-radius: 5px;
+  font-size: 14px;
+  width: 140px;
+  margin: auto;
+color: white;
+  padding: 8px 0;
   background-color: rgb(53, 52, 52);
-  color: white;
   text-align: center;
-  padding: 5px 20px;
-  width: 200px;
-  margin-left: auto ;
 }
 .box-btn:hover{
   background-color: black;
   cursor: pointer;
 }
+
+/*--------- slider css ----------*/
+.title-slide h2
+{
+  font-weight: 900;
+  font-size: 26px;
+}
+
+.main-slider{
+  height: 297px !important;
+  /* border: 1px solid red; */
+  /* padding: 10px 20px; */
+}
+.col-slider{
+  /* border: 1px solid black; */
+  height: 275px !important;
+  width: 275px !important;
+  display: flex;
+  justify-content: center;
+}
+.single-product-slider
+{
+  height: 200px;
+  width: 250px;
+  background-color: rgba(247, 243, 243, 0.5);
+}
+
+.main-slider .silder-text{
+  font-size: 15.6px;
+  display: block;
+  text-align: center;
+  color: var(--color-red) !important;
+  transition: 0.5s;
+}
+.main-slider .silder-text:hover {
+  color:black !important;
+}
+.second-row-slider{
+  /* border: green solid 1px; */
+  /* width: 100%; */
+  height: 275px;
+  
+}
+.back-img-slider{
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+.product-2{
+  transition: 0.7s;
+  transform: scale(1);
+  background-size: cover;
+}
+.col-slider:hover .product-2{
+  transform: scale(1.1);
+}
+
+#basmati-btn-last-slider .btn-slider{
+  font-size: 13px !important;
+  width: 110px;
+  margin: auto;
+  background-color: var(--color-red);
+  color:white;
+  text-align: center;
+  transition: 0.5s;
+  padding: 5px 0px;
+}
+
+.hidden{
+  overflow: hidden;
+}
+.react-multiple-carousel__arrow.react-multiple-carousel__arrow--right,
+.react-multiple-carousel__arrow.react-multiple-carousel__arrow--left{
+  background-color:rgba(252, 249, 249,0.1) !important;
+}
+.react-multiple-carousel__arrow::before {
+  font-size: 30px!important;
+  color: gray !important;
+}
+.slider-link
+{
+
+  border: solid rgb(195, 193, 193) 1px;
+}
+#last-button .brbtn2 {
+  width: 100%;
+  display: none;
+}
+/* Main Inner Box Product */
+
+#inner-box-Product .basmati-body .bt{
+  font-size: 22px;
+  font-weight: 0;
+}
+#inner-box-Product .basmati-body .brbtn{
+  border-radius:0px !important;
+  /* width: 88px !important;
+  padding: 2px 0; */
+}
+#inner-box-Product .basmati-body .table-pre,
+#inner-box-Product ul li,
+#inner-box-Product strong
+{
+  line-height: 29px;
+  font-size: 14.3px;
+}
+#inner-box-Product{
+  margin-top: 0px !important;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* form */
 
-.in{
+/* .in{
  width: 60px;
 }
 .name{
@@ -828,29 +963,14 @@ padding: 15px 0px;
 {
   margin: 10px auto;
   width: 90%;
-  /* margin: auto; */
-}
-.main-box1
-{
-  margin: 7px auto;
-  width: 80%;
-  /* margin: auto; */
-}
-.input-main-name{
-  width: 100%;
-}
-.inpute-name-box1{
-  height: 36px;
-  padding: 7px 7px;
-  width: 100%;
-  font-size: 11px;
-  color: #999;
-  border-color: rgba(0,0,0,0.13); 
-}
-.main-box2{
+  margin: auto;
+} */
+
+
+/* .main-box2{
   width: 90%;  
-}
-.radio-box{
+} */
+/* .radio-box{
   margin-left: 11px;
   width: 110px;
   height: 30px;
@@ -864,63 +984,11 @@ padding: 15px 0px;
   font-size: 11px;
   padding: 10px 10px;
   text-align: left;
-}
+} */
 /* slider css */
-.silder-text{
-  text-align: center;
-  display: block;
-  
- 
-}
-.main-slider .silder-text{
-  color: var(--color-red) !important;
-  transition: 0.5s;
-}
-.main-slider .silder-text:hover {
-  color:black !important;
-}
-#basmati-btn-last .btn-slider{
-  text-decoration: none !important;
-  font-size: 13px;
-}
-#basmati-btn-last .btn-slider{
-
-  width: 130px;
-  padding: 6px;
-}
+/*
 
 
-.react-multiple-carousel__arrow.react-multiple-carousel__arrow--right,
-.react-multiple-carousel__arrow.react-multiple-carousel__arrow--left{
-  background-color:rgba(252, 249, 249,0.1) !important;
-}
-.react-multiple-carousel__arrow::before {
-  font-size: 30px!important;
-  color: black !important;
-}
-.hidden{
-  overflow: hidden;
-}
-.product-2{
- 
 
-  transition: 0.7s;
-  transform: scale(1);
-}
-.product-2:hover{
-  transform: scale(1.1);
-}
-.back-img-slider{
 
-  height: 275PX;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: rgba(253, 249, 249, 0.5);
-}
-.single-product-slider
-{
-  height: 350px;
-  background-color: rgba(247, 243, 243, 0.5);
-
-}
+ */

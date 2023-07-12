@@ -1,56 +1,92 @@
-@media (max-width: 1192px) {
+@media (max-width: 1200px) {
   .container{
     max-width: 1156px !important;
 }
 .btns{
   flex-direction: column;
 }
-
-#basmati-btn{
-  flex-direction: row;
-}
-
-
 .btns .btn2
 {
   padding: 5px 5px;
   width: 96px !important;
 }
-
+}
+@media ( max-width: 1119px) {
 
 }
-@media (min-width: 992px){
-  .container{
-      max-width: 1156px !important;
-  }
-  .single-product{
- 
-    padding: 0px;
-  
+@media ( max-width: 1048px) {
+  .radio-btn{
+    align-items:start;
   }
 }
+
 /* Meadiam */
+@media (max-width: 884px) {
+  #basmati-btn{
+    flex-direction: column !important;
+  }
+}
 @media (max-width: 991px) {
   .btns{
     flex-direction:row;
   }
-      .back-img{
-        max-width: 250px;
-        margin: auto;
-      }
-      
-   /* basmati rice button */
 
+  #basmati-btn .brbtn1{
+    margin-bottom: 10px;
+  }
+  
+   /* basmati rice button */
+}  
+
+@media (max-width: 991px) and (min-width : 890px) {
+ 
+  .main-basmti-body{
+    margin-left: -40px !important;
+  }
+  
 }
+
+
 @media (max-width: 845px) {
   .btns{
     flex-direction:column;
   }
 }
+@media (max-width: 916px) {
+
+  .single-line b{
+    width: 75% !important;
+  }
+}
+@media (max-width: 800px) and (min-width:640px) {
+  #basmati-btn-last .brbtn2
+  {
+    width: 180px;
+    margin-left: 0px;
+    position: absolute;
+    top: 0;
+  }
+  #inner-box-Product #basmati-btn-last .brbtn2{
+    width: 180px;
+    margin:auto;
+    position: relative;
+  }
+}
 /* Meadiam */
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .btns{
     flex-direction:row;
+  }
+  #basmati-btn #box-btn{
+    margin-bottom: 10px;
+   }
+
+  table{
+    border: solid gray 1px;
+  }
+  td{
+    border: solid gray 1px;
+    padding-left: 10px;
   }
   .first-text-product{
     padding-bottom: 25px;
@@ -61,18 +97,53 @@
   .head-product{
     padding-top: 15px;
   }
-      /* box */
+
+  .form-row{
+    flex-direction: column;
+  }
+  .input-main-name-radio{
+   justify-content: space-between;
+   width: 100% !important;
+  }
+  .form-row-radio{
+    width: 100% !important;
+  }
+.radio-btn{
+  align-items: center;
+}
+.main-box1{
+  flex-direction: column;
+}
+.inpute-name1
+{
+  justify-content:start;
+  width: 320px;
+  margin-right: 10px;
+  text-align:left;
+}
+.lookin-box{
+  padding: 10px;
+  margin: 0 30px;
+}
+#box-btn .box-btn {
+
+  width: 140px;
+margin-left: 0px;
+}
+#lookingfor h2,
+.inner-text b{
+  font-size: 20px;
+  font-weight: 700;
+}
+
+
+  /* box */
       .modal-dialog {
         position: absolute;
         max-width: 100% !important;
         margin:auto !important;
       }
         /* basmati rice button */
-
-#basmati-btn .brbtn1 {
-  width: 100%;
-  margin: 3px;
-}
 
 #indianrice #basmati-btn-last .brbtn2
 {
@@ -81,55 +152,139 @@
 
 }
 
+
 /* Small  */
 
+@media (max-width: 640px){
+  .row-box
+{
+  display: flex;
+  flex-direction: column;
+}
+.main-basmati-box{
+  margin-top: 0px !important;
+  margin-bottom: 0px;
+  box-shadow: none;
+  padding-top: 0px !important;
+  border-bottom: 1px solid rgb(229, 224, 224);
+}
+.basmati-body{
+  padding: 20px;
+  padding-bottom: 0px;
+}
+#basmati-btn{
+  flex-direction: row !important;
+}
+.table-box-line{
+  display: flex;
+  flex-direction: column;
+}
+.tb td.gray-text {
+  width: 45% !important;
+  font-size: 14.7px;
+}
+.table-box{
+  padding-bottom: 0px !important;
+}
+.single-line b{
+  width: 60% !important;
+}
+
+}
+
+
+
+
 @media (max-width: 576px) {
-  
- .back-img{
-    width: 250px;
-    margin: auto;
- }
+  .card-title::before,
+.card-title::after
+{
+  width: 96%;
+}
+
  .first-text-product2{
   padding-bottom: 15px;
 }
 
- 
+#basmati-btn{
+  flex-direction:row !important;
+}
+
   
 /* basmati rice button */
-#basmati-btn{
-  flex-direction: column;
-}
+
 #indianrice #basmati-btn-last .brbtn2
 {
   width: 200px;
 }
 }
 /* Extra Small */
-
-@media (max-width: 393px) {
-  
-  /* basmati rice button */
-
-  #basmati-btn .brbtn1 {
-    padding: 9px 30px;
+@media (max-width: 500px){
+  .card-title::before,
+  .card-title::after
+  {
+    width: 95%;
   }
-  #basmati-btn .brbtn2 {
-    padding: 9px 30px;
+}
+@media (max-width: 480px){
+  table
+{
+    border: none;
   }
-
-
+  td{
+    border: none;
+    border-bottom: solid gray 1px;
+    padding-left: 10px;
+  }
+  td .link{
+    border-bottom: none !important;
+  }
+  .text-red{
+    border-bottom: black 1px solid !important;
+  }
 
 }
-@media (max-width:375px) {
+@media (max-width: 443px){
 
-  #basmati-btn {
-    flex-direction: column;
+#basmati-btn{
+  flex-direction: column !important;
+}
+
+}
+@media (max-width: 415px){
+  .input-main-name-radio{
+    flex-direction:column;
+  }
+  .radio-btn{
+    width: 100% !important;
+    margin-bottom: 5px;
+  }
+} 
+@media (max-width: 393px) {
+  .card-title::before,
+  .card-title::after
+  {
+    width: 94%;
+  }
+
+}
+@media (max-width:425px) {
+  #last-button {
+    margin: 0px !important;
+  }
+  #last-button .bottom-btn{
+    position: absolute;
+    bottom: 0;
+    padding: 0px;
+    position: fixed;
+    z-index: 11;
+    width: 100%;
+  }
+  #last-button .brbtn2 {
+    display: block;
+    height: 51px !important;
+    margin-bottom: 0 !important;
+    font-size: 17.5px !important;
+  }
   
-  }
-  #basmati-btn .brbtn1 {
-    width: 100%;
-  }
-  #basmati-btn .brbtn2 {
-    width: 100%;
-  }
- }
+}

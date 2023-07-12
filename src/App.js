@@ -13,22 +13,57 @@ import Products1 from "./components/Products1";
 import Form from './components/Form';
 
 function App() {
+ const data1 = [
+    {
+     title: 'first',
+     img:[require("./imgs/asset 2.png")]
+    },
+    {
+     title: 'second',
+     img:[require("./imgs/asset 3.jpeg")]
+    }
+   ]
+ const dataTwo = [
+    {
+     title: 'third',
+     img:[require("./imgs/asset 42.jpeg")]
+    },
+    {
+     title: 'fourth',
+     img:[require("./imgs/asset 43.jpeg")]
+
+    },
+    {
+      title: 'seven',
+      img:[require("./imgs/asset 44.jpeg")]
+ 
+     },
+   ]
   return (
     <>
       <Routes>
         <Route path="/" element={<Products1/>} />
         <Route path="/form" element={<Form/>} />
 
-        <Route path="/inadianrice" element={<Indianrice/>} />
-        <Route path="/basmatirice"  exact={true} element={<Basmatirice title='Basmati Rice' maintitle='Indian Rice' img={require("./imgs/asset 2.png")}/>} />
-        <Route path="/nonbasmatirice"  exact={true} element={<Basmatirice title='Non Basmati Rice' maintitle='Indian Rice' img={require("./imgs/asset 3.jpeg")}/>} />
+        <Route path="/inadianrice" element={<Indianrice data='data1' pro='Indian Rice' props ={data1}/> } />
+        <Route path="/grains" element={<Indianrice  data='data2' title='Grains' props={dataTwo}/> } />
+
+
+
+
+
+
+
+
+        <Route path="/basmatirice"  exact={true} element={<Basmatirice title='Basmati Rice' titleline='/inadianrice' maintitle='Indian Rice' img={require("./imgs/asset 2.png")}/>} />
+        <Route path="/nonbasmatirice"  exact={true} element={<Basmatirice title='Non Basmati Rice' titleline='/inadianrice' maintitle='Indian Rice' img={require("./imgs/asset 3.jpeg")}/>} />
         
-        <Route path="/greenmillet" element={<Basmatirice title='Green Millet' maintitle='Grains' img={require("./imgs/asset 42.jpeg")}/>} />
-        <Route path="/yellowmaize" element={<Basmatirice title='Yellow Maize'  maintitle='Grains' img={require("./imgs/asset 43.jpeg")}/>} />
-        <Route path="/barley" element={<Basmatirice title='Barley'  maintitle='Grains' img={require("./imgs/asset 44.jpeg")}/>} />
-        <Route path="/sorghum" element={<Basmatirice title='Sorghum'  maintitle='Grains' img={require("./imgs/asset 45.jpeg")}/>} />
-        <Route path="/wheat" element={<Basmatirice title='Wheat'  maintitle='Grains' img={require("./imgs/asset 46.jpeg")}/>} />
-        <Route path="/sesameseeds" element={<Basmatirice title='Sesame Seeds'  maintitle='Grains' img={require("./imgs/asset 47.jpeg")}/>} />
+        <Route path="/greenmillet" element={<Basmatirice title='Green Millet' titleline='/grains' maintitle='Grains' img={require("./imgs/asset 42.jpeg")}/>} />
+        <Route path="/yellowmaize" element={<Basmatirice title='Yellow Maize' titleline='/grains' maintitle='Grains' img={require("./imgs/asset 43.jpeg")}/>} />
+        <Route path="/barley" element={<Basmatirice title='Barley' titleline='/grains'  maintitle='Grains' img={require("./imgs/asset 44.jpeg")}/>} />
+        <Route path="/sorghum" element={<Basmatirice title='Sorghum' titleline='/grains'  maintitle='Grains' img={require("./imgs/asset 45.jpeg")}/>} />
+        <Route path="/wheat" element={<Basmatirice title='Wheat' titleline='/grains'  maintitle='Grains' img={require("./imgs/asset 46.jpeg")}/>} />
+        <Route path="/sesameseeds" element={<Basmatirice title='Sesame Seeds' titleline='/grains'  maintitle='Grains' img={require("./imgs/asset 47.jpeg")}/>} />
 
         <Route path="/AlfalfaGrassSeeds" element={<Basmatirice title='Alfalfa Grass Seeds'  maintitle='Fooder Seeds' img={require("./imgs/asset 48.jpeg")}/>} />
         <Route path="/PiperSudanGrassSeeds" element={<Basmatirice title='Piper Sudan Grass Seeds'  maintitle='Fooder Seeds' img={require("./imgs/asset 49.jpeg")}/>} />

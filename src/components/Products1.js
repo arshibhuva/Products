@@ -10,7 +10,7 @@ export default function Products1() {
       <div className="bg-img">
         <div className="container">
           <div className="row head-product d-flex justify-content-space-between align-items-center">
-            <div className="col-md-8 col-xs-12 ">
+            <div className="col-md-8 col-xs-12">
               <h1 className="h1">Products</h1>
             </div>
             <div className="col-md-4 col-xs-12 text-md-end first-text-product">
@@ -45,8 +45,9 @@ export default function Products1() {
             <div className="single-product">
                 <div className="back-img bg1"  >
                     <div className="bluer-back-img"></div>
-                    <img className="product-img" src={require("../imgs/asset 2.png")} alt="" />
+                    <img className="product-img" src={require("../imgs/asset 2.png")} alt="" /> 
                 </div>
+               
                 <p className="text-product pb-2">Basmati Rice</p>       
                 <div className="card-body1">
                     <div className="card-title">
@@ -76,7 +77,7 @@ export default function Products1() {
                     <div className="bluer-back-img "></div>
                     <img className="product-img" src={require("../imgs/asset 3.jpeg")} alt="" />        
                 </div>
-                <p className="text-product pb-2">Non Basmati Rice</p>   
+                <div className="text-product pb-2">Non Basmati Rice</div>   
                 <div className="card-body1">
                     <div className="card-title">
                   <h6 className="product-title-back"><b>Non Basmati Rice</b> </h6>
@@ -148,9 +149,9 @@ export default function Products1() {
             <div className="single-product">
                 <div className="back-img bg4 ">
                     <div className="bluer-back-img "></div>
-                    <img className="product-img" src={require("../imgs/asset 43.jpeg")} alt="" />
-                    <p className="text-product pb-2">Yellow Maize </p>          
+                    <img className="product-img" src={require("../imgs/asset 43.jpeg")} alt="" />   
                 </div>
+                <p className="text-product pb-2">Yellow Maize </p>       
                 <div className="card-body1">
                     <div className="card-title">
                   <h6 className="product-title-back"><b>Yellow Maize</b> </h6>
@@ -233,7 +234,7 @@ export default function Products1() {
             <div className="single-product">
                 <div className="back-img bg7 ">
                     <div className="bluer-back-img "></div>
-                    <img className="product-img" src={require("../imgs/asset 46.jpeg")} alt="" />
+                    <img className="product-img wheat" src={require("../imgs/asset 46.jpeg")} alt="" />
                 </div>
                 <p className="text-product pb-2">Wheat</p>
                 
@@ -260,8 +261,7 @@ export default function Products1() {
         <div className="col-lg-3 col-md-4 col-sm-6 col-xs-12 main-col">
         <Link to="/sesameseeds " title="Grains ">
             <div className="single-product">
-                <div className="back-img bg8 ">
-                   </div>
+                <div className="back-img bg8 "></div>
                 <p className="text-product pb-2">Sesame Seeds </p>
                 <div className="card-body1">
                     <div className="card-title">
@@ -375,7 +375,7 @@ export default function Products1() {
             <div className="single-product">
                 <div className="back-img bg11 ">
                     <div className="bluer-back-img "></div>
-                    <img className="product-img product-img2" src={require("../imgs/asset 50.jpeg")} alt="" />
+                    <img className="product-img promegranate product-img2" src={require("../imgs/asset 50.jpeg")} alt="" />
                 </div>
                 <p className="text-product pb-2">Fresh Promegranate</p>
                 <div className="card-body1">
@@ -420,9 +420,9 @@ export default function Products1() {
                 <p className="text-product pb-2">Fresh Ginger</p>
                 <div className="card-body1">
                     <div className="card-title">
-                       <h6 className="product-title-back"><b>Fresh Red Onion</b> </h6>
+                       <h6 className="product-title-back"><b> Fresh Ginger </b> </h6>
                       <div className="secound-back-body">
-                      <p> <b>Type : </b>Fresh Red Onion</p>
+                      <p> <b>Type : </b> Fresh Ginger </p>
                       <p> <b>Use : </b>Human Consumption</p>
                       <p> <b>style : </b>Dried</p>
                       <p> <b>Cultivation Type : </b>Organic</p>
@@ -444,7 +444,7 @@ export default function Products1() {
             <div className="single-product">
                 <div className="back-img bg13 ">
                     <div className="bluer-back-img "></div>
-                    <img className="product-img product-img2" src={require("../imgs/asset 52.jpeg")} alt="" />
+                    <img className="product-img onion" src={require("../imgs/asset 52.jpeg")} alt="" />
                  </div>
                  <p className="text-product pb-2">Fresh Red Onion</p>
                 <div className="card-body1">
@@ -492,7 +492,7 @@ export default function Products1() {
             <div className="single-product">
                 <div className="back-img bg14 ">
                     <div className="bluer-back-img "></div>
-                    <img className="product-img" src={require("../imgs/asset 53.jpeg")} alt="" />
+                    <img className="product-img pro-img" src={require("../imgs/asset 53.jpeg")} alt="" />
                  </div>
                  <p className="text-product pb-2"> Ajwain Speeds</p>
                 <div className="card-body1">
@@ -656,7 +656,7 @@ export default function Products1() {
             <div className="single-product">
                 <div className="back-img bg20 ">
                     <div className="bluer-back-img "></div>
-                    <img className="product-img" src={require("../imgs/asset 59.jpeg")} alt="" />
+                    <img className="product-img pro-img" src={require("../imgs/asset 59.jpeg")} alt="" />
                 </div>
                 <p className="text-product pb-2">BayLeaves</p>
                 <div className="card-body1">
@@ -684,7 +684,7 @@ export default function Products1() {
             <div className="single-product">
                 <div className="back-img bg21 ">
                     <div className="bluer-back-img "></div>
-                    <img className="product-img" src={require("../imgs/asset 60.jpeg")} alt="" />
+                    <img className="product-img pro-img" src={require("../imgs/asset 60.jpeg")} alt="" />
                 </div>
                 <p className="text-product pb-2">Senna Leaves</p>
                 <div className="card-body1">
