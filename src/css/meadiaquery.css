@@ -2,6 +2,10 @@
   .container{
     max-width: 1156px !important;
 }
+.modal-dialog {
+  margin: 4.85rem auto !important;
+}
+
 .btns{
   flex-direction: column;
 }
@@ -18,6 +22,7 @@
   .radio-btn{
     align-items:start;
   }
+
 }
 
 /* Meadiam */
@@ -25,6 +30,7 @@
   #basmati-btn{
     flex-direction: column !important;
   }
+ 
 }
 @media (max-width: 991px) {
   .btns{
@@ -72,6 +78,55 @@
     position: relative;
   }
 }
+@media (max-width: 800px) {
+  .col-form-img{
+    display: none;
+  }
+  .col-form{
+    width: 100% !important;
+  }
+  .modal-dialog {
+    max-width: 80% !important;
+
+   
+  }
+  #inner-box-form .main-box1{
+    flex-direction: column;
+  }
+  .modal-body {
+    max-height: 400px !important;
+    overflow-y: auto;
+  }
+  #inner-box-form .inpute-name1
+{
+  display: flex;
+  align-items: center;
+  justify-content:start;
+  width: 200px;
+  margin-right: 10px;
+  text-align:left;
+
+}
+  #inner-box-form{
+    display: flex;
+    flex-direction: column !important;
+    width: 100% !important;
+  }
+  .col-form-img{
+    max-width: 0% !important;
+  }.col-form{
+    padding-left: 25px !important;
+    padding-right: 0px !important;
+    margin-right: 0px !important;
+    max-width: 100% !important;
+  }
+  #inner-box-form .box-btn{
+    border-radius: 0px !important;
+    margin-left: 0px !important;
+  }
+
+}
+
 /* Meadiam */
 @media (max-width: 767px) {
   .btns{
@@ -136,13 +191,6 @@ margin-left: 0px;
   font-weight: 700;
 }
 
-
-  /* box */
-      .modal-dialog {
-        position: absolute;
-        max-width: 100% !important;
-        margin:auto !important;
-      }
         /* basmati rice button */
 
 #indianrice #basmati-btn-last .brbtn2
@@ -241,6 +289,9 @@ margin-left: 0px;
   }
   .text-red{
     border-bottom: black 1px solid !important;
+  }
+  .modal-dialog {
+    /* max-width: 80% !important; */
   }
 
 }

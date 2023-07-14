@@ -4,6 +4,8 @@ import ReactImageMagnify from "react-image-magnify";
 import { MdOutlineKeyboardArrowRight } from "react-icons/md";
 export default function Indianrice({props}) {
 
+  const name = props[0].maintitle;
+  console.log(name);
   return (
     <>
     
@@ -13,14 +15,14 @@ export default function Indianrice({props}) {
           <div className="container">
             <div className="row head-product d-flex justify-content-space-between align-items-center">
               <div className="col-sm-5 col-xs-12 ">
-                <h1 className="h1">{props.title}</h1>
+                <h1 className="h1">{name}</h1>
               </div>
               <div className="col-sm-7 col-xs-12 text-sm-end first-text-product  first-text-product2">
                 <Link to="/">Home</Link>
                 <MdOutlineKeyboardArrowRight></MdOutlineKeyboardArrowRight>
                 <Link to="/"> Products</Link>
                 <MdOutlineKeyboardArrowRight></MdOutlineKeyboardArrowRight>
-                <Link to="/inadianrice">{props.title}</Link>
+                <Link to="/inadianrice">{name}</Link>
               </div>
             </div>
           </div>
@@ -71,7 +73,7 @@ export default function Indianrice({props}) {
               </div>
               <div className="col-lg-7 col main-basmti-body">
                 <div className="basmati-body">
-                  <p className="fn-26 mb-1 bt ">Basmati Rice</p>
+                  <p className="fn-26 mb-1 bt ">{data.title}</p>
                   <div className="brbtn">Get Bebst Price</div>
                   <div className="fs-14">
                     <span className="gray-text">MOQ : </span>

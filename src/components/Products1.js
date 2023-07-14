@@ -59,7 +59,7 @@ export default function Products1() {
                       <p> <b>Cultivation Type : </b>Organic</p>
                       <p> <b>Self Life : </b>1 Year</p>
                       <div className="btns">
-                          <Link to='/'><div className="btn btn1">Enquiry Now</div></Link> 
+                 <Link to='/'><div className="btn btn1">Enquiry Now</div></Link> 
                       <div className="btn btn2">View More</div>
                   </div>
                   </div>
@@ -480,7 +480,7 @@ export default function Products1() {
     </div>
           <div className="row" id="indian">
             <div className="col-12 pb-4">
-              <p className="pre ps-0">The distinctiveness of quality of Indian spices remains gloriously un-replicated. India is heaven of exotic spices and has attracted countries of the globe for centuries and even wars have been fought for them. India coveted position in the world of quality spices still stands unchallenged. Other countries have tried to replicate Indian spices; even though they could produce spices, the distinctness of quality of Indian spices remains gloriously un-replicated. Mukhi Overseas manufacture and export wide range of Ground & Whole Spices.</p>
+              <p className="pre text-justify ps-0">The distinctiveness of quality of Indian spices remains gloriously un-replicated. India is heaven of exotic spices and has attracted countries of the globe for centuries and even wars have been fought for them. India coveted position in the world of quality spices still stands unchallenged. Other countries have tried to replicate Indian spices; even though they could produce spices, the distinctness of quality of Indian spices remains gloriously un-replicated. Mukhi Overseas manufacture and export wide range of Ground & Whole Spices.</p>
             </div>
           </div>
         
@@ -511,8 +511,7 @@ export default function Products1() {
                   </div>
                 </div>
             </div>
-            </div>
-            
+            </div> 
         </Link>
         </div>
     {/* Aselio Speeds */}
