@@ -13,89 +13,108 @@ import { MdOutlineKeyboardArrowRight } from "react-icons/md";
 
 export default function Basmatirice(props) {
   const slider = [
-    { 
-    link : '/basmatirice',
-     title: 'Basmati Rice',
-     img:[require("../imgs/asset 2.png")]},
+    // { 
+    // link : '/basmatirice',
+    //  title: 'Basmati Rice',
+    //  img:[require("../imgs/asset 2.png")]},
+    // {
+    // link : '/nonbasmatirice',
+    //  title: 'Non Basmati Rice',
+    //  img:[require("../imgs/asset 3.jpeg")]
+    // },
     {
-    link : '/nonbasmatirice',
-     title: 'Non Basmati Rice',
-     img:[require("../imgs/asset 3.jpeg")]
-    },{
-      title: 'Non Basmati Rice',
-      img:[require("../imgs/asset 3.jpeg")]
-     },
-    {
-      title: 'Non Basmati Rice',
+      link : '/greenmillet',
+      title: 'Green Millet',
       img:[require("../imgs/asset 42.jpeg")]
      },
      {
-      title: 'Non Basmati Rice',
+      link : '/yellowmaize',
+      title: 'Yellow Maize',
       img:[require("../imgs/asset 43.jpeg")]
      },
       {
-      title: 'Non Basmati Rice',
+      link : '/barley',
+      title: 'Barley',
       img:[require("../imgs/asset 44.jpeg")]
      },
      {
-      title: 'Non Basmati Rice',
+      link : '/sorghum',
+      title: 'Sorghum',
       img:[require("../imgs/asset 45.jpeg")]
      },
      {
-      title: 'Non Basmati Rice',
+      link : '/wheat',
+      title: 'Wheat',
       img:[require("../imgs/asset 46.jpeg")]
      },
      {
-      title: 'Non Basmati Rice',
+      link : '/sesameseeds',
+      title: 'Sesame Seeds',
       img:[require("../imgs/asset 47.jpeg")]
      },
      {
-      title: 'Non Basmati Rice',
+      link : '/AlfalfaGrassSeeds',
+      title: 'Alfalfa GrassSeeds',
       img:[require("../imgs/asset 48.jpeg")]
      },
      {
-      title: 'Non Basmati Rice',
+      link : '/PiperSudanGrassSeeds',
+      title: 'Piper Sudan Grass Seeds',
       img:[require("../imgs/asset 49.jpeg")]
      },
      {
-      title: 'Non Basmati Rice',
-      img:[require("../imgs/asset 12.jpeg")]
+      link : '/FreshPromegranate',
+      title: 'Fresh Promegranate',
+      img:[require("../imgs/asset 50.jpeg")]
      },{
-      title: 'Non Basmati Rice',
-      img:[require("../imgs/asset 13.jpeg")]
+      link : '/FreshGinger',
+      title: 'Fresh Ginger',
+      img:[require("../imgs/asset 51.jpeg")]
      },{
-      title: 'Non Basmati Rice',
-      img:[require("../imgs/asset 14.jpeg")]
+      link : '/FreshRedOnion',
+      title: 'Fresh Red Onion',
+      img:[require("../imgs/asset 52.jpeg")]
      },{
-      title: 'Non Basmati Rice',
+      link : '/AjwainSpeeds',
+      title: 'Ajwain Speeds',
       img:[require("../imgs/asset 15.jpeg")]
-     },{
-      title: 'Non Basmati Rice',
-      img:[require("../imgs/asset 16.jpeg")]
-     },{
-      title: 'Non Basmati Rice',
-      img:[require("../imgs/asset 17.jpeg")]
      },
      {
-      title: 'Non Basmati Rice',
-      img:[require("../imgs/asset 18.jpeg")]
+      link : '/AselioSpeeds',
+      title: 'Aselio Speeds',
+      img:[require("../imgs/asset 16.jpeg")]
      },{
-      title: 'Non Basmati Rice',
+      link : '/CorianderSeeds',
+      title: 'Coriander Seeds',
+      img:[require("../imgs/asset 17.jpeg")]
+     },{
+      link : '/CuminSeeds',
+      title: 'Cumin Seeds',
+      img:[require("../imgs/asset 18.jpeg")]
+     },
+     {
+      link : '/FennelSpeeds',
+      title: 'Fennel Speeds',
       img:[require("../imgs/asset 19.jpeg")]
      },{
-      title: 'Non Basmati Rice',
+      link : '/FenugreekSeeds',
+      title: 'Fenugreek Seeds',
       img:[require("../imgs/asset 20.jpeg")]
      },{
-      title: 'Non Basmati Rice',
+      link : '/BayLeaves',
+      title: 'Bay Leaves',
       img:[require("../imgs/asset 21.jpeg")]
      },{
-      title: 'Non Basmati Rice',
+      link : '/SennaLeaves',
+      title: 'Senna Leaves',
       img:[require("../imgs/asset 22.jpeg")]
      },{
-      title: 'Non Basmati Rice',
+      link : '/RedChilliPowder',
+      title: 'Red Chilli Powder',
       img:[require("../imgs/asset 23.jpeg")]
      },{
-      title: 'Non Basmati Rice',
+      link : '/TurmericPowder',
+      title: 'Turmeric Powder',
       img:[require("../imgs/asset 24.jpeg")]
      },
    ]
@@ -140,7 +159,7 @@ export default function Basmatirice(props) {
     superLargeDesktop: {
       // the naming can be any, depends on you.
       breakpoint: { max: 4000, min: 1450 },
-      items: 5,
+      items: 4,
     },
     desktop: {
       breakpoint: { max: 1450, min: 970 },
@@ -1356,7 +1375,7 @@ export default function Basmatirice(props) {
 
       {/* Exprore More Products */}
       <div className="container">
-        <div className="main-basmati-box hidden mt-5 ">
+        <div className="main-basmati-box hidden mt-5 mb-5 ">
           <div className="row ">
             <div className="col-12 pt-3 text-center title-slide">
               <h2>Explore More Products</h2>
@@ -1380,7 +1399,7 @@ export default function Basmatirice(props) {
         </div>
           </div> */}
 
-          <div className="row main-slider mt-4 mb-4">
+          <div className="row main-slider mt-4 mb-3">
             <div className="second-row-slider">
               <Carousel responsive={responsive}>
                 {/* <div className="col-12 col-slider">
@@ -1416,7 +1435,7 @@ export default function Basmatirice(props) {
 
         {
           slider.map((user)=>(
-            <div className="col-12 col-slider">
+            <div className="col-12 col-slider w-100 mb-5">
                   <Link
                     to= {user.link}
                     title="Grains"

@@ -3,9 +3,108 @@ import { Link } from "react-router-dom";
 import { MdOutlineKeyboardArrowRight } from "react-icons/md";
 
 export default function Products1() {
+   
+    const data = [
+        {
+            id :1,
+            titles : 'Indian Rice',
+            innerdata : [
+                {
+                    link : '/basmatirice',
+                    title: 'Basmati Rice',
+                    img:[require("../imgs/asset 2.png")]
+                },
+                {
+                    link : '/nonbasmatirice',
+                    title: 'Non Basmati Rice',
+                    img:[require("../imgs/asset 3.jpeg")]
+                }
+            ]
+        },
+        {
+            id :2,
+            titles : 'Grains',
+            innerdata : [
+                {
+                    link : '/greenmillet',
+                    title: 'Green Millet',
+                    img:[require("../imgs/asset 42.jpeg")]
+                },
+                {
+                    link : '/yellowmaize',
+                    title: 'Yellow Maize',
+                    img:[require("../imgs/asset 43.jpeg")]
+                },
+                {
+                    link : '/barley',
+                    title: 'Barley',
+                    img:[require("../imgs/asset 44.jpeg")]
+                   },
+                   {
+                    link : '/sorghum',
+                    title: 'Sorghum',
+                    img:[require("../imgs/asset 45.jpeg")]
+                   },
+                   {
+                    link : '/wheat',
+                    title: 'Wheat',
+                    img:[require("../imgs/asset 46.jpeg")]
+                   },
+                   {
+                    link : '/sesameseeds',
+                    title: 'Sesame Seeds',
+                    img:[require("../imgs/asset 47.jpeg")]
+                   },
+            ]
+        },
+        {
+            id:3,
+            titles:'Fodder Seeds',
+            innerdata : [
+                {
+                    link : '/AlfalfaGrassSeeds',
+                    title: 'Alfalfa GrassSeeds',
+                    img:[require("../imgs/asset 48.jpeg")]
+                   },
+                   {
+                    link : '/PiperSudanGrassSeeds',
+                    title: 'Piper Sudan Grass Seeds',
+                    img:[require("../imgs/asset 49.jpeg")]
+                   }
+            ]
+        },
+        {
+            id:4,
+            titles:'Fresh Fruits',
+            innerdata : [
+                {
+                    link : '/FreshPromegranate',
+                    title: 'Fresh Promegranate',
+                    img:[require("../imgs/asset 50.jpeg")]
+                }
+            ]
+        },
+        {
+            id:5,
+            titles : 'Fresh Vegetables',
+            innerdata : [
+                {
+                    link : '/FreshGinger',
+                    title: 'Fresh Ginger',
+                    img:[require("../imgs/asset 51.jpeg")]
+                 },{
+                    link : '/FreshRedOnion',
+                    title: 'Fresh Red Onion',
+                    img:[require("../imgs/asset 52.jpeg")]
+                  }
+            ]
+        }
+
+    ];
   return (
     <>
 {/* Header */}
+
 <section>
       <div className="bg-img">
         <div className="container">
@@ -24,10 +123,89 @@ export default function Products1() {
 </section>
 
 
+<div className="container">
       
 <div id="products-body">
 {/* Indian Rice */}
+
+
+{
+    data.map((item,index)=>(
+         
+        <div className="row"  key={index} >
+    <div className="col-12">
+                <Link to='/indianrice' title='Indian Rice' className="title-product">
+                 <p className="title-text-product">{item.titles}</p>
+                </Link>
+          
+    </div>
+       {
+        item.innerdata.map((user,index)=>(
+        
+<div key={index} className="col-lg-3 col-md-4 col-sm-6 col-xs-12 main-col">
+    <Link to={user.link} title="Grains">
+        <div className="main-single-product">
+            <div className="single-product">
+                <div className="back-img bg1"  >
+                    <div className="bluer-back-img"></div>
+                    <img className="product-img" src={user.img} alt="" /> 
+                </div>
+               
+                <p className="text-product pb-2">{user.title}</p>       
+                <div className="card-body1">
+                    <div className="card-title">
+                       <h6 className="product-title-back"><b> Basmatirice Rice</b> </h6>
+                      <div className="secound-back-body">
+                      <p> <b>Type : </b>basmatirice</p>
+                      <p> <b>Use : </b>Human Consumption</p>
+                      <p> <b>style : </b>Dried</p>
+                      <p> <b>Cultivation Type : </b>Organic</p>
+                      <p> <b>Self Life : </b>1 Year</p>
+                      <div className="btns">
+                 <Link to='/'><div className="btn btn1">Enquiry Now</div></Link> 
+                      <div className="btn btn2">View More</div>
+                  </div>
+                  </div>
+                </div>
+            </div>
+            </div>
+        </div>
+        </Link>
+        </div>
+      
+        ))}
+        </div>
+ 
+    ))
+}
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 <div className="container">
+
+<div id="products-body">
+
     <div className="row">
     <div className="col-12">
                 <Link to='/indianrice' title='Indian Rice' className="title-product">
@@ -104,7 +282,7 @@ export default function Products1() {
 
   {/* Grains */}
 
-  <div className="container">
+ <div className="container">
     <div className="row product-title">
     <div className="col-12">
                 <Link to='/' title='Grains' className="title-product">
@@ -114,7 +292,7 @@ export default function Products1() {
     </div>
 
     <div className="row main-line-produc" id="grains">
-    {/* Green Millet*/}
+    {/* Green Millet */}
         <div className="col-lg-3 col-md-4 col-sm-6 col-xs-12 main-col">
         <Link to="/greenmillet" title="Indian Rice ">
             <div className="single-product">
@@ -283,7 +461,7 @@ export default function Products1() {
         </Link>
         </div>
     </div>
-  </div>
+  </div> 
 
   {/* Fodder Seeds */}
 
@@ -762,7 +940,7 @@ export default function Products1() {
     </div>
   </div>
 </div>
-
+</div>
 
     </>
   );
