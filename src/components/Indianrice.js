@@ -1,6 +1,5 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import ReactImageMagnify from "react-image-magnify";
 import { MdOutlineKeyboardArrowRight } from "react-icons/md";
 export default function Indianrice({props}) {
 
@@ -53,22 +52,10 @@ export default function Indianrice({props}) {
             <div className="row mt-3 row-box">
               <div className="col-lg-5 col basmti-main-img">
                 <div className="basmati-rice-img sticky-top">
-                  <ReactImageMagnify
-                    className="basmti-img"
-                    title={data.title}
-                    {...{
-                      smallImage: {
-                        alt: "Wristwatch by Ted Baker London",
-                        isFluidWidth: true,
-                        src: [data.img],
-                      },
-                      largeImage: {
-                        src: [data.img],
-                        width: 1000,
-                        height: 500,
-                      },
-                    }}
-                  />
+                 
+                  
+                    <img src={data.img}   className="basmti-img" alt="" />
+            
                 </div>
               </div>
               <div className="col-lg-7 col main-basmti-body">
