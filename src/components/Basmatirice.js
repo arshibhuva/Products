@@ -198,10 +198,9 @@ export default function Basmatirice(props) {
       <div className="container">
         <div className="main-basmati-box">
           <div className="row mt-3 row-box">
-            <div className="col-lg-5 col basmti-main-img">
+            <div className="col basmti-main-img">
               <div className="basmati-rice-img">
               <img src={props.img} alt="" />
-              
               </div>
             </div>
             <div className="col-lg-7 col main-basmti-body">
