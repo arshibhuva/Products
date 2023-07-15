@@ -3,8 +3,6 @@ import css from './css/style.css';
 import meadia from "./css/meadiaquery.css";
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
-
-import ReactImageMagnify from 'react-image-magnify';
 import "bootstrap/dist/css/bootstrap.min.css";
 import { Routes, Route } from "react-router-dom";
 import Basmatirice from "./components/Basmatirice";
