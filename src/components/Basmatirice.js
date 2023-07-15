@@ -7,7 +7,7 @@ import { useLocation } from "react-router";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import { Link } from "react-router-dom";
-import ReactImageMagnify from "react-image-magnify";
+// import ReactImageMagnify from "react-image-magnify";
 
 import { MdOutlineKeyboardArrowRight } from "react-icons/md";
 
@@ -120,15 +120,6 @@ export default function Basmatirice(props) {
    ]
 
 
-
-
-
-
-
-
-
-
-
   const [name, setname] = useState("");
   const [email, setemail] = useState("");
 
@@ -209,24 +200,8 @@ export default function Basmatirice(props) {
           <div className="row mt-3 row-box">
             <div className="col-lg-5 col basmti-main-img">
               <div className="basmati-rice-img">
-                <ReactImageMagnify  
-               
-                  className="basmti-img"
-                  title={props.title}
-                  {...{
-                   width:1000,
-                    smallImage: {
-                      alt: "Wristwatch by Ted Baker London",
-                      isFluidWidth: true,
-                      src: [props.img],
-                    },
-                    largeImage: {
-                      src: [props.img],
-                      width: 1000,
-                      height: 500,
-                    },
-                  }}
-                />
+              <img src={props.img} alt="" />
+              
               </div>
             </div>
             <div className="col-lg-7 col main-basmti-body">
