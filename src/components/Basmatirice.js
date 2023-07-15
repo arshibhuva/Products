@@ -209,10 +209,12 @@ export default function Basmatirice(props) {
           <div className="row mt-3 row-box">
             <div className="col-lg-5 col basmti-main-img">
               <div className="basmati-rice-img">
-                <ReactImageMagnify
+                <ReactImageMagnify  
+               
                   className="basmti-img"
                   title={props.title}
                   {...{
+                   width:1000,
                     smallImage: {
                       alt: "Wristwatch by Ted Baker London",
                       isFluidWidth: true,

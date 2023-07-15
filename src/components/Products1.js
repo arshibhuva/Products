@@ -12,12 +12,14 @@ export default function Products1() {
                 {
                     link : '/basmatirice',
                     title: 'Basmati Rice',
-                    img:[require("../imgs/asset 2.png")]
+                    img:[require("../imgs/basmati.png")],
+                    // imges:[require("https://2.wlimg.com/product_images/bc-full/2019/8/947338/basmati-rice-1565251068-5017689.png")]
                 },
                 {
                     link : '/nonbasmatirice',
                     title: 'Non Basmati Rice',
-                    img:[require("../imgs/asset 3.jpeg")]
+                    img:[require("../imgs/nonbasmati.jpeg")],
+                    // imges:[require("https://2.wlimg.com/product_images/bc-full/2019/8/947338/non-basmati-rice-1565251084-5017703.jpeg")]
                 }
             ]
         },
@@ -33,7 +35,7 @@ export default function Products1() {
                 {
                     link : '/yellowmaize',
                     title: 'Yellow Maize',
-                    img:[require("../imgs/asset 43.jpeg")]
+                    img:[require("../imgs/yellow.jpeg")]
                 },
                 {
                     link : '/barley',
@@ -43,7 +45,7 @@ export default function Products1() {
                    {
                     link : '/sorghum',
                     title: 'Sorghum',
-                    img:[require("../imgs/asset 45.jpeg")]
+                    img:[require("../imgs/sorghum.jpeg")]
                    },
                    {
                     link : '/wheat',
@@ -99,7 +101,57 @@ export default function Products1() {
                   }
             ]
         }
-
+    ];
+    const data2 = [
+        {
+            id:1,
+            titles : 'Indian Spices',
+            innerdata : [
+                {
+                    link : '/AjwainSpeeds',
+                    title: 'Ajwain Speeds',
+                    img:[require("../imgs/ajwain.jpeg")]
+                   },
+                   {
+                    link : '/AselioSpeeds',
+                    title: 'Aselio Speeds',
+                    img:[require("../imgs/aselio.jpeg")]
+                   },{
+                    link : '/CorianderSeeds',
+                    title: 'Coriander Seeds',
+                    img:[require("../imgs/cori.jpeg")]
+                   },{
+                    link : '/CuminSeeds',
+                    title: 'Cumin Seeds',
+                    img:[require("../imgs/cumin.jpeg")]
+                   },
+                   {
+                    link : '/FennelSpeeds',
+                    title: 'Fennel Speeds',
+                    img:[require("../imgs/fennel.jpeg")]
+                   },{
+                    link : '/FenugreekSeeds',
+                    title: 'Fenugreek Seeds',
+                    img:[require("../imgs/fenu.jpeg")]
+                   },{
+                    link : '/BayLeaves',
+                    title: 'Bay Leaves',
+                    img:[require("../imgs/bay.jpeg")]
+                   },{
+                    link : '/SennaLeaves',
+                    title: 'Senna Leaves',
+                    img:[require("../imgs/senna.jpeg")]
+                   },{
+                    link : '/RedChilliPowder',
+                    title: 'Red Chilli Powder',
+                    img:[require("../imgs/red.jpeg")]
+                   },{
+                    link : '/TurmericPowder',
+                    title: 'Turmeric Powder',
+                    img:[require("../imgs/turmeric.jpeg")]
+                   }
+            ]
+        }
     ];
   return (
     <>
@@ -107,12 +159,12 @@ export default function Products1() {
 
 <section>
       <div className="bg-img">
-        <div className="container">
-          <div className="row head-product d-flex justify-content-space-between align-items-center">
-            <div className="col-md-8 col-xs-12">
+        <div className="container main-head">
+          <div className="row p-0 head-product d-flex justify-content-space-between align-items-center">
+            <div className="col-md-8 col-sm-4 col-xs-12 col-head">
               <h1 className="h1">Products</h1>
             </div>
-            <div className="col-md-4 col-xs-12 text-md-end first-text-product">
+            <div className="col-md-4 col-sm-8 col-xs-12 text-sm-end first-text-product">
               <Link to='/'>Home</Link>
               <MdOutlineKeyboardArrowRight></MdOutlineKeyboardArrowRight>
               Products
@@ -125,6 +177,7 @@ export default function Products1() {
 
 <div className="container">
       
+      
 <div id="products-body">
 {/* Indian Rice */}
 
@@ -133,12 +186,13 @@ export default function Products1() {
     data.map((item,index)=>(
          
         <div className="row"  key={index} >
-    <div className="col-12">
+    <div className="col-12 ps-3">
                 <Link to='/indianrice' title='Indian Rice' className="title-product">
                  <p className="title-text-product">{item.titles}</p>
                 </Link>
           
     </div>
+    
        {
         item.innerdata.map((user,index)=>(
         
@@ -146,7 +200,7 @@ export default function Products1() {
     <Link to={user.link} title="Grains">
         <div className="main-single-product">
             <div className="single-product">
-                <div className="back-img bg1"  >
+                <div className="back-img" style={{background:`url(${user.img})`}}  >
                     <div className="bluer-back-img"></div>
                     <img className="product-img" src={user.img} alt="" /> 
                 </div>
@@ -154,7 +208,7 @@ export default function Products1() {
                 <p className="text-product pb-2">{user.title}</p>       
                 <div className="card-body1">
                     <div className="card-title">
-                       <h6 className="product-title-back"><b> Basmatirice Rice</b> </h6>
+                       <h6 className="product-title-back"><b>{user.title}</b> </h6>
                       <div className="secound-back-body">
                       <p> <b>Type : </b>basmatirice</p>
                       <p> <b>Use : </b>Human Consumption</p>
@@ -174,10 +228,68 @@ export default function Products1() {
         </div>
       
         ))}
+        
         </div>
  
     ))
 }
+
+{
+    data2.map((item,index)=>(
+         
+        <div className="row"  key={index} >
+    <div className="col-12 ps-3">
+                <Link to='/indianrice' title='Indian Rice' className="title-product">
+                 <p className="title-text-product">{item.titles}</p>
+                </Link> 
+    </div>
+   
+          <div className="row pe-0" id="indian" >
+            <div className="col-12 pb-4 pe-0">
+              <p className="pre text-justify ps-0 pt-0">The distinctiveness of quality of Indian spices remains gloriously un-replicated. India is heaven of exotic spices and has attracted countries of the globe for centuries and even wars have been fought for them. India coveted position in the world of quality spices still stands unchallenged. Other countries have tried to replicate Indian spices; even though they could produce spices, the distinctness of quality of Indian spices remains gloriously un-replicated. Mukhi Overseas manufacture and export wide range of Ground & Whole Spices.</p>
+            </div>
+          </div>
+       {
+        item.innerdata.map((user,index)=>(
+        
+<div key={index} className="col-lg-3 col-md-4 col-sm-6 col-xs-12 main-col">
+    <Link to={user.link} title="Grains">
+        <div className="main-single-product">
+            <div className="single-product">
+                <div className="back-img" style={{background:`url(${user.img})`}}  >
+                    <div className="bluer-back-img"></div>
+                    <img className="product-img" src={user.img} alt="" /> 
+                </div>
+               
+                <p className="text-product pb-2">{user.title}</p>       
+                <div className="card-body1">
+                    <div className="card-title">
+                       <h6 className="product-title-back"><b>{user.title}</b> </h6>
+                      <div className="secound-back-body">
+                      <p> <b>Type : </b>basmatirice</p>
+                      <p> <b>Use : </b>Human Consumption</p>
+                      <p> <b>style : </b>Dried</p>
+                      <p> <b>Cultivation Type : </b>Organic</p>
+                      <p> <b>Self Life : </b>1 Year</p>
+                      <div className="btns">
+                 <Link to='/'><div className="btn btn1">Enquiry Now</div></Link> 
+                      <div className="btn btn2">View More</div>
+                  </div>
+                  </div>
+                </div>
+            </div>
+            </div>
+        </div>
+        </Link>
+        </div>
+      
+        ))}
+    
+        </div>
+ 
+    ))
+}
+</div>
 </div>
 
 
@@ -201,11 +313,10 @@ export default function Products1() {
 
 
 
-
 <div className="container">
 
 <div id="products-body">
-
+{/* <div className="container">
     <div className="row">
     <div className="col-12">
                 <Link to='/indianrice' title='Indian Rice' className="title-product">
@@ -215,7 +326,7 @@ export default function Products1() {
     </div>
 
     <div className="row" id="indianrice">
-    {/* Basmatirice Rice*/}
+    Basmatirice Rice
 
     <div className="col-lg-3 col-md-4 col-sm-6 col-xs-12 main-col">
     <Link to="/basmatirice" title="Grains">
@@ -278,10 +389,10 @@ export default function Products1() {
         </Link>
         </div>
     </div>
-</div>
+</div> */}
 
   {/* Grains */}
-
+{/* 
  <div className="container">
     <div className="row product-title">
     <div className="col-12">
@@ -292,7 +403,7 @@ export default function Products1() {
     </div>
 
     <div className="row main-line-produc" id="grains">
-    {/* Green Millet */}
+    Green Millet
         <div className="col-lg-3 col-md-4 col-sm-6 col-xs-12 main-col">
         <Link to="/greenmillet" title="Indian Rice ">
             <div className="single-product">
@@ -321,7 +432,7 @@ export default function Products1() {
              
         </Link>
         </div>
-        {/* Yellow Maize */}
+        Yellow Maize
         <div className="col-lg-3 col-md-4 col-sm-6 col-xs-12 main-col">
         <Link to="/yellowmaize" title="Grains">
             <div className="single-product">
@@ -350,7 +461,7 @@ export default function Products1() {
             
         </Link>
         </div>
-        {/* Barley */}
+        Barley
         <div className="col-lg-3 col-md-4 col-sm-6 col-xs-12 main-col">
         <Link to="/barley" title="Grains">
             <div className="single-product">
@@ -378,7 +489,7 @@ export default function Products1() {
             </div>
         </Link>
         </div>
-        {/* Sorghum */}
+        Sorghum
         <div className="col-lg-3 col-md-4 col-sm-6 col-xs-12 main-col">
         <Link to="/sorghum" title="Grains ">
             <div className="single-product">
@@ -406,7 +517,7 @@ export default function Products1() {
             </div>
         </Link>
         </div>
-        {/* Wheat */}
+        Wheat
         <div className="col-lg-3 col-md-4 col-sm-6 col-xs-12 main-col">
         <Link to="/wheat" title="Grains">
             <div className="single-product">
@@ -435,7 +546,7 @@ export default function Products1() {
             </div>
         </Link>
         </div>
-        {/* Sesame Seeds */}
+        Sesame Seeds
         <div className="col-lg-3 col-md-4 col-sm-6 col-xs-12 main-col">
         <Link to="/sesameseeds " title="Grains ">
             <div className="single-product">
@@ -461,11 +572,11 @@ export default function Products1() {
         </Link>
         </div>
     </div>
-  </div> 
+  </div>  */}
 
   {/* Fodder Seeds */}
 
-  <div className="container">
+  {/* <div className="container">
     <div className="row product-title">
     <div className="col-12">
                 <Link to='/' title='Indian Rice' className="title-product">
@@ -475,7 +586,7 @@ export default function Products1() {
     </div>
 
     <div className="row main-line-product" id="fodderseeds">
-   {/* Alfalfa Grass Seeds */}
+   Alfalfa Grass Seeds
         <div className="col-lg-3 col-md-4 col-sm-6 col-xs-12 main-col">
         <Link to="/AlfalfaGrassSeeds" title="Fodder Seeds">
             <div className="single-product">
@@ -504,7 +615,7 @@ export default function Products1() {
             
         </Link>
         </div>
-    {/* Piper Sudan Grass Seeds */}
+    Piper Sudan Grass Seeds
         <div className="col-lg-3 col-md-4 col-sm-6 col-xs-12 main-col">
         <Link to="/PiperSudanGrassSeeds" title="Fodder Seeds">
             <div className="single-product">
@@ -534,10 +645,10 @@ export default function Products1() {
         </Link>
         </div>
     </div>
-  </div>
+  </div> */}
 
   {/* Fresh Fruits */}
-  <div className="container">
+  {/* <div className="container">
     <div className="row product-title">
     <div className="col-12">
                 <Link to='/' title='Indian Rice' className="title-product">
@@ -547,7 +658,7 @@ export default function Products1() {
     </div>
 
     <div className="row main-line-product" id="freshfruits">
-    {/* Fresh Promegranate */}
+    Fresh Promegranate
         <div className="col-lg-3 col-md-4 col-sm-6 col-xs-12 main-col">
         <Link to="/FreshPromegranate" title="Fresh Promegranate">
             <div className="single-product">
@@ -577,10 +688,10 @@ export default function Products1() {
         </Link>
         </div>
     </div>
-  </div>
+  </div> */}
 
 {/* FRESH VEGETABLE */}
-   <div className="container">
+   {/* <div className="container">
     <div className="row product-title">
     <div className="col-12">
                 <Link to='/' title='Indian Rice' className="title-product">
@@ -590,7 +701,7 @@ export default function Products1() {
     </div>
 
     <div className="row main-line-product" id="freshvegetable">
-     {/* Fresh Ginger */}
+     Fresh Ginger
         <div className="col-lg-3 col-md-4 col-sm-6 col-xs-12 main-col">
         <Link to="/FreshGinger" title="Fresh Ginger">
             <div className="single-product">
@@ -616,7 +727,7 @@ export default function Products1() {
             
         </Link>
         </div>
-       {/* Fresh Red Onion */}
+       Fresh Red Onion
        <div className="col-lg-3 col-md-4 col-sm-6 col-xs-12 main-col">
         <Link to="/FreshRedOnion" title="Fresh Red Onion">
             <div className="single-product">
@@ -645,10 +756,10 @@ export default function Products1() {
         </Link>
         </div>
     </div>
-  </div>
+  </div> */}
 
 {/* iNDIAN SPICES */}
-<div className="container">
+{/* <div className="container">
     <div className="row product-title">
     <div className="col-12">
                 <Link to='/' title='Indian Rice' className="title-product">
@@ -664,7 +775,7 @@ export default function Products1() {
         
 
     <div className="row main-line-product" id="indianspices">
-   {/* Ajwain Speeds */}
+   Ajwain Speeds
         <div className="col-lg-3 col-md-4 col-sm-6 col-xs-12 main-col">
         <Link to="/AjwainSpeeds" title=" Ajwain Speeds">
             <div className="single-product">
@@ -692,7 +803,7 @@ export default function Products1() {
             </div> 
         </Link>
         </div>
-    {/* Aselio Speeds */}
+    Aselio Speeds
        <div className="col-lg-3 col-md-4 col-sm-6 col-xs-12 main-col">
         <Link to="/AselioSpeeds" title="Aselio Speeds">
             <div className="single-product">
@@ -717,7 +828,7 @@ export default function Products1() {
             </div> 
         </Link>
         </div>
-  {/* Coriander Seeds */}
+  Coriander Seeds
        <div className="col-lg-3 col-md-4 col-sm-6 col-xs-12 main-col">
         <Link to="/CorianderSeeds" title="Coriander Seeds">
             <div className="single-product">
@@ -743,7 +854,7 @@ export default function Products1() {
             </div> 
         </Link>
         </div>
-    {/* Cumin Seeds */}
+    Cumin Seeds
        <div className="col-lg-3 col-md-4 col-sm-6 col-xs-12 main-col">
         <Link to="/CuminSeeds" title="Cumin Seeds">
             <div className="single-product">
@@ -771,7 +882,7 @@ export default function Products1() {
             </div> 
         </Link>
         </div>
-  {/* Fennel Speeds */}
+  Fennel Speeds
        <div className="col-lg-3 col-md-4 col-sm-6 col-xs-12 main-col">
         <Link to="/FennelSpeeds" title="Fennel Speeds">
             <div className="single-product">
@@ -799,7 +910,7 @@ export default function Products1() {
             </div> 
         </Link>
         </div>
-   {/* Fenugreek Seeds */}
+   Fenugreek Seeds
        <div className="col-lg-3 col-md-4 col-sm-6 col-xs-12 main-col">
         <Link to="/FenugreekSeeds" title="Fenugreek Seeds">
             <div className="single-product">
@@ -827,7 +938,7 @@ export default function Products1() {
             </div> 
         </Link>
         </div>
-  {/* BayLeaves */}
+  BayLeaves
        <div className="col-lg-3 col-md-4 col-sm-6 col-xs-12 main-col">
         <Link to="/BayLeaves" title="BayLeaves">
             <div className="single-product">
@@ -855,7 +966,7 @@ export default function Products1() {
             </div> 
         </Link>
         </div>
-{/* Senna Leaves */}
+Senna Leaves
        <div className="col-lg-3 col-md-4 col-sm-6 col-xs-12 main-col">
         <Link to="/SennaLeaves" title="Fresh Red Onion">
             <div className="single-product">
@@ -883,7 +994,7 @@ export default function Products1() {
             </div> 
         </Link>
         </div>
- {/* Red Chilli Powder */}
+ Red Chilli Powder
        <div className="col-lg-3 col-md-4 col-sm-6 col-xs-12 main-col">
         <Link to="/RedChilliPowder" title="Red Chilli Powder">
             <div className="single-product">
@@ -909,7 +1020,7 @@ export default function Products1() {
             </div> 
         </Link>
         </div>
-          {/* Turmeric Powder */}
+          Turmeric Powder
        <div className="col-lg-3 col-md-4 col-sm-6 col-xs-12 main-col">
         <Link to="/TurmericPowder" title="Turmeric Powder">
             <div className="single-product">
@@ -938,7 +1049,7 @@ export default function Products1() {
         </Link>
         </div>
     </div>
-  </div>
+  </div> */}
 </div>
 </div>
 

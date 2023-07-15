@@ -1,5 +1,8 @@
 
   @import url('https://fonts.googleapis.com/css2?family=Baloo+Chettan+2:wght@500;600;700&family=Dancing+Script:wght@500&family=Open+Sans:wght@500&family=Oswald&family=Poppins:wght@400;500&family=Roboto:wght@500&display=swap');
+  /* @import url('https://fonts.googleapis.com/css2?family=Baloo+Chettan+2:wght@500;600;700&family=Dancing+Script:wght@500&family=Open+Sans:wght@500&family=Oswald&family=Poppins:wght@400;500&family=Roboto:wght@400;500&display=swap'); */
+
+  @import url('https://fonts.googleapis.com/css2?family=Baloo+Chettan+2:wght@500;600;700&family=Dancing+Script:wght@500&family=Open+Sans:wght@500&family=Oswald&family=Poppins:wght@400;500&family=Roboto:wght@500&display=swap');
 
 :root {
     --color-red :rgb(38, 103, 103);
@@ -24,12 +27,14 @@ font-family: 'Baloo Chettan 2', cursive;
 body{
   font-family: 'Baloo Chettan 2', cursive;
 }
-.container{
-  font-family: 'Baloo Chettan 2', cursive;
-}
 
 .container{
+  font-family: 'Baloo Chettan 2', cursive;
   max-width: 1170px !important;
+}
+.pre{
+  text-align: justify;
+  margin: auto;
 }
 /* Title css */
 
@@ -45,7 +50,14 @@ body{
     box-shadow: 0 5px 5px rgba(0, 0, 0, 0.02) inset, 0 -5px 5px rgba(0, 0, 0, 0.02) inset;    
 }
 .head-product{
-    height: 85px;
+    height: 88px;
+}
+
+.col-head,.first-text-product{
+  height:auto;
+}
+.first-text-product {
+  padding-bottom: 0px !important;
 }
 .first-text-product,.first-text-product span{
     font-size: 11.7px !important;
@@ -67,7 +79,7 @@ body{
 
 .title-text-product
 {
-    padding-top: 13px;
+    padding-top: 20px;
     border-bottom: solid 1px var(--color-gray);
     color: var(--text-color);
     transition: 0.5s;
@@ -82,7 +94,8 @@ body{
 
 .main-col
 {
-  margin: 10px 0;
+  margin-top: 15px;
+  margin-bottom: 25px;
   padding: 0 10px !important;
   transition: 0.5s !important;
 }
@@ -144,87 +157,6 @@ body{
   color:black !important;
 }
 
-.bg1
-{
-  background:url("../imgs/asset 2.png");
-}
-.bg2
-{
-  background:url('../imgs/asset 3.jpeg');
- }
-.bg3{
-  background: url('../imgs/asset 42.jpeg');
- }
-.bg4{
- background: url('../imgs/asset 43.jpeg');
-}
-.bg5{
- background: url('../imgs/asset 44.jpeg');
-  
-}
-.bg6{
- background: url('../imgs/asset 45.jpeg');
-  
-}
-.bg7{
- background: url('../imgs/asset 46.jpeg');
-  
-}
-
-.bg8{
- background: url('../imgs/asset 47.jpeg');  
-}
-
-.bg9{
- background: url('../imgs/asset 48.jpeg');
-  
-}
-.bg10{
- background: url('../imgs/asset 49.jpeg');
-}
-.bg11{
-  background: url('../imgs/asset 12.jpeg');
-}
-.bg12{
-  background: url('../imgs/asset 13.jpeg');
- }
- .bg13{
-  background: url('../imgs/asset 14.jpeg');
- }
- .bg14{
-  background: url('../imgs/asset 15.jpeg');
- }
- .bg15{
-  background: url('../imgs/asset 16.jpeg');
- }
- .bg16{
-  background: url('../imgs/asset 17.jpeg');
- }
- .bg17{
-  background: url('../imgs/asset 18.jpeg');
- }
- .bg18{
-  background: url('../imgs/asset 19.jpeg');
- }
- .bg19{
-  background: url('../imgs/asset 20.jpeg');
- }
- .bg20{
-  background: url('../imgs/asset 21.jpeg');
- }
- .bg21{
-  background: url('../imgs/asset 22.jpeg');
- }
- .bg22{
-  background: url('../imgs/asset 23.jpeg');
- }
- .bg23{
-  background: url('../imgs/asset 24.jpeg');
- }
- .bg8,.bg12,.bg15,.bg16,.bg22{
-  background-size: cover;
-}
-
 
 /* Back size card */
 
@@ -255,10 +187,10 @@ body{
   transition: 0.5s;
   height: 93%;
   width: 1px;
-  bottom: 11px;
+  bottom: 10px;
 }
 .card-body1::before{
-  left: 10px;
+  left: 11px;
   top: 10px;
 }
 .card-body1:hover::before
@@ -290,14 +222,14 @@ body{
   transform: scaleX(0);
   transition: 0.5s;
   width: 92%;
-  left: 10px;
+  left: 11px;
   height: 1px;
   bottom:10px;
 }
 .card-title::after
 {
   right: 10px;
-  top:9px;
+  top:10px;
 }
 
 .card-title:hover::after
@@ -327,6 +259,7 @@ body{
   justify-content:start;
   align-items: center;
   margin-top: 13px;
+
 }
 .btn{
   display: flex;
@@ -335,14 +268,18 @@ body{
   border: 1px solid white !important;
   font-size: 14px  !important;
   color: white !important;
+  font-family: 'Roboto', sans-serif;
   height: 31px;
+  font-family: r;
+  border-radius: 3px;
  
 }
 .btn1
 {
   background-color: var(--color-red) !important;
-  margin-right:5px;
-  width: 100px;
+  margin-right:10px;
+  width: 108px;
+  line-height: 19.6px;
 }
 .btns .btn2
 {
