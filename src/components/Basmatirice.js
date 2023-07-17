@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { useEffect } from "react";
-
+import PhoneInput from 'react-phone-input-2';
+import 'react-phone-input-2/lib/style.css';
 import css from "../css/style.css";
 import meadia from "../css/meadiaquery.css";
 import { useLocation } from "react-router";
@@ -471,7 +472,8 @@ export default function Basmatirice(props) {
                       <label className="name">Mobile No.</label>
                     </div>
                     <div className="input-main-name">
-                      <select
+                    <PhoneInput  className="inpute-name-box1" country={'in'} />
+                      {/* <select
                         className="inpute-name-box1"
                         id="dynFrm_country"
                         name="dynFrm_country"
@@ -787,7 +789,7 @@ export default function Basmatirice(props) {
                         <option value="ZR^243">Zaire + 243</option>
                         <option value="ZM^260">Zambia + 260</option>
                         <option value="ZW^263">Zimbabwe + 263</option>
-                      </select>
+                      </select> */}
                     </div>
                   </div>
                 </div>
@@ -950,7 +952,8 @@ export default function Basmatirice(props) {
                       <label className="name">Mobile No.</label>
                     </div>
                     <div className="input-main-name">
-                      <select
+                    <PhoneInput  className="inpute-name-box1" country={'in'} />
+                      {/* <select
                         className="inpute-name-box1"
                         id="dynFrm_country"
                         name="dynFrm_country"
@@ -1266,7 +1269,7 @@ export default function Basmatirice(props) {
                         <option value="ZR^243">Zaire + 243</option>
                         <option value="ZM^260">Zambia + 260</option>
                         <option value="ZW^263">Zimbabwe + 263</option>
-                      </select>
+                      </select> */}
                     </div>
                   </div>
                 </div>
