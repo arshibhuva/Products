@@ -175,19 +175,23 @@ body{
 .card-body1::before,
 .card-body1::after
 {
+ 
   content: "";
   position: absolute;
   background-color:white;
-  right: 11px;
   transform: scaley(0);
   transition: 0.5s;
-  height: 93%;
+  border-top :solid 1px white;
+  top: 11px;
   width: 1px;
-  bottom: 10px;
+  bottom:11px;
 }
 .card-body1::before{
   left: 11px;
-  top: 10px;
+}
+.card-body1::after{
+ 
+  right: 11px;
 }
 .card-body1:hover::before
 { 
@@ -217,15 +221,15 @@ body{
   background-color:white;
   transform: scaleX(0);
   transition: 0.5s;
-  width: 92%;
+  border-top :solid 1px white;
   left: 11px;
   height: 1px;
-  bottom:10px;
+  bottom:11px;
+  right: 11px;
 }
 .card-title::after
 {
-  right: 10px;
-  top:10px;
+  top:11px;
 }
 
 .card-title:hover::after

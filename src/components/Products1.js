@@ -185,7 +185,7 @@ export default function Products1() {
 {
     data.map((item,index)=>(
          
-        <div className="row"  key={index} >
+        <div className="row"  key={index}  id="indian"  >
     <div className="col-12 ps-3">
                 <Link to='/indianrice' title='Indian Rice' className="title-product">
                  <p className="title-text-product">{item.titles}</p>
@@ -196,7 +196,7 @@ export default function Products1() {
        {
         item.innerdata.map((user,index)=>(
         
-<div key={index} className="col-lg-3 col-md-4 col-sm-6 col-xs-12 main-col">
+<div key={index} className="col-lg-3 col-md-4 col main-col">
     <Link to={user.link} title="Grains">
         <div className="main-single-product">
             <div className="single-product">
@@ -252,7 +252,7 @@ export default function Products1() {
        {
         item.innerdata.map((user,index)=>(
         
-<div key={index} className="col-lg-3 col-md-4 col-sm-6 col-xs-12 main-col">
+<div key={index} className="col-lg-3 col-md-4 col main-col">
     <Link to={user.link} title="Grains">
         <div className="main-single-product">
             <div className="single-product">
