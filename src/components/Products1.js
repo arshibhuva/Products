@@ -185,7 +185,7 @@ export default function Products1() {
 {
     data.map((item,index)=>(
          
-        <div className="row"  key={index}  id="indian"  >
+        <div className="row indian"  key={index}  id="indian"  >
     <div className="col-12 ps-3">
                 <Link to='/indianrice' title='Indian Rice' className="title-product">
                  <p className="title-text-product">{item.titles}</p>
@@ -237,7 +237,7 @@ export default function Products1() {
 {
     data2.map((item,index)=>(
          
-        <div className="row"  key={index} >
+        <div className="row indian"  key={index} >
     <div className="col-12 ps-3">
                 <Link to='/indianrice' title='Indian Rice' className="title-product">
                  <p className="title-text-product">{item.titles}</p>
