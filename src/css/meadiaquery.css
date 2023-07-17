@@ -272,7 +272,7 @@ margin-left: 0px;
 }
 /* Extra Small */
 @media (max-width: 500px){
-  
+ 
 }
 @media (max-width: 480px){
   table
@@ -293,7 +293,6 @@ margin-left: 0px;
   .modal-dialog {
     /* max-width: 80% !important; */
   }
- /
 
 }
 @media (max-width: 443px){
@@ -313,7 +312,7 @@ margin-left: 0px;
   }
 } 
 @media (max-width: 393px) {
-
+ 
 
 }
 @media (max-width:425px) {
