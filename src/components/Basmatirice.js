@@ -13,15 +13,17 @@ import { MdOutlineKeyboardArrowRight } from "react-icons/md";
 
 export default function Basmatirice(props) {
   const slider = [
-    // { 
-    // link : '/basmatirice',
-    //  title: 'Basmati Rice',
-    //  img:[require("../imgs/asset 2.png")]},
-    // {
-    // link : '/nonbasmatirice',
-    //  title: 'Non Basmati Rice',
-    //  img:[require("../imgs/asset 3.jpeg")]
-    // },
+    { 
+    link : '/basmatirice',
+     title: 'Basmati Rice',
+     width: '100%',
+     img:[require("../imgs/asset 2.png")]},
+    {
+    link : '/nonbasmatirice',
+     title: 'Non Basmati Rice',
+     width: '100%',
+     img:[require("../imgs/asset 3.jpeg")]
+    },
     {
       link : '/greenmillet',
       title: 'Green Millet',
@@ -174,9 +176,9 @@ export default function Basmatirice(props) {
       {/* Header */}
       <section>
         <div className="bg-img">
-          <div className="container">
+          <div className="container main-head">
             <div className="row head-product d-flex justify-content-space-between align-items-center">
-              <div className="col-sm-5 col-xs-12 ">
+              <div className="col-sm-5 col-xs-12">
                 <h1 className="h1">{props.title}</h1>
               </div>
               <div className="col-sm-7 col-xs-12 text-sm-end first-text-product  first-text-product2">
@@ -1353,7 +1355,7 @@ export default function Basmatirice(props) {
               <div className="row form-row">
                 <div className="col-sm-12">
                   <div id="box-btn">
-                    <div className="box-btn">SEND ENQUIRY</div>
+                    <div className="box-btn">Send Enquiry</div>
                   </div>
                 </div>
               </div>
@@ -1370,58 +1372,10 @@ export default function Basmatirice(props) {
               <h2>Explore More Products</h2>
             </div>
           </div>
-          {/* 
-          <div className="row main-slider">
-          <div className="col-lg-3 col-md-4 col-sm-6 col-xs-12 main-col">
-        <Link to="/sesameseeds " title="Grains ">
-            <div className="single-product">
-                <div className="back-img bg8 ">
-                    <b className="text-product pb-2 silder-text">Sesame Seeds </b>               
-                </div>
-                <div id="basmati-btn-last">
-                <div className="brbtn2 btn-slider mt-4"> <b>Get Best Quote</b> </div>
-                </div>
-            </div>
-        </Link>
-
-
-        </div>
-          </div> */}
 
           <div className="row main-slider mt-4 mb-3">
             <div className="second-row-slider">
               <Carousel responsive={responsive}>
-                {/* <div className="col-12 col-slider">
-        <Link to="/sesameseeds " title="Grains" className="slider-link">
-            <div className="single-product-slider ">
-                <div className="back-img-slider hidden">
-                    <img className="product-2" src={require("../imgs/asset 2.png")} alt="" />
-                </div>
-            <div id="basmati-btn-last-slider">
-                <b className="silder-text text-center">Sesame Seeds </b> 
-                <div className="brbtn2 btn-slider mt-3"> Get Best Quote </div>
-                </div>
-            </div>
-        </Link>
-
-
-        </div> */}
-                {/* <div className="col-12 col-slider">
-        <Link to="/sesameseeds " title="Grains " className="slider-link">
-            <div className="single-product-slider ">
-                <div className="back-img-slider hidden">
-                    <img className="product-2" src={require("../imgs/asset 3.jpeg")} alt="" />
-                </div>
-            <div id="basmati-btn-last-slider">
-                <b className="silder-text text-center">Sesame Seeds </b> 
-                <div className="brbtn2 btn-slider mt-3"> Get Best Quote </div>
-                </div>
-            </div>
-        </Link>
-
-
-        </div> */}
-
         {
           slider.map((user)=>(
             <div className="col-12 col-slider w-100 mb-5">
@@ -1450,486 +1404,7 @@ export default function Basmatirice(props) {
                 </div>
           ))
         }
-                {/* <div className="col-12 col-slider">
-                  <Link
-                    to="/sesameseeds "
-                    title="Grains"
-                    className="slider-link"
-                  >
-                    <div className="single-product-slider ">
-                      <div className="back-img-slider hidden">
-                        <img
-                          className="product-2"
-                          src={require("../imgs/asset 42.jpeg")}
-                          alt=""
-                        />
-                      </div>
-                      <div id="basmati-btn-last-slider">
-                        <b className="silder-text text-center">Sesame Seeds </b>
-                        <div className="brbtn2 btn-slider mt-3">
-                          {" "}
-                          Get Best Quote{" "}
-                        </div>
-                      </div>
-                    </div>
-                  </Link>
-                </div>
-                <div className="col-12  col-slider">
-                  <Link
-                    to="/sesameseeds "
-                    title="Grains"
-                    className="slider-link"
-                  >
-                    <div className="single-product-slider ">
-                      <div className="back-img-slider hidden">
-                        <img
-                          className="product-2"
-                          src={require("../imgs/asset 43.jpeg")}
-                          alt=""
-                        />
-                      </div>
-                      <div id="basmati-btn-last-slider">
-                        <b className="silder-text text-center">Sesame Seeds </b>
-                        <div className="brbtn2 btn-slider mt-3">
-                          {" "}
-                          Get Best Quote{" "}
-                        </div>
-                      </div>
-                    </div>
-                  </Link>
-                </div>
-                <div className="col-12 col-slider">
-                  <Link
-                    to="/sesameseeds "
-                    title="Grains "
-                    className="slider-link"
-                  >
-                    <div className="single-product-slider ">
-                      <div className="back-img-slider hidden">
-                        <img
-                          className="product-2"
-                          src={require("../imgs/asset 44.jpeg")}
-                          alt=""
-                        />
-                      </div>
-                      <div id="basmati-btn-last-slider">
-                        <b className="silder-text text-center">Sesame Seeds </b>
-                        <div className="brbtn2 btn-slider mt-3">
-                          {" "}
-                          Get Best Quote{" "}
-                        </div>
-                      </div>
-                    </div>
-                  </Link>
-                </div>
-                <div className="col-12 col-slider">
-                  <Link
-                    to="/sesameseeds "
-                    title="Grains "
-                    className="slider-link"
-                  >
-                    <div className="single-product-slider ">
-                      <div className="back-img-slider hidden">
-                        <img
-                          className="product-2"
-                          src={require("../imgs/asset 45.jpeg")}
-                          alt=""
-                        />
-                      </div>
-                      <div id="basmati-btn-last-slider">
-                        <b className="silder-text text-center">Sesame Seeds </b>
-                        <div className="brbtn2 btn-slider mt-3">
-                          {" "}
-                          Get Best Quote{" "}
-                        </div>
-                      </div>
-                    </div>
-                  </Link>
-                </div>
-                <div className="col-12 col-slider">
-                  <Link
-                    to="/sesameseeds "
-                    title="Grains "
-                    className="slider-link"
-                  >
-                    <div className="single-product-slider ">
-                      <div className="back-img-slider hidden">
-                        <img
-                          className="product-2"
-                          src={require("../imgs/asset 46.jpeg")}
-                          alt=""
-                        />
-                      </div>
-                      <div id="basmati-btn-last-slider">
-                        <b className="silder-text text-center">Sesame Seeds </b>
-                        <div className="brbtn2 btn-slider mt-3">
-                          {" "}
-                          Get Best Quote{" "}
-                        </div>
-                      </div>
-                    </div>
-                  </Link>
-                </div>
-                <div className="col-12 col-slider">
-                  <Link
-                    to="/sesameseeds "
-                    title="Grains "
-                    className="slider-link"
-                  >
-                    <div className="single-product-slider ">
-                      <div className="back-img-slider hidden">
-                        <img
-                          className="product-2"
-                          src={require("../imgs/asset 47.jpeg")}
-                          alt=""
-                        />
-                      </div>
-                      <div id="basmati-btn-last-slider">
-                        <b className="silder-text text-center">Sesame Seeds </b>
-                        <div className="brbtn2 btn-slider mt-3">
-                          {" "}
-                          Get Best Quote{" "}
-                        </div>
-                      </div>
-                    </div>
-                  </Link>
-                </div>
-                <div className="col-12 col-slider">
-                  <Link
-                    to="/sesameseeds "
-                    title="Grains "
-                    className="slider-link"
-                  >
-                    <div className="single-product-slider ">
-                      <div className="back-img-slider hidden">
-                        <img
-                          className="product-2"
-                          src={require("../imgs/asset 48.jpeg")}
-                          alt=""
-                        />
-                      </div>
-                      <div id="basmati-btn-last-slider">
-                        <b className="silder-text text-center">Sesame Seeds </b>
-                        <div className="brbtn2 btn-slider mt-3">
-                          {" "}
-                          Get Best Quote{" "}
-                        </div>
-                      </div>
-                    </div>
-                  </Link>
-                </div>
-                <div className="col-12 col-slider">
-                  <Link
-                    to="/sesameseeds "
-                    title="Grains "
-                    className="slider-link"
-                  >
-                    <div className="single-product-slider ">
-                      <div className="back-img-slider hidden">
-                        <img
-                          className="product-2"
-                          src={require("../imgs/asset 49.jpeg")}
-                          alt=""
-                        />
-                      </div>
-                      <div id="basmati-btn-last-slider">
-                        <b className="silder-text text-center">Sesame Seeds </b>
-                        <div className="brbtn2 btn-slider mt-3">
-                          {" "}
-                          Get Best Quote{" "}
-                        </div>
-                      </div>
-                    </div>
-                  </Link>
-                </div>
-                <div className="col-12 col-slider">
-                  <Link
-                    to="/sesameseeds "
-                    title="Grains "
-                    className="slider-link"
-                  >
-                    <div className="single-product-slider ">
-                      <div className="back-img-slider hidden">
-                        <img
-                          className="product-2 w-100"
-                          src={require("../imgs/asset 51.jpeg")}
-                          alt=""
-                        />
-                      </div>
-                      <div id="basmati-btn-last-slider">
-                        <b className="silder-text text-center">Sesame Seeds </b>
-                        <div className="brbtn2 btn-slider mt-3">
-                          {" "}
-                          Get Best Quote{" "}
-                        </div>
-                      </div>
-                    </div>
-                  </Link>
-                </div>
-                <div className="col-12 col-slider">
-                  <Link
-                    to="/sesameseeds "
-                    title="Grains"
-                    className="slider-link"
-                  >
-                    <div className="single-product-slider ">
-                      <div className="back-img-slider hidden">
-                        <img
-                          className="product-2"
-                          src={require("../imgs/asset 52.jpeg")}
-                          alt=""
-                        />
-                      </div>
-                      <div id="basmati-btn-last-slider">
-                        <b className="silder-text text-center">Sesame Seeds </b>
-                        <div className="brbtn2 btn-slider mt-3">
-                          {" "}
-                          Get Best Quote{" "}
-                        </div>
-                      </div>
-                    </div>
-                  </Link>
-                </div>
-                <div className="col-12 col-slider">
-                  <Link
-                    to="/sesameseeds "
-                    title="Grains"
-                    className="slider-link"
-                  >
-                    <div className="single-product-slider ">
-                      <div className="back-img-slider hidden">
-                        <img
-                          className="product-2"
-                          src={require("../imgs/asset 53.jpeg")}
-                          alt=""
-                        />
-                      </div>
-                      <div id="basmati-btn-last-slider">
-                        <b className="silder-text text-center">Sesame Seeds </b>
-                        <div className="brbtn2 btn-slider mt-3">
-                          {" "}
-                          Get Best Quote{" "}
-                        </div>
-                      </div>
-                    </div>
-                  </Link>
-                </div>
-                <div className="col-12 col-slider">
-                  <Link
-                    to="/sesameseeds "
-                    title="Grains"
-                    className="slider-link"
-                  >
-                    <div className="single-product-slider ">
-                      <div className="back-img-slider hidden">
-                        <img
-                          className="product-2 w-100"
-                          src={require("../imgs/asset 54.jpeg")}
-                          alt=""
-                        />
-                      </div>
-                      <div id="basmati-btn-last-slider">
-                        <b className="silder-text text-center">Sesame Seeds </b>
-                        <div className="brbtn2 btn-slider mt-3">
-                          {" "}
-                          Get Best Quote{" "}
-                        </div>
-                      </div>
-                    </div>
-                  </Link>
-                </div>
-                <div className="col-12 col-slider">
-                  <Link
-                    to="/sesameseeds "
-                    title="Grains "
-                    className="slider-link"
-                  >
-                    <div className="single-product-slider ">
-                      <div className="back-img-slider hidden">
-                        <img
-                          className="product-2 w-100"
-                          src={require("../imgs/asset 55.jpeg")}
-                          alt=""
-                        />
-                      </div>
-                      <div id="basmati-btn-last-slider">
-                        <b className="silder-text text-center">Sesame Seeds </b>
-                        <div className="brbtn2 btn-slider mt-3">
-                          {" "}
-                          Get Best Quote{" "}
-                        </div>
-                      </div>
-                    </div>
-                  </Link>
-                </div>
-                <div className="col-12 col-slider">
-                  <Link
-                    to="/sesameseeds "
-                    title="Grains "
-                    className="slider-link"
-                  >
-                    <div className="single-product-slider ">
-                      <div className="back-img-slider hidden">
-                        <img
-                          className="product-2"
-                          src={require("../imgs/asset 56.jpeg")}
-                          alt=""
-                        />
-                      </div>
-                      <div id="basmati-btn-last-slider">
-                        <b className="silder-text text-center">Sesame Seeds </b>
-                        <div className="brbtn2 btn-slider mt-3">
-                          {" "}
-                          Get Best Quote{" "}
-                        </div>
-                      </div>
-                    </div>
-                  </Link>
-                </div>
-                <div className="col-12 col-slider">
-                  <Link
-                    to="/sesameseeds "
-                    title="Grains"
-                    className="slider-link"
-                  >
-                    <div className="single-product-slider ">
-                      <div className="back-img-slider hidden">
-                        <img
-                          className="product-2"
-                          src={require("../imgs/asset 57.jpeg")}
-                          alt=""
-                        />
-                      </div>
-                      <div id="basmati-btn-last-slider">
-                        <b className="silder-text text-center">Sesame Seeds </b>
-                        <div className="brbtn2 btn-slider mt-3">
-                          {" "}
-                          Get Best Quote{" "}
-                        </div>
-                      </div>
-                    </div>
-                  </Link>
-                </div>
-                <div className="col-12 col-slider">
-                  <Link
-                    to="/sesameseeds "
-                    title="Grains"
-                    className="slider-link"
-                  >
-                    <div className="single-product-slider ">
-                      <div className="back-img-slider hidden">
-                        <img
-                          className="product-2"
-                          src={require("../imgs/asset 58.jpeg")}
-                          alt=""
-                        />
-                      </div>
-                      <div id="basmati-btn-last-slider">
-                        <b className="silder-text text-center">Sesame Seeds </b>
-                        <div className="brbtn2 btn-slider mt-3">
-                          {" "}
-                          Get Best Quote{" "}
-                        </div>
-                      </div>
-                    </div>
-                  </Link>
-                </div>
-                <div className="col-12 col-slider">
-                  <Link
-                    to="/sesameseeds "
-                    title="Grains"
-                    className="slider-link"
-                  >
-                    <div className="single-product-slider ">
-                      <div className="back-img-slider hidden">
-                        <img
-                          className="product-2"
-                          src={require("../imgs/asset 59.jpeg")}
-                          alt=""
-                        />
-                      </div>
-                      <div id="basmati-btn-last-slider">
-                        <b className="silder-text text-center">Sesame Seeds </b>
-                        <div className="brbtn2 btn-slider mt-3">
-                          {" "}
-                          Get Best Quote{" "}
-                        </div>
-                      </div>
-                    </div>
-                  </Link>
-                </div>
-                <div className="col-12 col-slider">
-                  <Link
-                    to="/sesameseeds "
-                    title="Grains"
-                    className="slider-link"
-                  >
-                    <div className="single-product-slider ">
-                      <div className="back-img-slider hidden">
-                        <img
-                          className="product-2 w-100"
-                          src={require("../imgs/asset 60.jpeg")}
-                          alt=""
-                        />
-                      </div>
-                      <div id="basmati-btn-last-slider">
-                        <b className="silder-text text-center">Sesame Seeds </b>
-                        <div className="brbtn2 btn-slider mt-3">
-                          {" "}
-                          Get Best Quote{" "}
-                        </div>
-                      </div>
-                    </div>
-                  </Link>
-                </div>
-                <div className="col-12 col-slider">
-                  <Link
-                    to="/sesameseeds "
-                    title="Grains"
-                    className="slider-link"
-                  >
-                    <div className="single-product-slider ">
-                      <div className="back-img-slider hidden">
-                        <img
-                          className="product-2 w-100"
-                          src={require("../imgs/asset 61.jpeg")}
-                          alt=""
-                        />
-                      </div>
-                      <div id="basmati-btn-last-slider">
-                        <b className="silder-text text-center">Sesame Seeds </b>
-                        <div className="brbtn2 btn-slider mt-3">
-                          {" "}
-                          Get Best Quote{" "}
-                        </div>
-                      </div>
-                    </div>
-                  </Link>
-                </div>
-                <div className="col-12 col-slider">
-                  <Link
-                    to="/sesameseeds "
-                    title="Grains"
-                    className="slider-link"
-                  >
-                    <div className="single-product-slider ">
-                      <div className="back-img-slider hidden">
-                        <img
-                          className="product-2 w-100"
-                          src={require("../imgs/asset 62.jpeg")}
-                          alt=""
-                        />
-                      </div>
-                      <div id="basmati-btn-last-slider">
-                        <b className="silder-text text-center">Sesame Seeds </b>
-                        <div className="brbtn2 btn-slider mt-3">
-                          {" "}
-                          Get Best Quote{" "}
-                        </div>
-                      </div>
-                    </div>
-                  </Link>
-                </div> */}
+               
               </Carousel>
             </div>
           </div>
@@ -1937,7 +1412,7 @@ export default function Basmatirice(props) {
       </div>
   <div className="row"  id="last-button">
       <div id="basmati-btn-last"  className="col-12 mb-0 bottom-btn" data-bs-toggle="modal"  data-bs-target="#exampleModal" >
-              <div className="brbtn2">SEND ENQUIRY</div>
+              <div className="brbtn2">Send Enquity</div>
        </div>
    </div>
     </>

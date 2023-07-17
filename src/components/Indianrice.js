@@ -11,9 +11,9 @@ export default function Indianrice({props}) {
        {/* Header */}
        <section>
         <div className="bg-img">
-          <div className="container">
+          <div className="container main-head">
             <div className="row head-product d-flex justify-content-space-between align-items-center">
-              <div className="col-sm-5 col-xs-12 ">
+              <div className="col-sm-5 col-xs-12">
                 <h1 className="h1">{name}</h1>
               </div>
               <div className="col-sm-7 col-xs-12 text-sm-end first-text-product  first-text-product2">
