@@ -182,12 +182,8 @@ margin-left: 0px;
   font-size: 20px;
   font-weight: 700;
 }
-/* .basmti-main-img{
- 
-  width:auto !important; 
-} */
 
-        /* basmati rice button */
+  /* basmati rice button */
 
 #indianrice #basmati-btn-last .brbtn2
 {
@@ -206,12 +202,6 @@ margin-left: 0px;
   .main-col{
     width: 100% !important;
   }
-  /* .card-body1::before,
-.card-body1::after
-{
-  width: 96.3%;
-  left: 1.8%;
-} */
   .row-box
 {
   display: flex;
@@ -221,12 +211,38 @@ margin-left: 0px;
   margin-top: 0px !important;
   margin-bottom: 0px;
   box-shadow: none;
+  background-color: white;
   padding-top: 0px !important;
   border-bottom: 1px solid rgb(229, 224, 224);
 }
+.basmti-main-img{
+ 
+ 
+    min-width: auto !important;
+
+   
+
+  padding: 0 0 !important;
+}
 .basmati-body{
-  padding: 20px;
+ 
   padding-bottom: 0px;
+}
+.main-basmti-body{
+  margin: 0px 10px!important;
+
+}
+#basmati-table .table-box {
+  padding: 20px 0px;
+}
+.basmati-body .title-box1{
+  padding-top: 20px;
+  
+  font-size: 20px;
+}
+.main-line .gray-text,
+.main-line b{
+  width: 35%;
 }
 #basmati-btn{
   flex-direction: row !important;
@@ -236,7 +252,7 @@ margin-left: 0px;
   flex-direction: column;
 }
 .tb td.gray-text {
-  width: 45% !important;
+  width: 40% !important;
   font-size: 14.7px;
 }
 .table-box{
@@ -333,5 +349,7 @@ margin-left: 0px;
     margin-bottom: 0 !important;
     font-size: 17.5px !important;
   }
-  
+  .row-box{
+    flex-direction: column !important;
+  }
 }

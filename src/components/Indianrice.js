@@ -50,17 +50,35 @@ export default function Indianrice({props}) {
         <div className="container">
           <div className="main-basmati-box" id="inner-box-Product">
             <div className="row mt-3 row-box">
-              <div className="col-lg-5 col basmti-main-img">
+            <div className="col basmti-main-img">
+            <div className="zoom-gallery sticky-top">
+            <div className="zoom-box">
+            <div className="zoom-gallery-slider active">
+            <div className="magic-zoom">
+            <figure className="m-z-figure">
+            <img src={data.img} alt="" className="img-fluid" style={{width:data.width}}/>
+            </figure>
+            </div>
+            </div>
+            </div>
+            </div>
+              {/* <div className="basmati-rice-img">
+              <div className="img-second">
+              <img src={props.img} alt="" className="img-fluid" />
+              </div>
+              </div> */}
+            </div>
+              {/* <div className="col-lg-5 col basmti-main-img">
                 <div className="basmati-rice-img sticky-top">
                  
                   
                     <img src={data.img}   className="basmti-img" alt="" />
             
                 </div>
-              </div>
+              </div> */}
               <div className="col-lg-7 col main-basmti-body">
                 <div className="basmati-body">
-                  <p className="fn-26 mb-1 bt ">{data.title}</p>
+                  <p className="fn-26 mb-1 bt title-box1">{data.title}</p>
                   <div className="brbtn">Get Bebst Price</div>
                   <div className="fs-14">
                     <span className="gray-text">MOQ : </span>

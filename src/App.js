@@ -14,9 +14,12 @@ function App() {
  const data1 = [
     { maintitle : 'Indian Rice',
      title: 'Basmati Rice',
+     width:'100%',
      img:[require("./imgs/asset 2.png")]},
+    
     {
      title: 'Non Basmati Rice',
+     width:'100%',
      img:[require("./imgs/asset 3.jpeg")]
     }
    ]

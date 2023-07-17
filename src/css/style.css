@@ -311,37 +311,101 @@ body{
   margin-top: 35px;
 }
 .basmti-main-img{
-  /* border: solid red 1px; */
+
+  max-width: 422px !important;
+  min-width: 422px !important;
+
+  padding: 0 15px;
+  height: auto;
+}
+.zoom-gallery{
   display: flex;
-  justify-content: start;
-  width: 40% !important; 
+align-items: center;
+justify-content: center;
+  text-align: center;
+  position: relative;
+  height: 400px;
+  /* border: 1px solid green; */
+  background: rgba(0,0,0,.03);
+
+
+}
+.zoom-box{
+  /* max-width: 500px !important; */
+  overflow: hidden;
+  width: 100%;
+  position: relative;
+}
+/* .zoom-gallery-slider.active{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+} */
+/* .magic-zoom{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-items: center;
+  justify-content: center;
+} */
+figure.m-z-figure{
+  overflow: hidden;
+  margin: 0 !important;
+  /* perspective: 300px;
+  transform-style: preserve-3d;
+  display: inline-block;
+  outline: 0 !important;
+  font-size: 0 !important;
+  line-height: 100% !important;
+  direction: ltr !important;
+  position: relative;
+  z-index: 1;
+  margin: 0 auto;
+  vertical-align: middle;
+
+  backface-visibility: hidden; */
+
+}
+
+.mz-figure > img {
+  width: 100%;
+  height: auto;
+}
+img {
+  overflow-clip-margin: content-box;
+  overflow: clip;
+  height: 200px;
 }
 .basmati-rice-img
 {
-  display: flex;
-  margin-left: 8px;
-  justify-content: center;
+  /* display: flex; */
+  /* margin-left: 8px; */
+  /* justify-content: center;
   align-items: center;
   height: 400px;
-  width: 410px;
+  max-width: 407px;
+  padding: 0 15px;
+  background: rgba(0,0,0,.03); */
   /* overflow: hidden; */
-  background: rgba(0,0,0,.03);
-  background-size: cover;
+  /* background: rgba(0,0,0,.03); */
+  /* background-size: cover; */
 }
+
 .row-box
 {
   display: flex;
-  padding: 10px 10px;
+  padding: 10px 15px;
 }
-.basmti-img
+/* .basmti-img
 {
-  /* width: 100%!important; */
   z-index: 200;
   width: auto !important;
   height: auto !important;
   max-width: 100% !important;
   max-height: 100% !important;
-}
+} */
 .main-table{
   width: 100%;
 }
@@ -349,10 +413,13 @@ body{
   font-size: 26px;
 }
 .main-basmti-body{
-  
+  /* width:auto !important; */
+  /* min-width: 100px !important; */
+  /* max-width: 30%!important; */
   padding: 0 0 !important;
   /* border: 1px solid red; */
-  padding-right: 10px !important;
+  margin-left: 24px;
+  padding-right: 15px !important;
 }
 .brbtn{
   padding: 4px 10px;
@@ -378,9 +445,17 @@ body{
   color: gray;
 }
 .tb td.gray-text{
-  width: 130px !important;
+  width: 120px !important;
   font-size: 14.7px;
 }
+/* #first-tbl .tb .gray-text{
+  padding-left: 0 !important;
+  width: 200px !important;
+  min-width: 100px !important;
+} */
+/* #first-tbl .tb b{
+  padding-left: 5px;
+} */
 .tb b{
   font-size: 14.7px;
 }
@@ -389,6 +464,8 @@ body{
   padding:15px 0px;
   align-items: start;
   width: 40%;
+  max-width: auto;
+  min-width: auto;
 }
 .link-view-more
 {
@@ -418,7 +495,8 @@ body{
   /* border: 1px solid red; */
   width: 100%;
   margin: auto;
-  margin: 15px 0px;
+  margin: 20px 0px 5px 0;
+  
 }
 #basmati-btn .brbtn1,
 #basmati-btn .brbtn2{
@@ -430,7 +508,7 @@ body{
 text-align: center;
 border: 1px solid var(--color-red);
 border-radius: 5px;
-width: 98%;
+width: 99%;
 transition: 0.5s;
 }
 #basmati-btn .brbtn1:hover{
@@ -458,6 +536,13 @@ transition: 0.5s;
 #basmati-btn-last .brbtn2:hover{
   background-color: black;
   cursor: pointer;
+}
+.main-basmti-body b{
+  color: #333333;
+}
+.fc-black
+{
+    color: rgb(51, 51, 51);
 }
 
 .link-disgn:hover{

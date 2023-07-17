@@ -196,23 +196,34 @@ export default function Basmatirice(props) {
       {/* Basmati rice  */}
 
       <div className="container">
-        <div className="main-basmati-box">
+        <div className="main-basmati-box pb-0">
           <div className="row mt-3 row-box">
             <div className="col basmti-main-img">
-              <div className="basmati-rice-img">
-              <div className="img-second">
-              <img src={props.img} alt="" />
-              </div>
-              </div>
+            <div className="zoom-gallery">
+            <div className="zoom-box">
+            <div className="zoom-gallery-slider active">
+            <div className="magic-zoom">
+            <figure className="m-z-figure">
+            <img src={props.img} alt="" className="img-fluid" style={{width:props.width}}/>
+            </figure>
             </div>
-            <div className="col-lg-7 col main-basmti-body">
+            </div>
+            </div>
+            </div>
+              {/* <div className="basmati-rice-img">
+              <div className="img-second">
+              <img src={props.img} alt="" className="img-fluid" />
+              </div>
+              </div> */}
+            </div>
+            <div className="col main-basmti-body">
               <div className="basmati-body">
-                <p className="fn-26 mb-0">{props.title}</p>
+                <p className="fn-26 mb-0 fc-black title-box1">{props.title}</p>
                 <div className="brbtn">Get Bebst Price</div>
                 <div className="fs-14">
                   <span className="gray-text">MOQ : </span>
-                  <b>24 Ton</b>
-                  <table className="mt-4 main-table">
+                  <b className="fc-black">24 Ton</b>
+                  <table className="mt-3 main-table" id="first-tbl">
                     <tbody>
                       <tr className="tb">
                         <td className="gray-text">Business Type </td>
