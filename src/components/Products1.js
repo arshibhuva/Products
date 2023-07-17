@@ -193,7 +193,7 @@ export default function Products1() {
           
     </div>
     
-       {
+       {/* {
         item.innerdata.map((user,index)=>(
         
 <div key={index} className="col-lg-3 col-md-4 col-sm-6 col main-col">
@@ -227,14 +227,14 @@ export default function Products1() {
         </Link>
         </div>
       
-        ))}
+        ))} */}
         
         </div>
  
     ))
 }
 
-{
+{/* {
     data2.map((item,index)=>(
          
         <div className="row indian"  key={index} >
@@ -288,7 +288,7 @@ export default function Products1() {
         </div>
  
     ))
-}
+} */}
 </div>
 </div>
 
