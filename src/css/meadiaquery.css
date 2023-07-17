@@ -189,18 +189,24 @@ margin-left: 0px;
 {
   width: 150px;
 }
-
+/* .indian{
+  display: flex;
+  flex-direction: column !important;
+}
+.main-col{
+  width: 100% !important; 
+} */
 }
 
 /* Small  */
 
 @media (max-width: 640px){
-  #indian{
-    display: flex;
+  .indian{
+    display: flex !important;
     flex-direction: column !important;
   }
   .main-col{
-    width: 100% !important;
+    max-width: 100% !important;
   }
   .row-box
 {
@@ -216,12 +222,7 @@ margin-left: 0px;
   border-bottom: 1px solid rgb(229, 224, 224);
 }
 .basmti-main-img{
- 
- 
-    min-width: auto !important;
-
-   
-
+   min-width: auto !important;
   padding: 0 0 !important;
 }
 .basmati-body{
