@@ -426,7 +426,7 @@ img {
   border: 1px solid var(--color-red);
   display: inline-block;
   font-size: 12px;
-  border-radius: 5px;
+  border-radius: 3px;
   align-items: center;
   transition: 0.5s;
   margin-bottom:6px;
@@ -492,7 +492,6 @@ img {
   display: flex;
   justify-content:space-between ;
   font-size: 17.16px;
-  /* border: 1px solid red; */
   width: 100%;
   margin: auto;
   margin: 20px 0px 5px 0;
@@ -507,8 +506,9 @@ img {
 #basmati-btn .brbtn1{
 text-align: center;
 border: 1px solid var(--color-red);
-border-radius: 5px;
-width: 99%;
+border-radius: 3px;
+/* width: 99%; */
+min-width: 98%;
 transition: 0.5s;
 }
 #basmati-btn .brbtn1:hover{
@@ -520,9 +520,10 @@ transition: 0.5s;
   text-align: center;
   background-color: var(--color-red);
   color: white;
-  border-radius: 5px;
+  border: 1px solid var(--color-red);
+  border-radius: 3px;
   transition: 0.5s;
-  width: 99%;
+  min-width: 99%;
 }
 #basmati-btn .brbtn2:hover{
   background-color: black;
@@ -731,6 +732,18 @@ strong{
   font-size: 12px;
   color: rgba(0, 0, 0, 0.7);
 }
+.input-main-name .icon-flag{
+  padding-left: 0px;
+}
+.react-tel-input{
+  padding-left: 0px !important;
+  padding-right: 0px !important;
+  /* width: inherit; */
+} 
+.react-tel-input .form-control
+{
+  width: 100% !important;
+}
 
 /* box */
 .main-inpute{
@@ -843,9 +856,14 @@ strong{
  height: 12px;
  margin:0 5px;
 }
+::placeholder {
+  color:rgb(193, 189, 189);
+}
 .radio-text{
-  font-size: 13px;
-  color: #999;
+  font-size: 12px;
+  color:rgb(193, 189, 189);
+  word-wrap: break-word;
+  overflow: hidden;
 }
 .form-row-radio{
   width: 51% !important;

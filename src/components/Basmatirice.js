@@ -157,19 +157,19 @@ export default function Basmatirice(props) {
       items: 4,
     },
     desktop: {
-      breakpoint: { max: 1450, min: 970 },
+      breakpoint: { max: 1450, min: 1043},
       items: 4,
     },
     tablet: {
-      breakpoint: { max: 970, min: 680 },
+      breakpoint: { max: 1043, min: 761 },
       items: 3,
     },
     table: {
-      breakpoint: { max: 680, min: 450 },
+      breakpoint: { max: 761, min: 500},
       items: 2,
     },
     mobile: {
-      breakpoint: { max: 450, min: 0 },
+      breakpoint: { max: 500, min: 0 },
       items: 1,
     },
   };
@@ -199,7 +199,7 @@ export default function Basmatirice(props) {
 
       {/* Basmati rice  */}
 
-      <div className="container">
+      <div className="container"> 
         <div className="main-basmati-box pb-0">
           <div className="row mt-3 row-box">
             <div className="col basmti-main-img">
@@ -306,7 +306,7 @@ export default function Basmatirice(props) {
       <div id="basmati-table">
         <div className="container">
           <div className="main-basmati-box">
-            <div className="row table-box">
+            <div className="row table-box" >
               <div className="col-12 main-line-text">
                 <p>Product Details</p>
               </div>
@@ -474,7 +474,7 @@ export default function Basmatirice(props) {
                       <label className="name">Mobile No.</label>
                     </div>
                     <div className="input-main-name">
-                    <PhoneInput  className="inpute-name-box1" country={'in'} />
+                    <PhoneInput  className="inpute-name-box1 icon-flag" country={'in'} />
                       {/* <select
                         className="inpute-name-box1"
                         id="dynFrm_country"

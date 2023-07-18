@@ -125,7 +125,7 @@
     flex-direction:row;
   }
   #basmati-btn #box-btn{
-    margin-bottom: 10px;
+    /* margin-bottom: 10px; */
    }
 
   table{
@@ -188,6 +188,11 @@
 {
   width: 150px;
 }
+}
+@media (max-width:665px) {
+  .main-basmti-body{
+    margin-left: 0px;
+  }
 }
 
 /* Small  */
@@ -322,15 +327,19 @@
   .modal-dialog {
     /* max-width: 80% !important; */
   }
+  .tb td.gray-text{
+    padding-left: 0px;
+  }
+  .link-view-more td{
+    padding-left: 0px;
+  }
+  .basmati-body{
+    padding-bottom: 20px !important;
+  }
 
 }
-@media (max-width: 443px){
 
-#basmati-btn{
-  flex-direction: column !important;
-}
 
-}
 @media (max-width: 415px){
   .input-main-name-radio{
     flex-direction:column;
@@ -365,4 +374,10 @@
   .row-box{
     flex-direction: column !important;
   }
+  #basmati-btn{
+    /* flex-direction: column !important; */
+    display: none;
+  }
+
+
 }
