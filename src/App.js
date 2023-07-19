@@ -8,6 +8,7 @@ import { Routes, Route } from "react-router-dom";
 import Basmatirice from "./components/Basmatirice";
 import Indianrice from "./components/Indianrice";
 import Products1 from "./components/Products1";
+import ImageMagnifier from './components/ImageMagnifier';
 
 
 function App() {
@@ -136,11 +137,15 @@ function App() {
      },
     
    ]
+   const dat = require("./imgs/basmati.png");
  
   return (
     <>
       <Routes>
+      
         <Route path="/" element={<Products1/>} />
+        <Route path="/hellow" element={<ImageMagnifier imageUrl={dat} zoomFactor={3}/>} />
+
 
 
         <Route path="/inadianrice" element={<Indianrice  pro='Indian Rice' props ={data1}/> } />
@@ -155,8 +160,8 @@ function App() {
 {/* Single product */}
 
 
-        <Route path="/basmatirice"  exact={true} element={<Basmatirice title='Basmati Rice' titleline='/inadianrice' maintitle='Indian Rice' img={require("./imgs/asset 2.png")}  width="100%"/>} />
-        <Route path="/nonbasmatirice"  exact={true} element={<Basmatirice title='Non Basmati Rice' titleline='/inadianrice' maintitle='Indian Rice' img={require("./imgs/asset 3.jpeg")}  width="100%"/>} />
+        <Route path="/basmatirice"  exact={true} element={<Basmatirice title='Basmati Rice' titleline='/inadianrice' maintitle='Indian Rice' img={require("./imgs/basmati.png")}  width="100%"/>} />
+        <Route path="/nonbasmatirice"  exact={true} element={<Basmatirice title='Non Basmati Rice' titleline='/inadianrice' maintitle='Indian Rice' img={require("./imgs/nonbasmati.jpeg")}  width="100%"/>} />
         
         <Route path="/greenmillet" element={<Basmatirice title='Green Millet' titleline='/grains' maintitle='Grains' img={require("./imgs/asset 42.jpeg")}/>} />
         <Route path="/yellowmaize" element={<Basmatirice title='Yellow Maize' titleline='/grains' maintitle='Grains' img={require("./imgs/asset 43.jpeg")}/>} />

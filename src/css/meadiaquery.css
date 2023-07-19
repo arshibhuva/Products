@@ -33,10 +33,15 @@
 @media (max-width: 991px) {
   .btns{
     flex-direction:row;
+    width: 100%;
   }
 
   #basmati-btn .brbtn1{
     margin-bottom: 10px;
+ 
+  }
+  #basmati-btn .second-btn{
+    width: 80% !important;
   }
   
    /* basmati rice button */
@@ -94,7 +99,6 @@
   display: flex;
   align-items: center;
   justify-content:start;
-  width: 200px;
   margin-right: 10px;
   text-align:left;
 
@@ -124,9 +128,9 @@
   .btns{
     flex-direction:row;
   }
-  #basmati-btn #box-btn{
-    /* margin-bottom: 10px; */
-   }
+  #basmati-btn .second-btn{
+    width: 100% !important;
+  }
 
   table{
     border: solid gray 1px;
@@ -177,10 +181,12 @@
 }
 
 #lookingfor h2,
+.title-slide h2,
 .inner-text b{
-  font-size: 20px;
+  font-size: 20px !important;
   font-weight: 700;
 }
+.title-slide h2
 
   /* basmati rice button */
 

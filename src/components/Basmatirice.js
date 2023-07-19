@@ -180,10 +180,10 @@ export default function Basmatirice(props) {
         <div className="bg-img">
           <div className="container main-head">
             <div className="row head-product d-flex justify-content-space-between align-items-center">
-              <div className="col-sm-5 col-xs-12">
+              <div className="col-sm-6 col-xs-12">
                 <h1 className="h1">{props.title}</h1>
               </div>
-              <div className="col-sm-7 col-xs-12 text-sm-end first-text-product  first-text-product2">
+              <div className="col-sm-6 col-xs-12 text-sm-end first-text-product  first-text-product2 ps-0">
                 <Link to="/">Home</Link>
                 <MdOutlineKeyboardArrowRight></MdOutlineKeyboardArrowRight>
                 <Link to="/"> Products</Link>
@@ -200,8 +200,8 @@ export default function Basmatirice(props) {
       {/* Basmati rice  */}
 
       <div className="container"> 
-        <div className="main-basmati-box pb-0">
-          <div className="row mt-3 row-box">
+        <div className="main-basmati-box mt-4">
+          <div className="row row-box">
             <div className="col basmti-main-img">
             <div className="zoom-gallery">
             <div className="zoom-box">
@@ -226,8 +226,8 @@ export default function Basmatirice(props) {
                 <p className="fn-26 mb-0 fc-black title-box1">{props.title}</p>
                 <div className="brbtn">Get Bebst Price</div>
                 <div className="fs-14">
-                  <span className="gray-text">MOQ : </span>
-                  <b className="fc-black">24 Ton</b>
+                  {/* <span className="gray-text">MOQ : </span>
+                  <b className="fc-black">24 Ton</b> */}
                   <table className="mt-3 main-table" id="first-tbl">
                     <tbody>
                       <tr className="tb">
@@ -277,7 +277,7 @@ export default function Basmatirice(props) {
                 </table>
 
                 <div className="row" id="basmati-btn">
-                  <div className="col-md-6 col p-0 ">
+                  <div className=" col second-btn p-0 ">
                     <div
                       id="box-btn"
                       data-bs-toggle="modal"
@@ -286,7 +286,7 @@ export default function Basmatirice(props) {
                       <div className="brbtn1"> REQUEST TO CALL </div>
                     </div>
                   </div>
-                  <div className="col-md-6 col p-0">
+                  <div className="col second-btn p-0">
                   <div
                       id="box-btn"
                       data-bs-toggle="modal"
@@ -407,7 +407,7 @@ export default function Basmatirice(props) {
                           <div className="row" id="inner-box-form">
                           <button type="button" class="btn-close  btn-close-model" data-bs-dismiss="modal" aria-label="Close"></button>
                             <div className="col col-form-img">
-                              <div className="back-img back-img-box bg2">
+                              <div className="back-img back-img-box" style={{background:`url(${props.img})`}}>
                                 <div className="bluer-back-img "></div>
                                 <img
                                   className="product-img product-2"
@@ -473,8 +473,15 @@ export default function Basmatirice(props) {
                     <div className="inpute-name1">
                       <label className="name">Mobile No.</label>
                     </div>
-                    <div className="input-main-name">
-                    <PhoneInput  className="inpute-name-box1 icon-flag" country={'in'} />
+                    <div className="input-main-name mobail-box">
+
+                    <PhoneInput  className="icon-flag" country={'in'} />
+                     <input
+                        className="inpute-name-box1 number-box"
+                        type="text"
+                        placeholder="Enter Mobail no."
+                        required
+                      />
                       {/* <select
                         className="inpute-name-box1"
                         id="dynFrm_country"
@@ -903,7 +910,7 @@ export default function Basmatirice(props) {
       {/* lookin for basmati rice */}
 
       <div className="container">
-        <div className="main-basmati-box mt-5 " id="lookingfor">
+        <div className="main-basmati-box" id="lookingfor">
           <div className="lookin-box">
             <div className="row">
               <div className="col-12 pt-3 text-center lookin-box-text">
@@ -953,8 +960,15 @@ export default function Basmatirice(props) {
                     <div className="inpute-name1">
                       <label className="name">Mobile No.</label>
                     </div>
-                    <div className="input-main-name">
-                    <PhoneInput  className="inpute-name-box1" country={'in'} />
+                    <div className="input-main-name mobail-box">
+                     <PhoneInput  className="icon-flag" country={'in'} />
+                     <input
+                        className="inpute-name-box1 number-box"
+                        type="text"
+                        placeholder="Enter Mobail no."
+                        required
+                      />
+                    {/* <PhoneInput  className="inpute-name-box1" country={'in'} /> */}
                       {/* <select
                         className="inpute-name-box1"
                         id="dynFrm_country"
@@ -1371,7 +1385,7 @@ export default function Basmatirice(props) {
 
       {/* Exprore More Products */}
       <div className="container">
-        <div className="main-basmati-box hidden mt-5 mb-5 ">
+        <div className="main-basmati-box hidden">
           <div className="row ">
             <div className="col-12 pt-3 text-center title-slide">
               <h2>Explore More Products</h2>
