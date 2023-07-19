@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useRef, useState } from "react";
 import { useEffect } from "react";
 
 import PhoneInput from 'react-phone-input-2';
@@ -13,7 +13,23 @@ import { Link } from "react-router-dom";
 
 import { MdOutlineKeyboardArrowRight } from "react-icons/md";
 
-export default function Basmatirice(props) {
+export default function Basmatirice(props ) {
+  //   const [cursorPosition, setCursorPosition] = useState({ x: 0, y: 0 });
+  //   const imageRef = useRef(null);
+  //   const magnifierRef = useRef(null);
+  // const handleMouseMove = (e) => {
+  //   const { left, top, width, height } = imageRef.current.getBoundingClientRect();
+  //   const { clientX, clientY } = e;
+
+  //   const x = ((clientX - left) / width) * 100;
+  //   const y = ((clientY - top) / height) * 100;
+
+  //   setCursorPosition({ x, y });
+
+  //   const magnifier = magnifierRef.current;
+  //   magnifier.style.backgroundPosition = `-${x * zoomFactor}% -${y * zoomFactor}%`;
+  // };
+
   const slider = [
     { 
     link : '/basmatirice',
@@ -210,11 +226,29 @@ export default function Basmatirice(props) {
             <figure className="m-z-figure">
         
             <img src={props.img} alt="" className="img-fluid" style={{width:props.width}}/>
+            <span id="lens"></span>
             </figure>
+            
             </div>
             </div>
             </div>
             </div>
+
+            <div className="">
+              <div className="m-z-figure2">
+              <img src={props.img} alt="" className="img-fluid" />
+              </div>
+              </div>
+
+
+
+
+
+
+            {/* <figure className=" m-z-figure2">
+        
+            <img src={props.img} alt="" className="img-fluid" style={{width:props.width}}/>
+            </figure> */}
               {/* <div className="basmati-rice-img">
               <div className="img-second">
               <img src={props.img} alt="" className="img-fluid" />
@@ -391,7 +425,7 @@ export default function Basmatirice(props) {
               </div>
 
               {/* <!-- Modal --> */}
-              <div className="row">
+              <div className="row" id="inner-form-full">
                 <div className="col-12">
                   <div
                     className="modal fade"
@@ -827,7 +861,7 @@ export default function Basmatirice(props) {
               <div className="row form-row form-row-radio">
                 <div className="col-12 col col-radio">
                   <div className="main-box1 d-flex">
-                    <div className="inpute-name1">
+                    <div className="inpute-name1 textarea-box-text">
                       <label className="name">Purpose of Requirement</label>
                     </div>
                     <div className="input-main-name input-main-name-radio">
@@ -884,7 +918,7 @@ export default function Basmatirice(props) {
                   </div>
                 </div>
               </div>
-              <div className="row form-row">
+              <div className="row form-row" id="inner-btn-enquiry">
                 <div className="col-sm-12">
                   <div id="box-btn">
                     <div className="box-btn">Send Enquiry</div>
@@ -1314,7 +1348,7 @@ export default function Basmatirice(props) {
               <div className="row form-row form-row-radio">
                 <div className="col col-radio">
                   <div className="main-box1 d-flex">
-                    <div className="inpute-name1">
+                    <div className="inpute-name1  textarea-box-text">
                       <label className="name">Purpose of Requirement</label>
                     </div>
                     <div className="input-main-name input-main-name-radio">

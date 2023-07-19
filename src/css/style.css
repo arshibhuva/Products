@@ -312,10 +312,8 @@ body{
   margin-bottom: 30px !important;
 }
 .basmti-main-img{
-
   max-width: 422px !important;
   min-width: 422px !important;
-
   padding: 0 15px;
   height: auto;
 }
@@ -333,7 +331,7 @@ justify-content: center;
 }
 .zoom-box{
   /* max-width: 500px !important; */
-  overflow: hidden;
+  /* overflow: hidden; */
   width: 100%;
   position: relative;
 }
@@ -352,7 +350,8 @@ justify-content: center;
   justify-content: center;
 } */
 figure.m-z-figure{
-  overflow: hidden;
+  /* overflow: hidden; */
+  /* position: relative; */
   margin: 0 !important;
   /* perspective: 300px;
   transform-style: preserve-3d;
@@ -368,6 +367,36 @@ figure.m-z-figure{
 
   backface-visibility: hidden; */
 
+}
+figure.m-z-figure img{
+  position: relative;
+}
+#lens{
+  width: 100px;
+  height: 100px;
+  border: black solid 1px;
+  background-color:rgba(118, 113, 113, 0.1);
+  position: absolute;
+  left: 0;
+  top: 0;
+
+}
+.zoom-gallery:hover .m-z-figure1{
+  display: block !important;
+}
+.m-z-figure2{
+  position: absolute;
+  left:100%;
+  top:140px;
+  width: 100%;
+  z-index: 3;
+  /* display: none; */
+}
+.m-z-figure2 img{
+  width: auto;
+  height: auto;
+ 
+  
 }
 
 .mz-figure > img {
@@ -398,6 +427,7 @@ img {
 {
   display: flex;
   padding: 10px 15px;
+  position: relative;
 }
 /* .basmti-img
 {
@@ -775,12 +805,28 @@ strong{
   display: flex;
   justify-content: center;
 }
+.modal-open .modal{
+  /* height: 100vh  !important; */
+  overflow: hidden;
+}
+.modal.show .modal-dialog{
+  height: 90vh !important;
+  display: flex !important;
+  justify-content: center;
+  align-items: center !important;
+}
 .model-content{
   border-radius: 0px !important;
 }
 .modal-dialog {
   max-width: 725px !important;
-  margin: 7.85rem auto !important;
+  margin: 0px;
+}
+#inner-btn-enquiry #box-btn
+{
+  justify-content: start;
+  padding-left: 0px;
+  margin-left: 0px;
 }
 
 .box{
@@ -844,15 +890,14 @@ strong{
   display: flex;
   align-items: center;
   justify-content: end;
-  min-width: 77px;
-  max-width: 12px;
+  min-width: 70px;
   margin-right: 10px;
   text-align: right;
   color:  #666666;
 }
-/* .textarea-box-text{
-  width: 105px;
-} */
+.textarea-box-text{
+  width: 77px;
+}
 .input-main-name{
 
   width: 100%;
