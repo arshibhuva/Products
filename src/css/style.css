@@ -15,6 +15,28 @@
 a{
     text-decoration: none !important;
 }
+.magnify-container {
+  position: relative;
+  cursor: zoom-in;
+}
+
+.product-image {
+  width: 300px; /* Set the desired width of your product image */
+  height: auto;
+}
+
+.magnify-glass {
+  position: absolute;
+  border: 3px solid #000;
+  border-radius: 50%;
+  pointer-events: none;
+  display: none;
+}
+
+.magnify-container:hover .magnify-glass {
+  display: block;
+}
+
 * {
 margin: 0;
 padding: 0;
@@ -303,7 +325,9 @@ body{
 /* Second Page */
 
 /* First box */
-
+figure.m-z-figure img {
+  z-index: 11;
+}
 .main-basmati-box
 {
   box-shadow: 0 0 10px rgba(121, 120, 120, 0.67);
@@ -351,7 +375,7 @@ justify-content: center;
 } */
 figure.m-z-figure{
   /* overflow: hidden; */
-  /* position: relative; */
+  position: relative;
   margin: 0 !important;
   /* perspective: 300px;
   transform-style: preserve-3d;
@@ -370,6 +394,7 @@ figure.m-z-figure{
 }
 figure.m-z-figure img{
   position: relative;
+  /* left: 100%; */
 }
 #lens{
   width: 100px;
@@ -379,7 +404,30 @@ figure.m-z-figure img{
   position: absolute;
   left: 0;
   top: 0;
+}
 
+  figure.m-z-figure:nth-child(4){
+    overflow: hidden;
+    position: absolute;
+    top: 0px;
+    left: 10%;
+    margin-left: 10px;
+    border: 1px solid rgb(214, 214, 214);
+    width: 392px;
+    height: 239px;
+    opacity: 1;
+    transition: opacity 300ms ease-in 0s;
+    pointer-events: none;
+}
+
+.big{
+  border: 1px solid red;
+}
+.small{
+  width: 1000px !important;
+  height: 100px;
+  position: absolute;
+  left:0px;
 }
 .zoom-gallery:hover .m-z-figure1{
   display: block !important;

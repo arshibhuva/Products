@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { useEffect } from "react";
+import ReactImageMagnify from 'react-image-magnify';
 
 import PhoneInput from 'react-phone-input-2';
 import 'react-phone-input-2/lib/style.css';
@@ -14,6 +15,9 @@ import { Link } from "react-router-dom";
 import { MdOutlineKeyboardArrowRight } from "react-icons/md";
 
 export default function Basmatirice(props) {
+ 
+//  $('#zoom_01').elevateZoom(); 
+
   const slider = [
     { 
     link : '/basmatirice',
@@ -201,6 +205,8 @@ export default function Basmatirice(props) {
 
       {/* Basmati rice  */}
 
+      {/* <img id="zoom_01" src={require("../imgs/basmati.png")} data-zoom-image={require("../imgs/basmatilarge.png")}/> */}
+
       <div className="container"> 
         <div className="main-basmati-box mt-4">
           <div className="row row-box">
@@ -210,8 +216,26 @@ export default function Basmatirice(props) {
             <div className="zoom-gallery-slider active">
             <div className="magic-zoom">
             <figure className="m-z-figure">
-        
-            <img src={props.img} alt="" className="img-fluid" style={{width:props.width}}/>
+            <ReactImageMagnify style={{width:props.width}} {...{
+    smallImage: {
+      className:'big',
+        alt: 'Wristwatch by Ted Baker London',
+        isFluidWidth: true,
+        src: [props.img],
+        width:1000
+      
+      
+    },
+    largeImage: {
+      className:'small',
+        src:[props.img],
+        width: 500,
+        height: 300
+    },
+    enlargedImagePosition:true,
+    isEnlargedImagePortalEnabledForTouch:true
+}} />
+            {/* <img src={props.img} alt="" className="img-fluid" style={{width:props.width}}/> */}
             {/* <span id="lens"></span> */}
             </figure>
             

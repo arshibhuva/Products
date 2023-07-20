@@ -144,7 +144,7 @@ function App() {
       <Routes>
       
         <Route path="/" element={<Products1/>} />
-        <Route path="/hellow" element={<ImageMagnifier imageUrl={dat} zoomFactor={3}/>} />
+        <Route path="/hellow" element={<ImageMagnifier/>} />
 
 
 
