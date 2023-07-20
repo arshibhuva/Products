@@ -83,7 +83,7 @@ export default function Indianrice({props}) {
             
                 </div>
               </div> */}
-              <div className="col-lg-7 col main-basmti-body">
+              <div className="col main-basmti-body">
                 <div className="basmati-body">
                   <p className="fn-26 mb-1 bt title-box1">{data.title}</p>
                   <div className="brbtn">Get Bebst Price</div>
@@ -213,7 +213,6 @@ export default function Indianrice({props}) {
                         <div className="modal-body">
                         <div className="scoll-tree">
                           <div className="row" id="inner-box-form">
-                          <button type="button" class="btn-close  btn-close-model" data-bs-dismiss="modal" aria-label="Close"></button>
                             <div className="col col-form-img">
                               <div className="back-img back-img-box" style={{background:`url(${data.img})`}}>
                                 <div className="bluer-back-img "></div>
@@ -390,6 +389,7 @@ export default function Indianrice({props}) {
                           </div>
                           </div>
                         </div>
+                        <button type="button" class="btn-close  btn-close-model" data-bs-dismiss="modal" aria-label="Close"></button>
                       </div>
                     </div>
                   </div>

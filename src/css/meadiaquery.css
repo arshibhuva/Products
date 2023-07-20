@@ -2,25 +2,20 @@
   .container{
     max-width: 1156px !important;
 }
-.modal-dialog {
-  /* margin: 9.85rem auto !important; */
-}
-
 .btns{
   flex-direction: column;
 }
-.btns .btn2
+/* .btns .btn2
 {
   padding: 5px 5px;
   width: 96px !important;
-}
+} */
 }
 
 @media ( max-width: 1048px) {
   .radio-btn{
     align-items:start;
   }
-
 }
 
 /* Meadiam */
@@ -46,9 +41,6 @@
   
    /* basmati rice button */
 }  
-
-
-
 
 @media (max-width: 845px) {
   .btns{
@@ -91,8 +83,6 @@
   }
   .modal-body {
     max-height: 400px !important;
-   /* width: auto; */
-    /* overflow-x:auto; */
     overflow-y: scroll;
   }
   #inner-box-form .inpute-name1
@@ -275,11 +265,16 @@
 #lookingfor .inpute-name1
 {
   justify-content:start;
-  /* width: 320px; */
+
   margin-right: 10px;
   text-align:left;
 }
-
+#lookingfor .textarea-box-text{
+  width: 320px;
+}
+#bas .first-text-product2 {
+  margin-left: 15px;
+}
 #box-btn{
   justify-content: start;
 }
@@ -304,6 +299,9 @@
 #basmati-btn{
   flex-direction:row !important;
 }
+.modal.show .modal-dialog{
+  margin: auto;
+}
 
 
   
@@ -314,10 +312,7 @@
   width: 200px;
 }
 }
-/* Extra Small */
-@media (max-width: 500px){
- 
-}
+
 @media (max-width: 480px){
   table
 {

@@ -179,7 +179,7 @@ export default function Basmatirice(props) {
     <>
       {/* Header */}
       <section>
-        <div className="bg-img">
+        <div className="bg-img" id="bas">
           <div className="container main-head">
             <div className="row head-product d-flex justify-content-space-between align-items-center">
               <div className="col-sm-6 col-xs-12">
@@ -246,8 +246,8 @@ export default function Basmatirice(props) {
                 <p className="fn-26 mb-0 fc-black title-box1">{props.title}</p>
                 <div className="brbtn">Get Bebst Price</div>
                 <div className="fs-14">
-                  {/* <span className="gray-text">MOQ : </span>
-                  <b className="fc-black">24 Ton</b> */}
+                  <span className="gray-text">MOQ : </span>
+                  <b className="fc-black">24 Ton</b>
                   <table className="mt-3 main-table" id="first-tbl">
                     <tbody>
                       <tr className="tb">
@@ -425,7 +425,7 @@ export default function Basmatirice(props) {
                         <div className="modal-body">
                         <div className="scoll-tree">
                           <div className="row" id="inner-box-form">
-                          <button type="button" class="btn-close  btn-close-model" data-bs-dismiss="modal" aria-label="Close"></button>
+                          
                             <div className="col col-form-img">
                               <div className="back-img back-img-box" style={{background:`url(${props.img})`}}>
                                 <div className="bluer-back-img "></div>
@@ -602,10 +602,13 @@ export default function Basmatirice(props) {
                           </div>
                           </div>
                         </div>
+                        <button type="button" class="btn-close  btn-close-model" data-bs-dismiss="modal" aria-label="Close"></button>
                       </div>
                     </div>
                   </div>
                 </div>
+             
+
               </div>
             </div>
           </div>
