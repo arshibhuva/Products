@@ -1,7 +1,5 @@
 import React, { useState } from "react";
 import { useEffect } from "react";
-import ReactImageMagnify from 'react-image-magnify';
-
 import PhoneInput from 'react-phone-input-2';
 import 'react-phone-input-2/lib/style.css';
 import css from "../css/style.css";
@@ -216,23 +214,8 @@ export default function Basmatirice(props) {
             <div className="zoom-gallery-slider active">
             <div className="magic-zoom">
             <figure className="m-z-figure " style={{width:props.width}}>
-            <ReactImageMagnify style={{width:props.width}} {...{
-    smallImage: {
-      style:{width:props.width},
-        alt: 'Wristwatch by Ted Baker London',
-        isFluidWidth: true,
-        src: [props.img],
-    },
-    largeImage: {
-  
-        src:[props.img],
-        width: 500,
-        height: 300
-    },
-    enlargedImagePosition:true,
-    isEnlargedImagePortalEnabledForTouch:true
-}} />
-            {/* <img src={props.img} alt="" className="img-fluid" style={{width:props.width}}/> */}
+         
+            <img src={props.img} alt="" className="img-fluid" style={{width:props.width}}/>
             {/* <span id="lens"></span> */}
             </figure>
             

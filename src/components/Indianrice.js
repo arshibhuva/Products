@@ -4,7 +4,6 @@ import { MdOutlineKeyboardArrowRight } from "react-icons/md";
 import PhoneInput from 'react-phone-input-2';
 import { useLocation } from "react-router";
 import 'react-phone-input-2/lib/style.css';
-import ReactImageMagnify from 'react-image-magnify';
 export default function Indianrice({props}) {
   const location = useLocation();
   useEffect(() => {
@@ -64,23 +63,8 @@ export default function Indianrice({props}) {
             <div className="zoom-gallery-slider active">
             <div className="magic-zoom">
             <figure className="m-z-figure">
-            <ReactImageMagnify style={{width:props.width}} {...{
-    smallImage: {
-      style:{width:props.width},
-        alt: 'Wristwatch by Ted Baker London',
-        isFluidWidth: true,
-        src: [props.img],
-    },
-    largeImage: {
-  
-        src:[props.img],
-        width: 500,
-        height: 300
-    },
-    enlargedImagePosition:true,
-    isEnlargedImagePortalEnabledForTouch:true
-}} />
-            {/* <img src={data.img} alt="" className="img-fluid" style={{width:data.width}}/> */}
+         
+            <img src={data.img} alt="" className="img-fluid" style={{width:data.width}}/>
             </figure>
             </div>
             </div>
