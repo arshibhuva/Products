@@ -59,7 +59,7 @@ export default function Indianrice({props}) {
             <div className="row mt-3 row-box">
             <div className="col basmti-main-img">
             <div className="zoom-gallery sticky-top">
-            <div className="zoom-box">
+            <div className="zoom-box"  style={{width:props.width}}>
             <div className="zoom-gallery-slider active">
             <div className="magic-zoom">
             <figure className="m-z-figure">
