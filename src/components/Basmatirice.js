@@ -212,22 +212,19 @@ export default function Basmatirice(props) {
           <div className="row row-box">
             <div className="col basmti-main-img">
             <div className="zoom-gallery">
-            <div className="zoom-box">
+            <div className="zoom-box" style={{width:props.width}}>
             <div className="zoom-gallery-slider active">
             <div className="magic-zoom">
-            <figure className="m-z-figure">
+            <figure className="m-z-figure " style={{width:props.width}}>
             <ReactImageMagnify style={{width:props.width}} {...{
     smallImage: {
-      className:'big',
+      style:{width:props.width},
         alt: 'Wristwatch by Ted Baker London',
         isFluidWidth: true,
         src: [props.img],
-        width:1000
-      
-      
     },
     largeImage: {
-      className:'small',
+  
         src:[props.img],
         width: 500,
         height: 300
