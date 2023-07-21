@@ -1,5 +1,5 @@
-import React, { useState } from "react";
-import { useEffect } from "react";
+
+import { useCallback, useEffect, useRef, useState } from "react";
 import PhoneInput from 'react-phone-input-2';
 import 'react-phone-input-2/lib/style.css';
 import css from "../css/style.css";
@@ -15,6 +15,38 @@ import { MdOutlineKeyboardArrowRight } from "react-icons/md";
 export default function Basmatirice(props) {
  
 //  $('#zoom_01').elevateZoom(); 
+// image-magnify start---------------
+
+const imgRef = useRef();
+const cardRef = useRef();
+const [mousePos, setMousePos] = useState(0);
+
+const determinePos = useCallback(
+  (ele, mouse) => {
+    const boudingsCard = ele.getBoundingClientRect();
+    const cardTop = boudingsCard.top;
+    const cardLeft = boudingsCard.left;
+
+    const relativeX = mouse.pageX - cardLeft;
+    const relativeY = mouse.pageY - cardTop;
+
+    imgRef.current.style.top = -relativeY * 2 + "px";
+    imgRef.current.style.left = -relativeX * 2 + "px";
+  },
+  [mousePos]
+);
+useEffect(() => {
+  if (cardRef.current) {
+    determinePos(cardRef.current, mousePos);
+  }
+}, [imgRef, mousePos, cardRef]);
+const handleMouseLeave = () => {
+  imgRef.current.style.top = 0;
+  imgRef.current.style.left = 0;
+};
+
+
+// image-magnify end---------------
 
   const slider = [
     { 
@@ -213,22 +245,35 @@ export default function Basmatirice(props) {
             <div className="zoom-box" style={{width:props.width}}>
             <div className="zoom-gallery-slider active">
             <div className="magic-zoom">
-            <figure className="m-z-figure " style={{width:props.width}}>
+            <div
+        className="cards"
+        ref={cardRef}
+        onMouseMove={(e) => setMousePos(e)}
+        onMouseLeave={handleMouseLeave}
+      >
+        <img
+          ref={imgRef}
+          src={props.img}
+          alt=""
+        />
+      </div>
+            {/* <figure className="m-z-figure " style={{width:props.width}}>
          
             <img src={props.img} alt="" className="img-fluid" style={{width:props.width}}/>
-            {/* <span id="lens"></span> */}
+            <span id="lens"></span>
             </figure>
+            <div className="">
+              <div className="m-z-figure2">
+              <img src={props.img} alt="" className="img-fluid" />
+              </div>
+              </div> */}
             
             </div>
             </div>
             </div>
             </div>
 
-            {/* <div className="">
-              <div className="m-z-figure2">
-              <img src={props.img} alt="" className="img-fluid" />
-              </div>
-              </div> */}
+           
 
 
 

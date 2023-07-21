@@ -144,7 +144,7 @@ function App() {
       <Routes>
       
         <Route path="/" element={<Products1/>} />
-        <Route path="/hellow" element={<ImageMagnifier/>} />
+        <Route path="/hellow" element={<ImageMagnifier  src={require("./imgs/asset 24.jpeg")} alt="Image description"/>} />
 
 
 
