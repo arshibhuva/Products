@@ -13,40 +13,48 @@ import { Link } from "react-router-dom";
 import { MdOutlineKeyboardArrowRight } from "react-icons/md";
 
 export default function Basmatirice(props) {
- 
-//  $('#zoom_01').elevateZoom(); 
-// image-magnify start---------------
 
-const imgRef = useRef();
-const cardRef = useRef();
-const [mousePos, setMousePos] = useState(0);
+// Image magnify start---------------------
 
-const determinePos = useCallback(
-  (ele, mouse) => {
-    const boudingsCard = ele.getBoundingClientRect();
-    const cardTop = boudingsCard.top;
-    const cardLeft = boudingsCard.left;
+const [boxPosition, setBoxPosition] = useState({ x: 0, y: 0 });
+const [boxSize, setBoxSize] = useState();
 
-    const relativeX = mouse.pageX - cardLeft;
-    const relativeY = mouse.pageY - cardTop;
 
-    imgRef.current.style.top = -relativeY * 2 + "px";
-    imgRef.current.style.left = -relativeX * 2 + "px";
-  },
-  [mousePos]
-);
+// const [position, setPosition] = useState({ x: 0, y: 0 });
+// const imgRef = useRef();
+
 useEffect(() => {
-  if (cardRef.current) {
-    determinePos(cardRef.current, mousePos);
-  }
-}, [imgRef, mousePos, cardRef]);
-const handleMouseLeave = () => {
-  imgRef.current.style.top = 0;
-  imgRef.current.style.left = 0;
+     
+    const handleMouseMove = (e,mouse) => {
+    setBoxPosition({ x: e.clientX-300+'px',y: e.clientY-300+'px' });
+    const { clientX, clientY } = e;
+    const { left, top } = e.target.getBoundingClientRect();
+    const magnifier = document.getElementById('second2');
+
+    const xPos = clientX - left - magnifier.clientWidth / 2;
+    const yPos = clientY - top - magnifier.clientHeight / 2;
+
+    magnifier.style.transform = `translate(${xPos}px, ${yPos}px)`;
+       
+    // setBoxPosition({ x: e.clientX, y: e.clientY});
+    console.log(e.clientX)
+    console.log(e.clientY)
+
+
+    setBoxSize({boxPosition}*2 + 'px');
+    console.log(setBoxSize)
+    // console.log(imgRef.current.style.left)
 };
 
+    let first = document.getElementById('first');
+    first.addEventListener('mousemove',handleMouseMove);
+}, []);
+  
 
-// image-magnify end---------------
+
+
+// Image magnify End---------------------
+
 
   const slider = [
     { 
@@ -243,20 +251,31 @@ const handleMouseLeave = () => {
             <div className="col basmti-main-img">
             <div className="zoom-gallery">
             <div className="zoom-box" style={{width:props.width}}>
-            <div className="zoom-gallery-slider active">
-            <div className="magic-zoom">
-            <div
-        className="cards"
-        ref={cardRef}
-        onMouseMove={(e) => setMousePos(e)}
-        onMouseLeave={handleMouseLeave}
-      >
-        <img
-          ref={imgRef}
-          src={props.img}
-          alt=""
-        />
+  
+           
+{/* imagemagnify start */}
+      <div   id="first" className='boxx'>
+      <img src={props.img} style={{width:props.width}} alt="" />
+        <div id="lens" style={{
+        position: 'absolute',
+        top: boxPosition.y,
+        left: boxPosition.x,
+      }}></div>
       </div>
+      <div id="second-img" className='boxx'>
+      <img  id="second2" style={{width:{boxSize}}}
+       src={props.img}  alt=""
+       />
+       </div>
+      {/* <div ></div> */}
+      
+
+{/* imagemagnify start */}
+
+
+
+           
+      {/* <img className="img2" style={{width:props.width}} src={props.img} alt=""/> */}
             {/* <figure className="m-z-figure " style={{width:props.width}}>
          
             <img src={props.img} alt="" className="img-fluid" style={{width:props.width}}/>
@@ -268,8 +287,8 @@ const handleMouseLeave = () => {
               </div>
               </div> */}
             
-            </div>
-            </div>
+            
+            
             </div>
             </div>
 

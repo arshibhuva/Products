@@ -10,6 +10,7 @@ export default function ImageMagnifier() {
 
   const determinePos = useCallback(
     (ele, mouse) => {
+      console.log(mouse)
       const boudingsCard = ele.getBoundingClientRect();
       const cardTop = boudingsCard.top;
       const cardLeft = boudingsCard.left;
@@ -17,8 +18,12 @@ export default function ImageMagnifier() {
       const relativeX = mouse.pageX - cardLeft;
       const relativeY = mouse.pageY - cardTop;
 
-      imgRef.current.style.top = -relativeY * 2 + "px";
-      imgRef.current.style.left = -relativeX * 2 + "px";
+      imgRef.current.style.top = -relativeY * 1 + "px";
+      imgRef.current.style.left = -relativeX * 1 + "px";
+      imgRef.current.style.backGround = 'red';
+      imgRef.current.style.border = 'red';
+
+
     },
     [mousePos]
   );
@@ -35,20 +40,17 @@ export default function ImageMagnifier() {
   return (
 
   <>
-    <div className="App">
-      <div
-        className="card"
-        ref={cardRef}
-        onMouseMove={(e) => setMousePos(e)}
-        onMouseLeave={handleMouseLeave}
-      >
-        <img
-          ref={imgRef}
-          src="https://images.pexels.com/photos/12328370/pexels-photo-12328370.jpeg"
-          alt=""
-        />
+<div className="App d-flex">
+
+    <div className="card" ref={cardRef} onMouseMove={(e) => setMousePos(e)} onMouseLeave={handleMouseLeave}>
+        <img src="https://images.pexels.com/photos/12328370/pexels-photo-12328370.jpeg" alt=""/> 
+    </div>
+    <div className="main-box">
+      <div className="card">
+        <img  ref={imgRef} src="https://images.pexels.com/photos/12328370/pexels-photo-12328370.jpeg" alt=""/> 
       </div>
     </div>
+</div>
   </>
   )
 }

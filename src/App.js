@@ -9,6 +9,8 @@ import Basmatirice from "./components/Basmatirice";
 import Indianrice from "./components/Indianrice";
 import Products1 from "./components/Products1";
 import ImageMagnifier from './components/ImageMagnifier';
+import Zoom from './components/Zoom';
+import Cursor from './components/Cursor';
 
 
 function App() {
@@ -144,6 +146,10 @@ function App() {
       <Routes>
       
         <Route path="/" element={<Products1/>} />
+        <Route path="/zoom" element={<Zoom/>} />
+        <Route path="/a" element={<Cursor/>} />
+
+
         <Route path="/hellow" element={<ImageMagnifier  src={require("./imgs/asset 24.jpeg")} alt="Image description"/>} />
 
 

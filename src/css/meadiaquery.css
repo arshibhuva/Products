@@ -41,7 +41,11 @@
   
    /* basmati rice button */
 }  
-
+@media (max-width: 850px) {
+  #second-img{
+    left:0px;
+  }
+}
 @media (max-width: 845px) {
   .btns{
     flex-direction:column;

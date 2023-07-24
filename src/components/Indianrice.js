@@ -1,10 +1,42 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { MdOutlineKeyboardArrowRight } from "react-icons/md";
 import PhoneInput from 'react-phone-input-2';
 import { useLocation } from "react-router";
 import 'react-phone-input-2/lib/style.css';
 export default function Indianrice({props}) {
+  // Image magnify start---------------------
+
+const [boxPosition, setBoxPosition] = useState({ x: 0, y: 0 });
+const [boxSize, setBoxSize] = useState();
+
+useEffect(() => {
+     
+    const handleMouseMove = (e,mouse) => {
+    setBoxPosition({ x: e.clientX-300+'px',y: e.clientY-300+'px' });
+    const { clientX, clientY } = e;
+    const { left, top } = e.target.getBoundingClientRect();
+    const magnifier = document.getElementById('second2');
+
+    const xPos = clientX - left - magnifier.clientWidth / 2;
+    const yPos = clientY - top - magnifier.clientHeight / 2;
+
+    magnifier.style.transform = `translate(${xPos}px, ${yPos}px)`;
+       
+    // setBoxPosition({ x: e.clientX, y: e.clientY});
+    console.log(e.clientX)
+    console.log(e.clientY)
+
+
+    setBoxSize({boxPosition}*2 + 'px');
+    console.log(setBoxSize)
+    // console.log(imgRef.current.style.left)
+};
+
+    let first = document.getElementById('first');
+    first.addEventListener('mousemove',handleMouseMove);
+}, []);
+  
   const location = useLocation();
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -59,31 +91,31 @@ export default function Indianrice({props}) {
             <div className="row mt-3 row-box">
             <div className="col basmti-main-img">
             <div className="zoom-gallery sticky-top">
-            <div className="zoom-box"  style={{width:props.width}}>
-            <div className="zoom-gallery-slider active">
-            <div className="magic-zoom">
-            <figure className="m-z-figure">
-         
-            <img src={data.img} alt="" className="img-fluid" style={{width:data.width}}/>
-            </figure>
-            </div>
-            </div>
-            </div>
-            </div>
-              {/* <div className="basmati-rice-img">
-              <div className="img-second">
-              <img src={props.img} alt="" className="img-fluid" />
+            <div className="zoom-box" style={{width:data.width}}>
+  
+           
+  {/* imagemagnify start */}
+        <div   id="first" className='boxx'>
+        <img src={data.img} style={{width:data.width}} alt="" />
+          <div id="lens" style={{
+          position: 'absolute',
+          top: boxPosition.y,
+          left: boxPosition.x,
+        }}></div>
+        </div>
+        <div id="second-img" className='boxx'>
+        <img  id="second2" style={{width:{boxSize}}}
+         src={data.img}  alt=""
+         />
+         </div>
+  
+  {/* imagemagnify start */}  
               </div>
-              </div> */}
+          
             </div>
-              {/* <div className="col-lg-5 col basmti-main-img">
-                <div className="basmati-rice-img sticky-top">
-                 
-                  
-                    <img src={data.img}   className="basmti-img" alt="" />
-            
-                </div>
-              </div> */}
+              
+            </div>
+              
               <div className="col main-basmti-body">
                 <div className="basmati-body">
                   <p className="fn-26 mb-1 bt title-box1">{data.title}</p>
