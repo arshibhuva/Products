@@ -416,16 +416,15 @@ body{
 }
 
 
-*{
-  margin: 0;
-  padding: 0px;
-  box-sizing: border-box;
-}
+
 /* body{
   width: 100vw;
   height: 100vh;
   background: linear-gradient(to right,red,pink);
 } */
+
+
+/* magnify img------------------------------------------start------------ */
 .main-box{
   height: 100vh;
   display: flex;
@@ -435,20 +434,30 @@ body{
   border: solid red 1px;
 }
 #second2{
-  border: 3px solid #ccc;
+  /* border: 3px solid #ccc; */
   pointer-events: none; /* Allow mouse events to pass through */
   opacity: 0; /* Hide the magnifier until hover */
   transition: opacity 0.3s ease-in-out;
-  width: 500px;
-  height: 500px;
+  /* width: 500px; */
+
+
+  /* height: 500px; */
 }
 #second-img{
   position: absolute;
+  border: none;
+  /* top: 20px; */
   left: calc(100% + 10px);
   z-index: 10;
- 
+  /* border: solid red 3px; */
   overflow: hidden;
-  /* width: 100%; */
+  background-color: white;
+  display: none;
+  width: 100%;
+  
+}
+.zoom-box:hover #second-img{
+  display: block;
 }
 .zoom-box:hover #second2 {
   opacity: 1; /* Show the magnifier on hover */
@@ -469,8 +478,12 @@ body{
   
   /* border: 2px solid black; */
 }
+#img-first{
+  max-width: 100%;
+  height: auto;
+}
 #first img{
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 #first:hover #lens{
   display: block;
@@ -482,8 +495,15 @@ body{
   border: black solid 1px;
   background-color:rgba(201, 195, 195, 0.2);
   position: absolute;
+  /* transform: translate(-50%,-50%); */
+  /* transition: 0.1s; */
   display: none;
 }
+
+
+
+/* magnify img------------------------------------------End------------ */
+
 #les{
 height: 150px;
 width: 150px;
@@ -578,61 +598,9 @@ height: auto; */
   position: relative;
 }
 
-/* figure.m-z-figure{
-  overflow: hidden;
-  position: relative;
-  margin: 0 !important;
-
-} */
-/* figure.m-z-figure img{
-  position: relative;
-
-} */
-
-/* 
-  figure.m-z-figure:nth-child(4){
-    overflow: hidden;
-    position: absolute;
-    top: 0px;
-    left: 10%;
-    margin-left: 10px;
-    border: 1px solid rgb(214, 214, 214);
-    width: 392px;
-    height: 239px;
-    opacity: 1;
-    transition: opacity 300ms ease-in 0s;
-    pointer-events: none;
-} */
-
-/* 
-.small{
-  width: 1000px !important;
-  height: 100px;
-  position: absolute;
-  left:0px;
-} */
 .zoom-gallery:hover .m-z-figure1{
   display: block !important;
 }
-/* .m-z-figure2{
-  position: absolute;
-  left:100%;
-  top:100px;
-  width: 100%;
-  z-index: 3;
-  display: none;
-} */
-/* .m-z-figure2 img{
- 
-  z-index: 200;
-  width: auto !important;
-  height: auto !important;
-  max-width: 100% !important;
-  display: inline;
-  max-height: 100% !important;
- 
-  
-} */
 
 
 .basmati-rice-img

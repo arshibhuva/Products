@@ -17,44 +17,144 @@ export default function Basmatirice(props) {
 // Image magnify start---------------------
 
 const [boxPosition, setBoxPosition] = useState({ x: 0, y: 0 });
-const [boxSize, setBoxSize] = useState();
+// const [boxSize, setBoxSize] = useState();
 
 
 // const [position, setPosition] = useState({ x: 0, y: 0 });
 // const imgRef = useRef();
 
 useEffect(() => {
+
+// new cod----------------
+
+
+// let first = document.getElementById('first');
+// let imgfirst = document.getElementById('img-first');
+// let lens = document.getElementById('lens');
+// let secondimg = document.getElementById('second-img');
+
+// const containerRect = first.target.getBoundingClientRect()
+// const imageRect = imgfirst.target.getBoundingClientRect()
+// const lensRect = lens.target.getBoundingClientRect()
+// const resultRect = secondimg.target.getBoundingClientRect()
+
+// const handleMouseMove =(e)=>{
+// const containerRect = e.target.getBoundingClientRect()
+    // const { left, top,right,bottom ,width,height } = e.target.getBoundingClientRect();
+
+// console.log("Zoom img : " , e.clientX , e.clientY)
+ 
+//     const { clientX, clientY,offsetX,offsetY } = e;
+//     setBoxPosition({ x: e.clientX-left-50, y: e.clientY-top-50});
+
+// let fx = secondimg.width /100;
+// let fy = secondimg.height /100;
+
+
+// console.log("fx : ", fx)
+
+    // let minX = 0;
+    // let minY = 0;
+    // let maxX = width - 100;
+    // let maxY = height - 100;
+
+    // if(e.clientX <= minX){
+    // setBoxPosition({ x: minX});
+    // }else if(e.clientX >=maxX){
+    // setBoxPosition({ x: maxX});
+
+    // }
+
+// }
+//   first.addEventListener('mousemove',handleMouseMove);
+
+
+// new cod----------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
      
-    const handleMouseMove = (e,mouse) => {
-    setBoxPosition({ x: e.clientX-300+'px',y: e.clientY-300+'px' });
-    const { clientX, clientY } = e;
-    const { left, top } = e.target.getBoundingClientRect();
+    const handleMouseMove = (e) => {
+console.clear()
+//       console.log("client x - =" + e.clientX - e.offsetX)
+//       console.log("client x + =" + e.clientX + e.offsetX)
+
+//       console.log("client y =" + e.clientY)
+      // console.log("offset y =" + e.offsetY)
+      // console.log("offsetleft =" + e.offsetLeft)
+      // console.log("offsetleft =" + e.target.offsetLeft)
+
+
+      // console.log("offset x =" + e.offsetX) 
+      // console.log("page x =" + e.pageX)
+      // console.log("page y =" + e.pageY)
+
+
+
+      
+
+
+
+
+    // setBoxPosition({ x: e.clientX-300 +'px',y: e.clientY-300+'px' });
+    const { clientX, clientY,offsetX,offsetY } = e;
+    const { left, top,right,bottom } = e.target.getBoundingClientRect();
+    // console.log("left :" + left)
+    // console.log("rigth :" + right)
+    // console.log("top :" + top)
+    // console.log("bottom :" + bottom)
+    setBoxPosition({ x: e.clientX-left-50,y: e.clientY-top-50});
+    // setBoxPosition({ x: e.clientX,y: e.clientY});
+
+console.log("X :",e.clientX-left)
+    // setBoxPosition({ x: e.clientX-300 +'px',y: e.clientY-300 +'px' });
+
     const magnifier = document.getElementById('second2');
 
-    const xPos = clientX - left - magnifier.clientWidth / 2;
-    const yPos = clientY - top - magnifier.clientHeight / 2;
+    const xPos = - clientX + left + magnifier.clientWidth/8;
+    const yPos = -clientY + top + magnifier.clientHeight/8;
+    
+// console.log("xpos : " + xPos)
+// console.log("ypos : " + yPos)
 
     magnifier.style.transform = `translate(${xPos}px, ${yPos}px)`;
        
     // setBoxPosition({ x: e.clientX, y: e.clientY});
-    console.log(e.clientX)
-    console.log(e.clientY)
-
-
-    setBoxSize({boxPosition}*2 + 'px');
-    console.log(setBoxSize)
+    // setBoxSize({boxPosition} + 'px');
+    // console.log(setBoxSize)
     // console.log(imgRef.current.style.left)
 };
 
     let first = document.getElementById('first');
+    // let imgfirst = document.getElementById('img-first');
+    // let lens = document.getElementById('lens');
+    // let secondimg = document.getElementById('second-img');
+
     first.addEventListener('mousemove',handleMouseMove);
 }, []);
-  
-
-
 
 // Image magnify End---------------------
-
 
   const slider = [
     { 
@@ -165,7 +265,6 @@ useEffect(() => {
      },
    ]
 
-
   const [name, setname] = useState("");
   const [email, setemail] = useState("");
 
@@ -255,7 +354,7 @@ useEffect(() => {
            
 {/* imagemagnify start */}
       <div   id="first" className='boxx'>
-      <img src={props.img} style={{width:props.width}} alt="" />
+      <img id='img-first' src={props.img} style={{width:props.width}} alt="" />
         <div id="lens" style={{
         position: 'absolute',
         top: boxPosition.y,
@@ -263,8 +362,9 @@ useEffect(() => {
       }}></div>
       </div>
       <div id="second-img" className='boxx'>
-      <img  id="second2" style={{width:{boxSize}}}
+      <img  id="second2"
        src={props.img}  alt=""
+       style={{width:props.widths}}
        />
        </div>
       {/* <div ></div> */}
@@ -286,18 +386,9 @@ useEffect(() => {
               <img src={props.img} alt="" className="img-fluid" />
               </div>
               </div> */}
-            
-            
-            
+                  
             </div>
             </div>
-
-           
-
-
-
-
-
 
             {/* <figure className=" m-z-figure2">
         

@@ -166,34 +166,34 @@ function App() {
 {/* Single product */}
 
 
-        <Route path="/basmatirice"  exact={true} element={<Basmatirice title='Basmati Rice' titleline='/inadianrice' maintitle='Indian Rice' img={require("./imgs/basmati.png")}  width="100%"/>} />
-        <Route path="/nonbasmatirice"  exact={true} element={<Basmatirice title='Non Basmati Rice' titleline='/inadianrice' maintitle='Indian Rice' img={require("./imgs/nonbasmati.jpeg")}  width="100%"/>} />
+        <Route path="/basmatirice"  exact={true} element={<Basmatirice title='Basmati Rice' titleline='/inadianrice' maintitle='Indian Rice' img={require("./imgs/basmati.png")}  width="100%" widths='700px'/>} />
+        <Route path="/nonbasmatirice"  exact={true} element={<Basmatirice title='Non Basmati Rice' titleline='/inadianrice' maintitle='Indian Rice' img={require("./imgs/nonbasmati.jpeg")}  width="100%" widths='700px'/>} />
         
-        <Route path="/greenmillet" element={<Basmatirice title='Green Millet' titleline='/grains' maintitle='Grains' img={require("./imgs/asset 42.jpeg")}/>} />
-        <Route path="/yellowmaize" element={<Basmatirice title='Yellow Maize' titleline='/grains' maintitle='Grains' img={require("./imgs/asset 43.jpeg")}/>} />
-        <Route path="/barley" element={<Basmatirice title='Barley' titleline='/grains'  maintitle='Grains' img={require("./imgs/asset 44.jpeg")}/>} />
-        <Route path="/sorghum" element={<Basmatirice title='Sorghum' titleline='/grains'  maintitle='Grains' img={require("./imgs/asset 45.jpeg")}/>} />
-        <Route path="/wheat" element={<Basmatirice title='Wheat' titleline='/grains'  maintitle='Grains' img={require("./imgs/asset 46.jpeg")}/>} />
-        <Route path="/sesameseeds" element={<Basmatirice title='Sesame Seeds' titleline='/grains'  maintitle='Grains' img={require("./imgs/asset 47.jpeg")}/>} />
+        <Route path="/greenmillet" element={<Basmatirice title='Green Millet' titleline='/grains' maintitle='Grains' img={require("./imgs/asset 42.jpeg")} widths='400px'/>} />
+        <Route path="/yellowmaize" element={<Basmatirice title='Yellow Maize' titleline='/grains' maintitle='Grains' img={require("./imgs/asset 43.jpeg")} widths='400px'/>} />
+        <Route path="/barley" element={<Basmatirice title='Barley' titleline='/grains'  maintitle='Grains' img={require("./imgs/asset 44.jpeg")} widths='400px'/>} />
+        <Route path="/sorghum" element={<Basmatirice title='Sorghum' titleline='/grains'  maintitle='Grains' img={require("./imgs/asset 45.jpeg")} widths='400px'/>} />
+        <Route path="/wheat" element={<Basmatirice title='Wheat' titleline='/grains'  maintitle='Grains' img={require("./imgs/asset 46.jpeg")} widths='400px'/>} />
+        <Route path="/sesameseeds" element={<Basmatirice title='Sesame Seeds' titleline='/grains'  maintitle='Grains' img={require("./imgs/asset 47.jpeg")} widths='500px'/>} />
 
-        <Route path="/AlfalfaGrassSeeds" element={<Basmatirice title='Alfalfa Grass Seeds' titleline='/fodderseeds'  maintitle='Fooder Seeds' img={require("./imgs/asset 48.jpeg")}/>} />
-        <Route path="/PiperSudanGrassSeeds" element={<Basmatirice title='Piper Sudan Grass Seeds' titleline='/fodderseeds'  maintitle='Fooder Seeds' img={require("./imgs/asset 49.jpeg")}/>} />
+        <Route path="/AlfalfaGrassSeeds" element={<Basmatirice title='Alfalfa Grass Seeds' titleline='/fodderseeds'  maintitle='Fooder Seeds' img={require("./imgs/asset 48.jpeg")} widths='400px'/>} />
+        <Route path="/PiperSudanGrassSeeds" element={<Basmatirice title='Piper Sudan Grass Seeds' titleline='/fodderseeds'  maintitle='Fooder Seeds' img={require("./imgs/asset 49.jpeg")} widths='300px'/>} />
 
-        <Route path="/FreshPromegranate" element={<Basmatirice title='Fresh Promegranate' titleline='/freshfruits' maintitle='Fresh Fruits' img={require("./imgs/asset 50.jpeg")}/>} />
+        <Route path="/FreshPromegranate" element={<Basmatirice title='Fresh Promegranate' titleline='/freshfruits' maintitle='Fresh Fruits' img={require("./imgs/asset 50.jpeg")} widths='400px'/>} />
         
-        <Route path="/FreshGinger" element={<Basmatirice title='Fresh Ginger' titleline='/freshvegetables'  maintitle='Fresh Vegetables' img={require("./imgs/asset 51.jpeg")}/>} />
-        <Route path="/FreshRedOnion" element={<Basmatirice title='Fresh Red Onion' titleline='/freshvegetables'  maintitle='Fresh Vegetables' img={require("./imgs/asset 52.jpeg")}/>} />
+        <Route path="/FreshGinger" element={<Basmatirice title='Fresh Ginger' titleline='/freshvegetables'  maintitle='Fresh Vegetables' img={require("./imgs/asset 51.jpeg")} widths='500px'/>} />
+        <Route path="/FreshRedOnion" element={<Basmatirice title='Fresh Red Onion' titleline='/freshvegetables'  maintitle='Fresh Vegetables' img={require("./imgs/asset 52.jpeg")} widths='400px'/>} />
 
-        <Route path="/AjwainSpeeds" element={<Basmatirice title='Ajwain Speeds'  maintitle='Indian Spices' titleline='/indianspices'  img={require("./imgs/asset 15.jpeg")}/>} />
-        <Route path="/AselioSpeeds" element={<Basmatirice title='Aselio Speeds'  maintitle='Indian Spices' titleline='/indianspices'  img={require("./imgs/asset 16.jpeg")}/>} />
-        <Route path="/CorianderSeeds" element={<Basmatirice title='Coriander Seeds'  maintitle='Indian Spices' titleline='/indianspices'  img={require("./imgs/asset 17.jpeg")}/>} />
-        <Route path="/CuminSeeds" element={<Basmatirice title='Cumin Seeds'  maintitle='Indian Spices' titleline='/indianspices'  img={require("./imgs/asset 18.jpeg")}/>} />
-        <Route path="/FennelSpeeds" element={<Basmatirice title='Fennel Speeds'  maintitle='Indian Spices' titleline='/indianspices'  img={require("./imgs/asset 19.jpeg")}/>} />
-        <Route path="/FenugreekSeeds" element={<Basmatirice title='Fenugreek Seeds'  maintitle='Indian Spices' titleline='/indianspices'  img={require("./imgs/asset 20.jpeg")}/>} />
-        <Route path="/BayLeaves" element={<Basmatirice title='Bay Leaves'  maintitle='Indian Spices' titleline='/indianspices'  img={require("./imgs/asset 21.jpeg")}/>} />
-        <Route path="/SennaLeaves" element={<Basmatirice title='Senna Leaves'  maintitle='Indian Spices' titleline='/indianspices'  img={require("./imgs/asset 22.jpeg")}/>} />
-        <Route path="/RedChilliPowder" element={<Basmatirice title='Red Chilli Powder'  maintitle='Indian Spices' titleline='/indianspices'  img={require("./imgs/asset 23.jpeg")}/>} />
-        <Route path="/TurmericPowder" element={<Basmatirice title='Turmeric Powder'  maintitle='Indian Spices' titleline='/indianspices'  img={require("./imgs/asset 24.jpeg")}/>} />
+        <Route path="/AjwainSpeeds" element={<Basmatirice title='Ajwain Speeds'  maintitle='Indian Spices' titleline='/indianspices'  img={require("./imgs/asset 15.jpeg")} widths='500px'/>} />
+        <Route path="/AselioSpeeds" element={<Basmatirice title='Aselio Speeds'  maintitle='Indian Spices' titleline='/indianspices'  img={require("./imgs/asset 16.jpeg")} widths='500px'/>} />
+        <Route path="/CorianderSeeds" element={<Basmatirice title='Coriander Seeds'  maintitle='Indian Spices' titleline='/indianspices'  img={require("./imgs/asset 17.jpeg")} widths='500px'/>} />
+        <Route path="/CuminSeeds" element={<Basmatirice title='Cumin Seeds'  maintitle='Indian Spices' titleline='/indianspices'  img={require("./imgs/asset 18.jpeg")} widths='500px'/>} />
+        <Route path="/FennelSpeeds" element={<Basmatirice title='Fennel Speeds'  maintitle='Indian Spices' titleline='/indianspices'  img={require("./imgs/asset 19.jpeg")} widths='500px'/>} />
+        <Route path="/FenugreekSeeds" element={<Basmatirice title='Fenugreek Seeds'  maintitle='Indian Spices' titleline='/indianspices'  img={require("./imgs/asset 20.jpeg")} widths='500px'/>} />
+        <Route path="/BayLeaves" element={<Basmatirice title='Bay Leaves'  maintitle='Indian Spices' titleline='/indianspices'  img={require("./imgs/asset 21.jpeg")} widths='500px'/>} />
+        <Route path="/SennaLeaves" element={<Basmatirice title='Senna Leaves'  maintitle='Indian Spices' titleline='/indianspices'  img={require("./imgs/asset 22.jpeg")} widths='500px'/>} />
+        <Route path="/RedChilliPowder" element={<Basmatirice title='Red Chilli Powder'  maintitle='Indian Spices' titleline='/indianspices'  img={require("./imgs/asset 23.jpeg")} widths='500px'/>} />
+        <Route path="/TurmericPowder" element={<Basmatirice title='Turmeric Powder'  maintitle='Indian Spices' titleline='/indianspices'  img={require("./imgs/asset 24.jpeg")} widths='500px'/>} />
 
       </Routes>
     </>
