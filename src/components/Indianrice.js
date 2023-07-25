@@ -104,8 +104,9 @@ useEffect(() => {
         }}></div>
         </div>
         <div id="second-img" className='boxx'>
-        <img  id="second2" style={{width:{boxSize}}}
-         src={data.img}  alt=""
+        <img  id="second2"
+         src={data.img} 
+         style={{width:data.widths}} alt=""
          />
          </div>
   

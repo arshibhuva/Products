@@ -25,7 +25,7 @@ const [boxPosition, setBoxPosition] = useState({ x: 0, y: 0 });
 
 useEffect(() => {
 
-// new cod----------------
+// new code----------------
 
 
 // let first = document.getElementById('first');
@@ -69,33 +69,9 @@ useEffect(() => {
 //   first.addEventListener('mousemove',handleMouseMove);
 
 
-// new cod----------------
+// new code----------------
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-     
-    const handleMouseMove = (e) => {
+const handleMouseMove = (e) => {
 console.clear()
 //       console.log("client x - =" + e.clientX - e.offsetX)
 //       console.log("client x + =" + e.clientX + e.offsetX)
@@ -119,16 +95,20 @@ console.clear()
 
     // setBoxPosition({ x: e.clientX-300 +'px',y: e.clientY-300+'px' });
     const { clientX, clientY,offsetX,offsetY } = e;
-    const { left, top,right,bottom } = e.target.getBoundingClientRect();
+    const { left, top,right,bottom} = e.target.getBoundingClientRect();
     // console.log("left :" + left)
     // console.log("rigth :" + right)
     // console.log("top :" + top)
     // console.log("bottom :" + bottom)
-    setBoxPosition({ x: e.clientX-left-50,y: e.clientY-top-50});
-    // setBoxPosition({ x: e.clientX,y: e.clientY});
 
-console.log("X :",e.clientX-left)
-    // setBoxPosition({ x: e.clientX-300 +'px',y: e.clientY-300 +'px' });
+
+    // setBoxPosition({ x: e.clientX-left,y: e.clientY-top});
+    // setBoxPosition({ x: e.clientX, y: e.clientY});
+    // setBoxPosition({ x: e.clientX-left-50,y: e.clientY-top-50});
+    setBoxPosition({ x: e.clientX-300 +'px',y: e.clientY-300 +'px' });
+
+
+// console.log("X :",e.clientX-left)
 
     const magnifier = document.getElementById('second2');
 
