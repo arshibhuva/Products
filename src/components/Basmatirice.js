@@ -104,8 +104,8 @@ console.clear()
 
     // setBoxPosition({ x: e.clientX-left,y: e.clientY-top});
     // setBoxPosition({ x: e.clientX, y: e.clientY});
-    // setBoxPosition({ x: e.clientX-left-50,y: e.clientY-top-50});
-    setBoxPosition({ x: e.clientX-300 +'px',y: e.clientY-300 +'px' });
+    setBoxPosition({ x: e.clientX-left-50,y: e.clientY-top-50});
+    // setBoxPosition({ x: e.clientX-300 +'px',y: e.clientY-300 +'px' });
 
 
 // console.log("X :",e.clientX-left)

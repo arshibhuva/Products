@@ -18,11 +18,13 @@ function App() {
     { maintitle : 'Indian Rice',
      title: 'Basmati Rice',
      width:'100%',
+     widths:'700px',
      img:[require("./imgs/asset 2.png")]},
     
     {
      title: 'Non Basmati Rice',
      width:'100%',
+     widths:'700px',
      img:[require("./imgs/asset 3.jpeg")]
     }
    ]
@@ -31,30 +33,36 @@ function App() {
     {
       maintitle : 'Grains',
      title: 'Green Millet',
+     widths:'400px',
      img:[require("./imgs/asset 42.jpeg")]
     },
     {
      title: 'Yellow Maize',
+     widths:'400px',
      img:[require("./imgs/asset 43.jpeg")]
 
     },
     {
       title: 'Barley',
+      widths:'400px',
       img:[require("./imgs/asset 44.jpeg")]
  
      },
      {
       title: 'Sorghum',
+      widths:'400px',
       img:[require("./imgs/asset 45.jpeg")]
  
      },
      {
       title: 'Wheat',
+      widths:'400px',
       img:[require("./imgs/asset 46.jpeg")]
  
      },
      {
       title: 'Sesame Seeds',
+      widths:'500px',
       img:[require("./imgs/asset 47.jpeg")]
  
      },
@@ -63,12 +71,13 @@ function App() {
     {
       maintitle : 'Fodder Seeds',
      title: 'Alfalfa Grass Seeds',
+     widths:'400px',
      img:[require("./imgs/asset 48.jpeg")]
     },
     {
      title: 'Piper Sudan Grass Seeds',
+     widths:'400px',
      img:[require("./imgs/asset 49.jpeg")]
-
     },
     
    ]
@@ -76,6 +85,7 @@ function App() {
     {
       maintitle : 'Fresh Fruits',
      title: 'Fresh Pomegranate',
+     widths:'400px',
      img:[require("./imgs/asset 50.jpeg")]
     }
    
@@ -85,10 +95,12 @@ function App() {
     {
       maintitle : 'Fresh Vegetables',
      title: 'Fresh Ginger',
+     widths:'500px',
      img:[require("./imgs/asset 51.jpeg")]
     },
     {
      title: 'Fresh Red Onion',
+     widths:'400px',
      img:[require("./imgs/asset 52.jpeg")]
 
     },
@@ -98,43 +110,54 @@ function App() {
     {
     maintitle : 'Indian Spices',
      title: 'Ajwain Seeds',
+     widths:'600px',
      img:[require("./imgs/asset 15.jpeg")]
     },
     {
      title: 'Aselio Seeds',
+     widths:'600px',
      img:[require("./imgs/asset 16.jpeg")]
 
     },
     {
       title: 'Coriander Seeds',
+     widths:'600px',
       img:[require("./imgs/asset 17.jpeg")]
      },
      {
       title: 'Cumin Seeds',
+     widths:'600px',
       img:[require("./imgs/asset 18.jpeg")]
      },
      {
       title: 'Fennel Seeds',
+     widths:'600px',
       img:[require("./imgs/asset 19.jpeg")]
      },
      {
       title: 'Fenugreek Seeds',
+     widths:'600px',
       img:[require("./imgs/asset 20.jpeg")]
      },
      {
       title: 'Bay Leaves',
+     widths:'600px',
       img:[require("./imgs/asset 21.jpeg")]
      },
      {
       title: 'Senna Leaves',
+     widths:'600px',
       img:[require("./imgs/asset 22.jpeg")]
      },
      {
       title: 'Red Chilli Powder',
+     widths:'600px',
       img:[require("./imgs/asset 23.jpeg")]
      },
      {
       title: 'Turmeric Powder',
+     widths:'600px',
+
       img:[require("./imgs/asset 24.jpeg")]
      },
     
@@ -179,7 +202,7 @@ function App() {
         <Route path="/AlfalfaGrassSeeds" element={<Basmatirice title='Alfalfa Grass Seeds' titleline='/fodderseeds'  maintitle='Fooder Seeds' img={require("./imgs/asset 48.jpeg")} widths='400px'/>} />
         <Route path="/PiperSudanGrassSeeds" element={<Basmatirice title='Piper Sudan Grass Seeds' titleline='/fodderseeds'  maintitle='Fooder Seeds' img={require("./imgs/asset 49.jpeg")} widths='300px'/>} />
 
-        <Route path="/FreshPromegranate" element={<Basmatirice title='Fresh Promegranate' titleline='/freshfruits' maintitle='Fresh Fruits' img={require("./imgs/asset 50.jpeg")} widths='400px'/>} />
+        <Route path="/FreshPromegranate" element={<Basmatirice title='Fresh Promegranate' titleline='/freshfruits' maintitle='Fresh Fruits' img={require("./imgs/asset 50.jpeg")} widths='300px'/>} />
         
         <Route path="/FreshGinger" element={<Basmatirice title='Fresh Ginger' titleline='/freshvegetables'  maintitle='Fresh Vegetables' img={require("./imgs/asset 51.jpeg")} widths='500px'/>} />
         <Route path="/FreshRedOnion" element={<Basmatirice title='Fresh Red Onion' titleline='/freshvegetables'  maintitle='Fresh Vegetables' img={require("./imgs/asset 52.jpeg")} widths='400px'/>} />

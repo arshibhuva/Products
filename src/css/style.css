@@ -475,12 +475,15 @@ body{
   border: none;
   width: 100%;
   overflow: hidden;
-  
   /* border: 2px solid black; */
 }
 #img-first{
   max-width: 100%;
   height: auto;
+}
+#first:hover{
+
+  /* opacity: 0.7; */
 }
 #first img{
   /* overflow: hidden; */
@@ -493,7 +496,10 @@ body{
   width: 100px;
   height: 100px;
   border: black solid 1px;
-  background-color:rgba(201, 195, 195, 0.2);
+  
+  /* opacity: 0.9 !important; */
+  /* background-color: black; */
+  /* background-color:rgba(250, 244, 244, 0.1); */
   position: absolute;
   /* transform: translate(-50%,-50%); */
   /* transition: 0.1s; */
@@ -1227,6 +1233,8 @@ color: white;
 .product-2{
   width: auto;
   height: auto;
+  max-width: 100%;
+  max-height: 100%;
   transition: 0.7s;
   transform: scale(1);
   background-size: cover;
