@@ -169,13 +169,6 @@ function App() {
       <Routes>
       
         <Route path="/" element={<Products1/>} />
-        <Route path="/zoom" element={<Zoom/>} />
-        <Route path="/a" element={<Cursor/>} />
-
-
-        <Route path="/hellow" element={<ImageMagnifier  src={require("./imgs/asset 24.jpeg")} alt="Image description"/>} />
-
-
 
         <Route path="/inadianrice" element={<Indianrice  pro='Indian Rice' props ={data1}/> } />
         <Route path="/grains" element={<Indianrice  title='Grains' props={dataTwo}/> } />

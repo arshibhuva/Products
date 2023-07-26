@@ -490,19 +490,20 @@ body{
 }
 #first:hover #lens{
   display: block;
-  cursor: move;
+  cursor: move !important;
 }
 #lens{
   width: 100px;
   height: 100px;
   border: black solid 1px;
-  
+  cursor: move !important;
   /* opacity: 0.9 !important; */
   /* background-color: black; */
   /* background-color:rgba(250, 244, 244, 0.1); */
   position: absolute;
   /* transform: translate(-50%,-50%); */
   /* transition: 0.1s; */
+  pointer-events: none !important;
   display: none;
 }
 

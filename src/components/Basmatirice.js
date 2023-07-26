@@ -119,7 +119,7 @@ console.clear()
 // console.log("ypos : " + yPos)
 
     magnifier.style.transform = `translate(${xPos}px, ${yPos}px)`;
-       
+    // lens.style.backgroundImage = `url(${props.img})`
     // setBoxPosition({ x: e.clientX, y: e.clientY});
     // setBoxSize({boxPosition} + 'px');
     // console.log(setBoxSize)
@@ -128,7 +128,7 @@ console.clear()
 
     let first = document.getElementById('first');
     // let imgfirst = document.getElementById('img-first');
-    // let lens = document.getElementById('lens');
+    let lens = document.getElementById('lens');
     // let secondimg = document.getElementById('second-img');
 
     first.addEventListener('mousemove',handleMouseMove);
